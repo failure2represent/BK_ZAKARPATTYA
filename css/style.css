@@ -1,67 +1,34 @@
-@charset "UTF-8";
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+@font-face {
+  font-family: "ubunturegular";
+  src: url("../fonts/ubuntu-regular/ubuntu-r-webfont.eot");
+  src: url("../fonts/ubuntu-regular/ubuntu-r-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-regular/ubuntu-r-webfont.woff2") format("woff2"), url("../fonts/ubuntu-regular/ubuntu-r-webfont.woff") format("woff"), url("../fonts/ubuntu-regular/ubuntu-r-webfont.ttf") format("truetype"), url("../fonts/ubuntu-regular/ubuntu-r-webfont.svg#ubunturegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-image: url(../img/bg_plugg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #fff;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: auto;
 }
 
 .header__inner {
-  margin-top: 10px;
+  padding: 13px 0;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
@@ -72,79 +39,100 @@ table {
   gap: 20px;
 }
 .header__inner .header__list .header__item .header__item-link {
+  font-family: "ubunturegular";
   text-decoration: none;
   font-weight: 700;
-  font-size: 18px;
-  color: #1e1e1e;
-  border: 5px solid #5a5a58;
+  font-size: 24px;
+  color: #38393E;
+  border: 5px solid #38393E;
   border-radius: 10px;
   padding: 10px 30px;
+  transition: 0.222s;
+}
+.header__inner .header__list .header__item .header__item-link:hover {
+  background: #38393E;
+  color: white;
 }
 
 .hero__container {
-  background-image: url(../img/bg_plug.jpg);
-  content: "";
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 38px 0 38px 64px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+  margin-bottom: 160px;
 }
-.hero__container .hero__header .hero__title {
-  font-weight: 900;
-  font-size: 64px;
-  color: #33363b;
-  margin-bottom: 10px;
+.hero__container .hero__content .hero__header {
+  padding-top: 82px;
 }
-.hero__container .hero__header .hero__subtitle {
-  max-width: 289px;
+.hero__container .hero__content .hero__header .hero__title {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 85px;
+  color: #38393E;
+  margin-bottom: 13px;
+  font-family: "ubunturegular";
+}
+.hero__container .hero__content .hero__header .hero__subtitle {
+  max-width: 380px;
+  font-weight: 900;
+  font-size: 42px;
   text-align: center;
-  color: #33363b;
-  margin-left: 130px;
-  margin-bottom: 50px;
+  color: #38393E;
+  margin-left: 170px;
+  margin-bottom: 66px;
 }
-.hero__container .hero__features {
+.hero__container .hero__content .hero__features {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   justify-content: space-evenly;
+  align-items: center;
   text-align: center;
-  max-width: 529px;
+  max-width: 706px;
 }
-.hero__container .hero__features .hero__item .hero__item-text {
+.hero__container .hero__content .hero__features .hero__item .hero__item-icon {
+  margin-bottom: 14px;
+}
+.hero__container .hero__content .hero__features .hero__item .hero__item-text {
   font-weight: 700;
-  font-size: 20px;
-  color: #33363b;
+  font-size: 26px;
+  color: #38393E;
+}
+.hero__container .hero__img {
+  border-radius: 35px 0 0 35px;
+  box-shadow: 0 0 7px 7px #38393e;
 }
 
 .about__container {
-  background-image: url(../img/bg_plug.jpg);
-  content: "";
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 30px;
+  margin-bottom: 168px;
 }
 .about__container .about__content {
-  max-width: 984px;
+  max-width: 1312px;
   margin: auto;
-  padding: 20px 40px;
+  padding: 35px 55px;
   display: flex;
-  gap: 54px;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
+  gap: 78px;
+  background: #38393E;
+  border-radius: 25px;
+}
+.about__container .about__content .about__media {
+  padding: 35px 0;
+}
+.about__container .about__content .about__media img {
+  border-radius: 15px;
+}
+.about__container .about__content .about__info {
+  max-width: 667px;
 }
 .about__container .about__content .about__info .about__title {
-  margin-top: 8px;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 64px;
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 }
 .about__container .about__content .about__info .about__text {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 26px;
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 }
 .about__container .about__content .about__info .about__text:last-of-type {
   margin-bottom: inherit;
@@ -154,10 +142,6 @@ table {
 }
 
 .services__container {
-  background-image: url(../img/bg_plug.jpg);
-  content: "";
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,21 +149,21 @@ table {
 }
 .services__container .services__title {
   font-weight: 900;
-  font-size: 44px;
-  color: #fff;
-  margin-bottom: 10px;
+  font-size: 64px;
+  color: #38393E;
+  margin-bottom: 40px;
 }
 .services__container .services__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 66px;
   justify-content: space-evenly;
   text-align: center;
-  max-width: 850px;
+  max-width: 1123px;
   margin-bottom: 12px;
 }
 .services__container .services__list .services__item {
-  max-width: 250px;
+  max-width: 333px;
 }
 .services__container .services__list .services__item .services__item-icon {
   display: block;
@@ -189,7 +173,7 @@ table {
   font-size: 20px;
   color: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: #33363b;
+  background: #38393E;
   padding: 15px 25px;
   border-top: solid 5px orange;
 }
@@ -198,10 +182,6 @@ table {
 }
 
 .gallery__container {
-  background-image: url(../img/bg_plug.jpg);
-  content: "";
-  background-size: cover;
-  background-repeat: no-repeat;
   padding-top: 30px;
 }
 .gallery__container .gallery__title {
@@ -218,16 +198,12 @@ table {
 }
 
 .contacts__container {
-  background-image: url(../img/bg_plug.jpg);
-  content: "";
-  background-size: cover;
-  background-repeat: no-repeat;
   padding-top: 43px;
 }
 .contacts__container .contacts__title {
   font-weight: 900;
   font-size: 48px;
-  color: #33363b;
+  color: #38393E;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -238,7 +214,7 @@ table {
 .contacts__container .contacts__content .contacts__company {
   font-weight: 900;
   font-size: 48px;
-  color: #33363b;
+  color: #38393E;
   margin-top: 17px;
   margin-bottom: 20px;
 }
@@ -254,20 +230,20 @@ table {
 .contacts__container .contacts__content .contacts__item .contacts__label {
   font-weight: 700;
   font-size: 32px;
-  color: #33363b;
+  color: #38393E;
   margin-bottom: 8px;
 }
 .contacts__container .contacts__content .contacts__item .contacts__text {
   font-weight: 400;
   font-size: 24px;
-  color: #33363b;
+  color: #38393E;
   max-width: 379px;
 }
 .contacts__container .contacts__content .contacts__item .contacts__text a {
   text-decoration: none;
   font-weight: 400;
   font-size: 24px;
-  color: #33363b;
+  color: #38393E;
 }
 
 .swiper {
