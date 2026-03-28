@@ -25,15 +25,21 @@ header{
     background-color: #fff;
 }
 .container{
-    max-width: 1600px;
+    max-width: 1440px;
     margin: auto;
 }
-.header__inner{
+.header__container{
+    max-width: 1600px;
+    margin: auto;
     padding: 13px 0;
-    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .header__logo{
+        .header__logo-img{
+            display: block;
+        }
+    }
     .header__list{
         display: flex;
         gap: 20px;
@@ -59,25 +65,26 @@ header{
 .hero__container{
     display: flex;
     justify-content: space-around;
-    padding-top: 80px;
+    padding-top: 72px;
     margin-bottom: 160px;
+    gap: 85px;
     .hero__content{
         .hero__header{
-            padding-top: 82px;
+            padding-top: 12px;
             .hero__title{
                 font-weight: 900;
-                font-size: 85px;
+                font-size: 76px;
                 color: $main_color;
                 margin-bottom: 13px;
-                font-family: 'ubunturegular';
+                text-align: center;
             }
             .hero__subtitle{
-                max-width: 380px;
+                max-width: 300px;
                 font-weight: 900;
-                font-size: 42px;
+                font-size: 38px;
                 text-align: center;
                 color: $main_color;
-                margin-left: 170px;
+                margin-left: 180px;
                 margin-bottom: 66px;
             }
         }
@@ -95,7 +102,7 @@ header{
                 }
                 .hero__item-text{
                 font-weight: 700;
-                font-size: 26px;
+                font-size: 24px;
                 color: $main_color;
                 }
             }   
@@ -104,12 +111,13 @@ header{
     .hero__img{
         border-radius: 35px 0 0 35px;
         box-shadow: 0 0 7px 7px #38393e;
+        display: block;
     }   
 }
 .about__container{
     margin-bottom: 168px;
     .about__content{
-        max-width: 1312px;
+        max-width: 1181px;
         margin: auto;
         padding: 35px 55px;
         display: flex;
@@ -126,13 +134,13 @@ header{
             max-width: 667px;
            .about__title{
             font-weight: 900;
-            font-size: 64px;
+            font-size: 57px;
             color: #fff;
             margin-bottom: 33px;
            }
            .about__text{
             font-weight: 400;
-            font-size: 26px;
+            font-size: 24px;
             color: #fff;
             margin-bottom: 33px;
             &:last-of-type{
@@ -150,33 +158,40 @@ header{
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
+    margin-bottom: 170px;
     .services__title{
         font-weight: 900;
-        font-size: 64px;
+        font-size: 57px;
         color: $main_color;
-        margin-bottom: 40px;
+        margin-bottom: 36px;
     }
     .services__list{
         display: flex;
         flex-wrap: wrap;
-        gap: 66px;
+        gap: 60px;
         justify-content: space-evenly;
         text-align: center;
         max-width: 1123px;
         margin-bottom: 12px;
         .services__item{
-            max-width: 333px;
+            max-width: 333px;             
+            border: 7px solid $main_color;          
+            border-radius: 10px;
+            box-shadow: 0.9px -0.9px 18px 4.5px rgba(0,0,0,0.6);
             .services__item-icon{
                 display: block;
             }
             .services__item-text{
+                max-width: 300px;
                 font-weight: 700;
-                font-size: 20px;
+                font-size: 24px;
                 color: #fff;
-                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
                 background: $main_color;
-                padding: 15px 25px;
+                padding: 15px;
                 border-top: solid 5px orange;
+                &:first-of-type{
+                    min-height: 91px;
+                }
             } 
         }
         .services__item:first-child .services__item-text {
@@ -185,40 +200,68 @@ header{
     }
 }
 .gallery__container{
-    
-    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 209px;
     .gallery__title{
         font-weight: 900;
-        font-size: 48px;
-        color: #fff;
+        font-size: 57px;
+        color: $main_color;
         text-align: center;
-        margin-bottom: 102px;
+        margin-bottom: 27px;
     }
-    .gallery__list{
+    .gallery__wrap{
+        border: 2px solid #000;
+        border-radius: 18px;
+        background: $main_color;
+        padding: 0px 62px;
+        .gallery__list{
+            display: flex;
+            justify-content: space-evenly;
+            .gallery__item-img{
+                display: block;
+                border-left: 2px solid #000;;
+                border-right: 2px solid #000;
+            }
+        }
+    }
+}
+.certificates__container{
+    max-width: 95%;
+    margin-bottom: 168px;
+    .certificates__list{
         display: flex;
-        justify-content: space-evenly;
-        padding-bottom: 205px;
+        justify-content: space-between;
+        .certificates__item{
+            border: 7px solid $main_color;          
+            box-shadow: 0.9px -0.9px 18px 4.5px rgba(0,0,0,0.6);
+            .certificates__link{
+                .certificates__item-img{
+                    max-width: 450px;
+                    max-height: 636px;
+                }
+            }
+        }
     }
 }
 .contacts__container{
-    
-    padding-top: 43px;
+    margin-bottom: 173px;
     .contacts__title{
         font-weight: 900;
-        font-size: 48px;
+        font-size: 57px;
         color: $main_color;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 39px;
     }
     .contacts__content{
         display: flex;
         justify-content: space-around;
         .contacts__company{
             font-weight: 900;
-            font-size: 48px;
+            font-size: 54px;
             color: $main_color;
-            margin-top: 17px;
-            margin-bottom: 20px;
+            margin-bottom: 36px;
             .contacts__company-line{
                 &:last-of-type{
                     display: block;
@@ -226,33 +269,82 @@ header{
             }
         }
         .contacts__item{
-            margin-bottom: 20px;
+            margin-bottom: 37px;
+            display: flex;
+            gap: 24px;
+            align-items: center;
             &:last-of-type{
                 margin-bottom: inherit;
             }
             .contacts__label{
                 font-weight: 700;
-                font-size: 32px;
+                font-size: 38px;
                 color: $main_color;
                 margin-bottom: 8px;
             }
             .contacts__text{
                 font-weight: 400;
-                font-size: 24px;
+                font-size: 28px;
                 color: $main_color;
-                max-width: 379px;
-                a{
-                    text-decoration: none;
-                    font-weight: 400;
-                    font-size: 24px;
-                    color: $main_color;
+                max-width: 455px;
+                text-decoration: none;
+            }
+        }
+        .contacts__map{
+            margin-top: 13px;
+        }
+    }
+}
+footer{
+    background: $main_color;
+}
+.footer__container{
+    max-width: 1600px;
+    margin: auto;
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer__company{
+        font-weight: 800;
+        font-size: 42px;
+        text-align: center;
+        color: #fff;
+        .footer__company-line{
+            &:last-of-type{
+                display: block;
+                font-weight: 400;
+                font-size: 26px;
+            }
+        }
+    }
+    .footer__socials{
+        display: flex;
+        gap: 30px;
+        .footer__socials-item{
+            &:hover .footer__socials-link svg path{
+                stroke: #cfcfcf;       
+            }
+            &:last-of-type{
+                &:hover .footer__socials-link svg path{
+                    fill: #cfcfcf;
                 }
             }
+        }
+    }
+    .footer__phone{
+        font-weight: 400;
+        font-size: 32px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #fff;
+        &:hover{
+            color: #cfcfcf;
         }
     }
 }
 .swiper {
     width: 100%;
-    height: 400px; /* Любая нужная высота */
+    height: 400px; 
 }
 
