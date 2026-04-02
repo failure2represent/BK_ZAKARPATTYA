@@ -24,13 +24,13 @@
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item">
-                    <a class="header__item-link" href="#">Послуги</a>
+                    <a class="header__item-link" href="#services">Послуги</a>
                 </li>
                 <li class="header__item">
-                    <a class="header__item-link" href="#">Про нас</a>
+                    <a class="header__item-link" href="#about">Про нас</a>
                 </li>
                 <li class="header__item">
-                    <a class="header__item-link" href="#">Контакти</a>
+                    <a class="header__item-link" href="#contacts">Контакти</a>
                 </li>
             </ul>
         </nav>   
@@ -43,7 +43,7 @@
                 <div class="hero__content">
                     <div class="hero__header">
                         <h1 class="hero__title">БК ЗАКАРПАТТЯ</h1>
-                        <p class="hero__subtitle">Виробник бетону м. Мукачево</p>
+                        <p class="hero__subtitle">Виробник бетону №1 м. Мукачево</p>
                     </div>
                     <ul class="hero__features">
                         <li class="hero__item">
@@ -78,7 +78,7 @@
                         <img src="img/about_plug.jpg">
                     </div>
                     <div class="about__info">
-                        <h2 class="about__title">ПРО КОМПАНІЮ</h2>
+                        <h2 id="about" class="about__title">ПРО КОМПАНІЮ</h2>
                         <p class="about__text">Компанія БЕТОН БК Закарпаття займається виробництвом товарного бетону та продажем його спільно з нерудними матеріалами (пісок, щебінь тощо). За <span class="about__text-highlight">понад 15-річну історію</span> існування ми стали <span class="about__text-highlight">лідерами Закарпатської області</span> у сфері виготовлення та продажу матеріалів нульового циклу для малоповерхового та промислового будівництва.</p>
                         <p class="about__text">Весь технологічний процес здійснюється під безперервним <span class="about__text-highlight">контролем технолога</span>, що дозволяє без відриву від виробництва здійснювати оперативний та чіткий <span class="about__text-highlight">контроль якості</span> як вхідної сировини, так і готової бетонної продукції.</p>
                         <p class="about__text">Доставка бетону здійснюється <span class="about__text-highlight">власним автотранспортом</span> за заявкою клієнта у зручний час.</p>
@@ -87,8 +87,8 @@
             </div>
         </section>
         <section class="services">
-            <div class="services__container container">
-                <h2 class="services__title">ПОСЛУГИ</h2>
+            <div  class="services__container container">
+                <h2 id="services" class="services__title">ПОСЛУГИ</h2>
                 <ul class="services__list">
                     <li class="services__item">
                         <img class="services__item-icon" src="img/service_1.png">
@@ -117,21 +117,19 @@
         <section class="gallery">
             <div class="gallery__container container">
                 <h2 class="gallery__title">ГАЛЕРЕЯ</h2>
-
                 <div class="gallery__wrap">
                     <div class="swiper">
                         <ul class="gallery__list swiper-wrapper">
                             <li class="gallery__item swiper-slide">
-                                <img class="gallery__item-img" src="img/gallery_1.png">
+                                <img class="gallery__item-img" src="img/07 1.png">
                             </li>
                             <li class="gallery__item swiper-slide">
-                                <img class="gallery__item-img" src="img/gallery_1.png">
+                                <img class="gallery__item-img" src="img/07 1.png">
                             </li>
                             <li class="gallery__item swiper-slide">
-                                <img class="gallery__item-img" src="img/gallery_1.png">
+                                <img class="gallery__item-img" src="img/07 1.png">
                             </li>
                         </ul>
-                        
                     </div>
                     <div class="swiper-button-prev">
                         <svg width="19" height="34" viewBox="0 0 19 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,30 +147,32 @@
         </section>
         <section class="certificates">
             <div class="certificates__container container">
-                <ul class="certificates__list">
-                    <li class="certificates__item">
-                        <a class="certificates__link" href="files/certificate_1.pdf" target="_blank" rel="noopener noreferrer">
-                            <img class="certificates__item-img" src="img/certificate-preview1.png">
-                        </a>
-                    </li>
-                    <li class="certificates__item">
-                        <a class="certificates__link" href="files/certificate_1.pdf" target="_blank" rel="noopener noreferrer">
-                            <img class="certificates__item-img" src="img/certificate-preview1.png">
-                        </a>
-                    </li>
-                    <li class="certificates__item">
-                        <a class="certificates__link" href="files/certificate_1.pdf" target="_blank" rel="noopener noreferrer">
-                            <img class="certificates__item-img" src="img/certificate-preview1.png">
-                        </a>
-                    </li>
-                    
-                    
-                </ul>
+                <div>
+                    <ul class="certificates__list">
+                        <li class="certificates__item">
+                            <a class="certificates__link" href="files/certificate_1.pdf" target="_blank" rel="noopener noreferrer">
+                                <img class="certificates__item-img" src="img/certificate-preview1.png">
+                            </a>
+                        </li>
+                        <li class="certificates__item">
+                            <a class="certificates__link" href="files/certificate_1.pdf" target="_blank" rel="noopener noreferrer">
+                                <img class="certificates__item-img" src="img/certificate-preview1.png">
+                            </a>
+                        </li>
+                        <li class="certificates__item">
+                            <a class="certificates__link" href="files/certificate_1.pdf" target="_blank" rel="noopener noreferrer">
+                                <img class="certificates__item-img" src="img/certificate-preview1.png">
+                            </a>
+                        </li>
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                        
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="contacts">
             <div class="contacts__container container">
-                <h2 class="contacts__title">КОНТАКТИ</h2>
+                <h2 id="contacts" class="contacts__title">КОНТАКТИ</h2>
                 <div class="contacts__content">
                     <div class="contacts__info">
                         <h3 class="contacts__company">
@@ -211,7 +211,7 @@
                         </div>
                     </div>
                     <div class="contacts__map" >
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d769.7104145333842!2d22.71871380351202!3d48.421948203600365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739ac9a249d7265%3A0x89d6397738df8262!2z0LLRg9C70LjRhtGPINCf0YDRj9GI0ZbQstGB0YzQutCwLCAxMSwg0JzRg9C60LDRh9C10LLQviwg0JfQsNC60LDRgNC_0LDRgtGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgODk2MDA!5e0!3m2!1sru!2scz!4v1772878718958!5m2!1sru!2scz" width="504" height="504" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d769.7104145333842!2d22.71871380351202!3d48.421948203600365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739ac9a249d7265%3A0x89d6397738df8262!2z0LLRg9C70LjRhtGPINCf0YDRj9GI0ZbQstGB0YzQutCwLCAxMSwg0JzRg9C60LDRh9C10LLQviwg0JfQsNC60LDRgNC_0LDRgtGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgODk2MDA!5e0!3m2!1sru!2scz!4v1772878718958!5m2!1sru!2scz" width="504" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

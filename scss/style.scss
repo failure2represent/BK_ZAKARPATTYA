@@ -1,4 +1,5 @@
 $main_color: #38393E;
+// $main_color: #202020;
 *{
     padding: 0;
     margin: 0;
@@ -27,12 +28,17 @@ $main_color: #38393E;
     font-style: normal;
   }
 body{
-    background-image: url(../img/bg_plugg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #D5D4D0;
+    // background-color: #DDDDDA;
+    // background-image: url(../img/bg_plug.png);
+    // background-repeat: repeat;
+    // background-attachment: fixed;
+    // background-size: auto; 
 }
 header{
     background-color: #fff;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 7px 1px #38393e;
 }
 .container{
     max-width: 1440px;
@@ -90,13 +96,13 @@ header{
                 text-align: center;
             }
             .hero__subtitle{
-                max-width: 347px;
+                max-width: 415px;
                 font-family: "Roboto Slab", serif;
                 font-weight: 900;
                 font-size: 38px;
                 text-align: center;
                 color: $main_color;
-                margin-left: 180px;
+                margin-left: 156px;
                 margin-bottom: 66px;
             }
         }
@@ -270,13 +276,13 @@ header{
     }
 }
 .certificates__container{
-    max-width: 95%;
+    max-width: 1600px;
     margin-bottom: 168px;
     .certificates__list{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         .certificates__item{
-            border: 7px solid $main_color;          
+            border: 3px solid $main_color;          
             box-shadow: 0.9px -0.9px 18px 4.5px rgba(0,0,0,0.6);
             height: 100%;
             .certificates__link{
@@ -285,6 +291,9 @@ header{
                     display: block;
                 }
             }
+        }
+        .certificates__item .swiper-slide, .certificates__item .swiper-slide-active{
+            width: inherit;
         }
     }
 }
@@ -339,6 +348,8 @@ header{
         }
         .contacts__map{
             margin-top: 23px;
+            border: 3px solid $main_color;          
+            box-shadow: 0.9px -0.9px 18px 4.5px rgba(0,0,0,0.6);
         }
     }
 }
