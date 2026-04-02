@@ -34,7 +34,14 @@ body {
   background-color: #D5D4D0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: #fff;
   border-bottom: 1px solid black;
   box-shadow: 0 0 7px 1px #38393e;
@@ -74,6 +81,12 @@ header {
 .header__container .header__list .header__item .header__item-link:hover {
   background: #38393E;
   color: white;
+}
+
+#services,
+#about,
+#contacts {
+  scroll-margin-top: 147px;
 }
 
 .hero__container {

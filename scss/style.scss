@@ -35,7 +35,14 @@ body{
     // background-attachment: fixed;
     // background-size: auto; 
 }
+html {
+    scroll-behavior: smooth;
+}
+
 header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #fff;
     border-bottom: 1px solid black;
     box-shadow: 0 0 7px 1px #38393e;
@@ -78,6 +85,11 @@ header{
         }
     }
 }
+#services,
+  #about,
+  #contacts {
+    scroll-margin-top: 147px;
+  }
 .hero__container{
     display: flex;
     justify-content: space-around;
