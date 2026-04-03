@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiperGallery', {
   loop: true,
   slidesPerView: 1,
   autoplay: {
@@ -14,12 +14,11 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-// const swiperС = new Swiper('.swiperС', {
-//   loop: true,
-//   slidesPerView: 3,
-//   speed: 1011,
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-
-// });
+const swiperС = new Swiper('.swiperCertificates', {
+  slidesPerView: 3,
+  spaceBetween: 60,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});

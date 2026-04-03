@@ -55,7 +55,7 @@ header {
 .header__container {
   max-width: 1600px;
   margin: auto;
-  padding: 13px 0;
+  padding: 8px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,20 +73,20 @@ header {
   font-weight: 700;
   font-size: 24px;
   color: #38393E;
-  border: 5px solid #38393E;
+  border: 5px solid #5A5A58;
   border-radius: 10px;
   padding: 10px 30px;
   transition: 0.222s;
 }
 .header__container .header__list .header__item .header__item-link:hover {
-  background: #38393E;
+  background: #5A5A58;
   color: white;
 }
 
 #services,
 #about,
 #contacts {
-  scroll-margin-top: 147px;
+  scroll-margin-top: 127px;
 }
 
 .hero__container {
@@ -98,6 +98,9 @@ header {
 }
 .hero__container .hero__content .hero__header {
   padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero__container .hero__content .hero__header .hero__title {
   font-family: "Roboto Slab", serif;
@@ -114,7 +117,6 @@ header {
   font-size: 38px;
   text-align: center;
   color: #38393E;
-  margin-left: 156px;
   margin-bottom: 66px;
 }
 .hero__container .hero__content .hero__features {
@@ -197,7 +199,7 @@ header {
 .services__container .services__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 35px;
   justify-content: space-evenly;
   text-align: center;
   max-width: 1123px;
@@ -223,7 +225,7 @@ header {
   border-top: solid 5px orange;
 }
 .services__container .services__list .services__item .services__item-text:first-of-type {
-  min-height: 91px;
+  min-height: 92px;
 }
 .services__container .services__list .services__item:first-child .services__item-text {
   padding: 25px 91px;
@@ -250,15 +252,19 @@ header {
   padding: 0px 62px;
   position: relative;
 }
-.gallery__container .gallery__wrap .swiper {
+.gallery__container .gallery__wrap .swiperGallery {
   max-width: 1020px;
   border-left: 2px solid #000;
   border-right: 2px solid #000;
 }
-.gallery__container .gallery__wrap .swiper .swiper-wrapper .swiper-slide {
+.gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide {
   width: 1020px;
 }
-.gallery__container .gallery__wrap .swiper .swiper-wrapper .swiper-slide.swiper-slide-active {
+.gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide.swiper-slide-active {
+  width: 1020px;
+}
+.gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item .gallery__item-img {
+  display: block;
   width: 1020px;
 }
 .gallery__container .gallery__wrap .swiper-button-prev {
@@ -270,30 +276,32 @@ header {
 .gallery__container .gallery__wrap .swiper-button-next svg path, .gallery__container .gallery__wrap .swiper-button-prev svg path {
   fill: none;
 }
-.gallery__container .gallery__wrap .gallery__list .gallery__item-img {
-  display: block;
-  width: 1020px;
-}
 
 .certificates__container {
   max-width: 1600px;
   margin-bottom: 168px;
 }
-.certificates__container .certificates__list {
-  display: flex;
-  justify-content: space-around;
+.certificates__container .swiperCertificates {
+  margin-bottom: 30px;
 }
-.certificates__container .certificates__list .certificates__item {
+.certificates__container .swiperCertificates .certificates__list .certificates__item.swiper-slide {
   border: 3px solid #38393E;
-  box-shadow: 0.9px -0.9px 18px 4.5px rgba(0, 0, 0, 0.6);
   height: 100%;
 }
-.certificates__container .certificates__list .certificates__item .certificates__link .certificates__item-img {
-  max-width: 450px;
+.certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
+  max-width: 487px;
   display: block;
 }
-.certificates__container .certificates__list .certificates__item .swiper-slide, .certificates__container .certificates__list .certificates__item .swiper-slide-active {
-  width: inherit;
+.certificates__container .swiper-pagination {
+  bottom: inherit;
+  top: inherit;
+}
+.certificates__container .swiper-pagination .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+.certificates__container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #38393E;
 }
 
 .contacts__container {
