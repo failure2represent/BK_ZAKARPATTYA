@@ -58,7 +58,6 @@ header {
                 border-radius: 10px;
                 padding: 10px 30px;
                 transition: 0.222s;
-
                 &:hover {
                     background: #5A5A58;
                     color: white;
@@ -143,7 +142,7 @@ header {
     margin-bottom: 250px;
 
     .about__content {
-        max-width: 1181px;
+        max-width: 1180px;
         margin: auto;
         padding: 35px 55px;
         display: flex;
@@ -207,8 +206,7 @@ header {
         gap: 30px;
         justify-content: center;
         text-align: center;
-        max-width: 1123px;
-        margin-bottom: 12px;
+        max-width: 1200px;
 
         .services__item {
             max-width: 333px;
@@ -219,54 +217,56 @@ header {
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+            will-change: transform;
+            transition:  transform 0.333s;
             &:hover {
+                transition: transform 0.333s;
                 transform: translateY(-5px);
                 box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-
-                .services__item-text--link::after {
-                    transform: translate(5px, -50%);
+            }
+            &:first-of-type{
+                &:hover{
+                    .services__item-text{
+                        &::after{
+                            transform: translateX(7px);
+                            transition: transform 0.333s;
+                        }
+                    }
                 }
-            }
-
-            .services__item-icon {
-                display: block;
-                width: 100%;
-            }
-
-            .services__item-text {
-                max-width: 300px;
-                flex-grow: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                font-family: "Ubuntu", sans-serif;
-                font-weight: 700;
-                font-size: 24px;
-                color: #fff;
-                background: $main_color;
-                padding: 18px 20px;
-                border-top: solid 5px orange;
-                position: relative;
-
-                &--link {
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        left: calc(50% + 55px);
-                        top: 50%;
-                        transform: translateY(-50%);
-                        display: inline-block;
+                .services__item-text{
+                    &::after{
+                        content: "";
+                        background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="%23fc0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
                         width: 24px;
                         height: 24px;
-                        background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="%23fc0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: contain;
-                        transition: transform 0.2s ease;
+                        position: absolute;
+                        left: 69%;
+                        will-change: transform;
+                        transition:  transform 0.333s;
                     }
+                }
+            }
+            .services__link{
+                display: contents;
+                .services__item-icon {
+                    display: block;
+                    width: 100%;
+                }
+    
+                .services__item-text {
+                    max-width: 300px;
+                    flex-grow: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-family: "Ubuntu", sans-serif;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #fff;
+                    background: $main_color;
+                    padding: 18px 20px;
+                    border-top: solid 5px orange;
                 }
             }
         }
@@ -335,42 +335,32 @@ header {
             transform: translateY(-50%);
             margin-top: 0;
             transition: all 0.3s ease;
-
             &:after {
                 display: none;
             }
-
             svg {
                 width: 20px;
                 height: 20px;
-
-
-
                 path {
                     fill: none;
                     stroke: $main_color;
                     stroke-width: 4;
                 }
             }
-
             &:hover {
                 background: #f8f8f8;
                 box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
             }
         }
-
         .swiper-button-prev {
             left: -30px;
-
             svg {
                 position: relative;
                 left: -2px;
             }
         }
-
         .swiper-button-next {
             right: -30px;
-
             svg {
                 position: relative;
                 right: -2px;
@@ -403,7 +393,7 @@ header {
         border-radius: 25px;
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 
-        p {
+        .prices__text{
             font-family: "Ubuntu", sans-serif;
             font-size: 22px;
             line-height: 1.6;
@@ -414,7 +404,7 @@ header {
             }
         }
 
-        .prices__btn {
+        .prices__button {
             display: inline-block;
             margin-top: 20px;
             background: #fc0;
@@ -426,7 +416,7 @@ header {
             border-radius: 10px;
             text-decoration: none;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+            will-change: transform;
             &:hover {
                 transform: translateY(-3px);
                 box-shadow: 0 10px 20px rgba(255, 204, 0, 0.4);
@@ -476,7 +466,7 @@ header {
 }
 
 .contacts__container {
-    margin-bottom: 250px;
+    margin-bottom: 205px;
 
     .contacts__title {
         font-family: "Montserrat", sans-serif;
@@ -610,156 +600,171 @@ footer {
     }
 }
 
-.concrete-page {
+.concrete__page-wrapper {
     padding: 80px 0;
     max-width: 1200px;
     margin: 0 auto;
-
-    .concrete-title {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 900;
-        font-size: 57px;
-        color: $main_color;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .concrete-article {
-        background: $main_color;
-        color: #fff;
-        padding: 40px 60px;
-        border-radius: 20px;
-        margin-bottom: 60px;
-
-        h3 {
+    .concrete__production{
+        margin-bottom: 80px;
+        .concrete__production-title {
             font-family: "Montserrat", sans-serif;
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #fc0;
+            font-weight: 900;
+            font-size: 57px;
+            color: $main_color;
+            text-align: center;
+            margin-bottom: 50px;
         }
-
-        p {
-            font-family: "Ubuntu", sans-serif;
-            font-size: 20px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-    }
-
-    .concrete-section-title {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 900;
-        font-size: 42px;
-        color: $main_color;
-        text-align: center;
-        margin-bottom: 30px;
-        text-transform: uppercase;
-    }
-
-    .concrete-grid {
-        background: #252525;
-        padding: 60px 40px;
-        border-radius: 20px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 50px 30px;
-        margin-bottom: 60px;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-
-        .mark-card {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            background: #fff;
-            padding: 15px 25px;
-            border-radius: 15px;
-            text-decoration: none;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-            &:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-            }
-
-            img {
-                width: 70px;
-                height: 70px;
-                border-radius: 10px;
-                object-fit: cover;
-                flex-shrink: 0;
-            }
-
-            .mark-card__info {
-                .mark-class {
-                    font-family: "Ubuntu", sans-serif;
-                    font-weight: 700;
-                    font-size: 28px;
-                    color: $main_color;
-                    margin-bottom: 2px;
-                }
-
-                .mark-mark {
-                    font-family: "Ubuntu", sans-serif;
-                    font-size: 16px;
-                    color: #666;
-                }
-            }
-        }
-    }
-
-    .concrete-descriptions {
-        margin-top: 50px;
-
-        .mark-detail-card {
-            max-width: 1181px;
-            margin: 0 auto 50px auto;
-            padding: 40px 60px;
-            display: flex;
-            align-items: center;
-            gap: 50px;
+        
+        .concrete__production-content {
             background: $main_color;
-            border-radius: 25px;
-            scroll-margin-top: 130px;
-
-            .mark-media {
-                flex-shrink: 0;
-                width: 320px;
-                height: 250px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 15px;
-                    object-fit: cover;
-                }
+            color: #fff;
+            padding: 40px 60px;
+            border-radius: 20px;
+            
+    
+            .concrete__production-subtitle {
+                font-family: "Montserrat", sans-serif;
+                font-size: 32px;
+                margin-bottom: 20px;
+                color: #fc0;
             }
-
-            .mark-info {
-                h3 {
-                    font-family: "Montserrat", sans-serif;
-                    font-weight: 900;
-                    font-size: 38px;
-                    color: #fc0;
-                    margin-bottom: 20px;
+    
+            .concrete__production-text{
+                font-family: "Ubuntu", sans-serif;
+                font-size: 20px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+    .concrete__grades{
+        margin-bottom: 100px;
+        .concrete__grades-title {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 900;
+            font-size: 42px;
+            color: $main_color;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .concrete__grades-content{
+            background: #252525;
+            padding: 60px 40px;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 50px 30px;
+            margin-bottom: 60px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    
+            .mark__card {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                background: #fff;
+                padding: 15px 25px;
+                border-radius: 15px;
+                text-decoration: none;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
                 }
-
-                p {
-                    font-family: "Ubuntu", sans-serif;
-                    font-weight: 400;
-                    font-size: 20px;
-                    color: #fff;
-                    margin-bottom: 15px;
-                    line-height: 1.5;
-
-                    &:last-of-type {
-                        margin-bottom: 0;
+    
+                .mark__card-img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                    flex-shrink: 0;
+                }
+    
+                .mark__card-info {
+                    .mark__class {
+                        font-family: "Ubuntu", sans-serif;
+                        font-weight: 700;
+                        font-size: 28px;
+                        color: $main_color;
+                        margin-bottom: 2px;
+                    }
+    
+                    .mark__type {
+                        font-family: "Ubuntu", sans-serif;
+                        font-size: 16px;
+                        color: #666;
                     }
                 }
             }
         }
-
-        .mark-detail-card:nth-child(even) {
-            flex-direction: row-reverse;
+    }
+    .detailed__description{
+        margin-bottom: 150px;
+        .detailed__description-title{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 900;
+            font-size: 42px;
+            color: #38393E;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+        .detailed__description-content {
+            
+            .detail__card {
+                max-width: 1181px;
+                margin: 0 auto 50px auto;
+                padding: 40px 60px;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                background: $main_color;
+                border-radius: 25px;
+                scroll-margin-top: 130px;
+    
+                .detail__media {
+                    flex-shrink: 0;
+                    width: 320px;
+                    height: 250px;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 15px;
+                        object-fit: cover;
+                    }
+                }
+    
+                .detail__info{
+                    .detail__info-title {
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 900;
+                        font-size: 38px;
+                        color: #fc0;
+                        margin-bottom: 20px;
+                    }
+    
+                    .detail__info-text{
+                        font-family: "Ubuntu", sans-serif;
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: #fff;
+                        margin-bottom: 15px;
+                        line-height: 1.5;
+    
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+    
+            .detail__card:nth-child(even) {
+                flex-direction: row-reverse;
+            }
         }
     }
 }

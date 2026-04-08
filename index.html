@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="header__container">
             <a href="index.html" class="header__logo">
@@ -44,7 +43,7 @@
         </div>
     </header>
     <main>
-        <div class="page-wrapper">
+        <div class="main__page-wrapper">
             <section class="hero">
                 <div class="hero__container container">
                     <div class="hero__content">
@@ -82,7 +81,7 @@
                 <div class="about__container container">
                     <div class="about__content">
                         <div class="about__media">
-                            <img src="img/about_plug.png" alt="Виробництво бетону">
+                            <img src="img/about_plugg.jpg" alt="Виробництво бетону">
                         </div>
                         <div class="about__info">
                             <h2 class="about__title">ПРО КОМПАНІЮ</h2>
@@ -109,27 +108,35 @@
                     <h2 class="services__title">ПОСЛУГИ</h2>
                     <ul class="services__list">
                         <li class="services__item">
-                            <a href="concrete.html" style="display: contents;">
+                            <a href="concrete.html" class="services__link">
                                 <img class="services__item-icon" src="img/service_1.png" alt="Бетон">
-                                <p class="services__item-text services__item-text--link">БЕТОН</p>
+                                <p class="services__item-text">БЕТОН</p>
                             </a>
                         </li>
                         <li class="services__item">
-                            <img class="services__item-icon" src="img/service_2.png" alt="Послуги екскаватора">
-                            <p class="services__item-text">ПОСЛУГИ ЕКСКАВАТОРА</p>
+                            <a href="#contacts" class="services__link">
+                                <img class="services__item-icon" src="img/service_2.png" alt="Послуги екскаватора">
+                                <p class="services__item-text">ПОСЛУГИ ЕКСКАВАТОРА</p>
+                            </a>
                         </li>
                         <li class="services__item">
-                            <img class="services__item-icon" src="img/service_3.png" alt="Послуги навантажувача">
-                            <p class="services__item-text">ПОСЛУГИ НАВАНТАЖУВАЧА</p>
+                            <a href="concrete.html" class="services__link">
+                                <img class="services__item-icon" src="img/service_3.png" alt="Послуги навантажувача">
+                                <p class="services__item-text">ПОСЛУГИ НАВАНТАЖУВАЧА</p>
+                            </a>
                         </li>
                         <li class="services__item">
-                            <img class="services__item-icon" src="img/service_4.png" alt="Послуги бетононасоса">
-                            <p class="services__item-text">ПОСЛУГИ
+                            <a href="#contacts" class="services__link">
+                                <img class="services__item-icon" src="img/service_4.png" alt="Послуги бетононасоса">
+                                <p class="services__item-text">ПОСЛУГИ
                                  БЕТОНОНАСОСА</p>
+                            </a>    
                         </li>
                         <li class="services__item">
-                            <img class="services__item-icon" src="img/service_5.png" alt="Доставка піску і щебеню">
-                            <p class="services__item-text">ДОСТАВКА ПІСКУ І ЩЕБНЮ</p>
+                            <a href="#contacts" class="services__link">
+                                <img class="services__item-icon" src="img/service_5.png" alt="Доставка піску і щебеню">
+                                <p class="services__item-text">ДОСТАВКА ПІСКУ І ЩЕБНЮ</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -169,16 +176,16 @@
 
                 </div>
             </section>
-            <section id="prices" class="prices">
+            <section class="prices">
                 <div class="prices__container container">
                     <h2 class="prices__title">ЦІНИ</h2>
                     <div class="prices__content">
-                        <p>Вартість бетону та розчинів розраховується індивідуально і залежить від обсягів замовлення,
+                        <p class="prices__text">Вартість бетону та розчинів розраховується індивідуально і залежить від обсягів замовлення,
                             адреси доставки та необхідності використання автобетононасоса.</p>
-                        <p>Для забудовників та постійних клієнтів у нас діє <strong>гнучка система знижок</strong>.</p>
-                        <p>Щоб отримати актуальний прайс-лист або точний розрахунок вартості саме для вашого об'єкту —
+                        <p class="prices__text">Для забудовників та постійних клієнтів у нас діє <strong>гнучка система знижок</strong>.</p>
+                        <p class="prices__text">Щоб отримати актуальний прайс-лист або точний розрахунок вартості саме для вашого об'єкту —
                             зв'яжіться з нашими менеджерами.</p>
-                        <a href="#contacts" class="prices__btn">РОЗРАХУВАТИ ВАРТІСТЬ</a>
+                        <a href="#contacts" class="prices__button">РОЗРАХУВАТИ ВАРТІСТЬ</a>
                     </div>
                 </div>
             </section>

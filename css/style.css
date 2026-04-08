@@ -122,7 +122,7 @@ header {
   margin-bottom: 250px;
 }
 .about__container .about__content {
-  max-width: 1181px;
+  max-width: 1180px;
   margin: auto;
   padding: 35px 55px;
   display: flex;
@@ -176,8 +176,7 @@ header {
   gap: 30px;
   justify-content: center;
   text-align: center;
-  max-width: 1123px;
-  margin-bottom: 12px;
+  max-width: 1200px;
 }
 .services__container .services__list .services__item {
   max-width: 333px;
@@ -188,20 +187,36 @@ header {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  transition: transform 0.333s;
 }
 .services__container .services__list .services__item:hover {
+  transition: transform 0.333s;
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
-.services__container .services__list .services__item:hover .services__item-text--link::after {
-  transform: translate(5px, -50%);
+.services__container .services__list .services__item:first-of-type:hover .services__item-text::after {
+  transform: translateX(7px);
+  transition: transform 0.333s;
 }
-.services__container .services__list .services__item .services__item-icon {
+.services__container .services__list .services__item:first-of-type .services__item-text::after {
+  content: "";
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="%23fc0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 69%;
+  will-change: transform;
+  transition: transform 0.333s;
+}
+.services__container .services__list .services__item .services__link {
+  display: contents;
+}
+.services__container .services__list .services__item .services__link .services__item-icon {
   display: block;
   width: 100%;
 }
-.services__container .services__list .services__item .services__item-text {
+.services__container .services__list .services__item .services__link .services__item-text {
   max-width: 300px;
   flex-grow: 1;
   display: flex;
@@ -215,22 +230,6 @@ header {
   background: #38393E;
   padding: 18px 20px;
   border-top: solid 5px orange;
-  position: relative;
-}
-.services__container .services__list .services__item .services__item-text--link::after {
-  content: "";
-  position: absolute;
-  left: calc(50% + 55px);
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="%23fc0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition: transform 0.2s ease;
 }
 
 .gallery__container {
@@ -344,16 +343,16 @@ header {
   border-radius: 25px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
-.prices__container .prices__content p {
+.prices__container .prices__content .prices__text {
   font-family: "Ubuntu", sans-serif;
   font-size: 22px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
-.prices__container .prices__content p strong {
+.prices__container .prices__content .prices__text strong {
   color: #fc0;
 }
-.prices__container .prices__content .prices__btn {
+.prices__container .prices__content .prices__button {
   display: inline-block;
   margin-top: 20px;
   background: #fc0;
@@ -365,8 +364,9 @@ header {
   border-radius: 10px;
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
 }
-.prices__container .prices__content .prices__btn:hover {
+.prices__container .prices__content .prices__button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(255, 204, 0, 0.4);
 }
@@ -399,7 +399,7 @@ header {
 }
 
 .contacts__container {
-  margin-bottom: 250px;
+  margin-bottom: 205px;
 }
 .contacts__container .contacts__title {
   font-family: "Montserrat", sans-serif;
@@ -505,12 +505,15 @@ footer {
   color: #cfcfcf;
 }
 
-.concrete-page {
+.concrete__page-wrapper {
   padding: 80px 0;
   max-width: 1200px;
   margin: 0 auto;
 }
-.concrete-page .concrete-title {
+.concrete__page-wrapper .concrete__production {
+  margin-bottom: 80px;
+}
+.concrete__page-wrapper .concrete__production .concrete__production-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 57px;
@@ -518,26 +521,28 @@ footer {
   text-align: center;
   margin-bottom: 50px;
 }
-.concrete-page .concrete-article {
+.concrete__page-wrapper .concrete__production .concrete__production-content {
   background: #38393E;
   color: #fff;
   padding: 40px 60px;
   border-radius: 20px;
-  margin-bottom: 60px;
 }
-.concrete-page .concrete-article h3 {
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
   margin-bottom: 20px;
   color: #fc0;
 }
-.concrete-page .concrete-article p {
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-text {
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
-.concrete-page .concrete-section-title {
+.concrete__page-wrapper .concrete__grades {
+  margin-bottom: 100px;
+}
+.concrete__page-wrapper .concrete__grades .concrete__grades-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 42px;
@@ -546,7 +551,7 @@ footer {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
-.concrete-page .concrete-grid {
+.concrete__page-wrapper .concrete__grades .concrete__grades-content {
   background: #252525;
   padding: 60px 40px;
   border-radius: 20px;
@@ -556,7 +561,7 @@ footer {
   margin-bottom: 60px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
-.concrete-page .concrete-grid .mark-card {
+.concrete__page-wrapper .concrete__grades .concrete__grades-content .mark__card {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -566,11 +571,11 @@ footer {
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.concrete-page .concrete-grid .mark-card:hover {
+.concrete__page-wrapper .concrete__grades .concrete__grades-content .mark__card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
-.concrete-page .concrete-grid .mark-card img {
+.concrete__page-wrapper .concrete__grades .concrete__grades-content .mark__card .mark__card-img {
   width: 70px;
   height: 70px;
   border-radius: 10px;
@@ -578,22 +583,32 @@ footer {
      object-fit: cover;
   flex-shrink: 0;
 }
-.concrete-page .concrete-grid .mark-card .mark-card__info .mark-class {
+.concrete__page-wrapper .concrete__grades .concrete__grades-content .mark__card .mark__card-info .mark__class {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 28px;
   color: #38393E;
   margin-bottom: 2px;
 }
-.concrete-page .concrete-grid .mark-card .mark-card__info .mark-mark {
+.concrete__page-wrapper .concrete__grades .concrete__grades-content .mark__card .mark__card-info .mark__type {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   color: #666;
 }
-.concrete-page .concrete-descriptions {
-  margin-top: 50px;
+.concrete__page-wrapper .detailed__description {
+  margin-bottom: 150px;
 }
-.concrete-page .concrete-descriptions .mark-detail-card {
+.concrete__page-wrapper .detailed__description .detailed__description-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 42px;
+  color: #38393E;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.concrete__page-wrapper .detailed__description .detailed__description-content .detail__card {
   max-width: 1181px;
   margin: 0 auto 50px auto;
   padding: 40px 60px;
@@ -604,26 +619,26 @@ footer {
   border-radius: 25px;
   scroll-margin-top: 130px;
 }
-.concrete-page .concrete-descriptions .mark-detail-card .mark-media {
+.concrete__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__media {
   flex-shrink: 0;
   width: 320px;
   height: 250px;
 }
-.concrete-page .concrete-descriptions .mark-detail-card .mark-media img {
+.concrete__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__media img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.concrete-page .concrete-descriptions .mark-detail-card .mark-info h3 {
+.concrete__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__info .detail__info-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 38px;
   color: #fc0;
   margin-bottom: 20px;
 }
-.concrete-page .concrete-descriptions .mark-detail-card .mark-info p {
+.concrete__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__info .detail__info-text {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -631,9 +646,9 @@ footer {
   margin-bottom: 15px;
   line-height: 1.5;
 }
-.concrete-page .concrete-descriptions .mark-detail-card .mark-info p:last-of-type {
+.concrete__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__info .detail__info-text:last-of-type {
   margin-bottom: 0;
 }
-.concrete-page .concrete-descriptions .mark-detail-card:nth-child(even) {
+.concrete__page-wrapper .detailed__description .detailed__description-content .detail__card:nth-child(even) {
   flex-direction: row-reverse;
 }/*# sourceMappingURL=style.css.map */
