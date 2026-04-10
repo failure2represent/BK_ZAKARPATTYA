@@ -433,7 +433,9 @@ header {
 
     .swiperCertificates {
         margin-bottom: 30px;
-
+        .certificates__list.swiper-wrapper{
+            //
+        }
         .certificates__list {
             .certificates__item {
                 &.swiper-slide {

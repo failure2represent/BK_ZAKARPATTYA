@@ -17,6 +17,7 @@ const swiper = new Swiper('.swiperGallery', {
 const swiperС = new Swiper('.swiperCertificates', {
   slidesPerView: 3,
   spaceBetween: 60,
+  touchEventsTarget: "container",
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
