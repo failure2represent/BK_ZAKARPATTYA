@@ -352,7 +352,8 @@ header {
 .prices__container .prices__content .prices__text strong {
   color: #fc0;
 }
-.prices__container .prices__content .prices__button {
+
+.prices__button {
   display: inline-block;
   margin-top: 20px;
   background: #fc0;
@@ -365,10 +366,12 @@ header {
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   will-change: transform;
+  text-transform: uppercase;
 }
-.prices__container .prices__content .prices__button:hover {
+.prices__button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(255, 204, 0, 0.4);
+  color: #f8f8f8;
 }
 
 .certificates__container {
@@ -446,6 +449,10 @@ header {
   color: #38393E;
   max-width: 455px;
   text-decoration: none;
+}
+.contacts__container .contacts__content .contacts__item #contacts__phone {
+  font-weight: 700;
+  color: #8F2D2D;
 }
 .contacts__container .contacts__content .contacts__map {
   margin-top: 23px;
