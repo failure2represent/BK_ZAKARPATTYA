@@ -48,37 +48,65 @@
                 <div class="hero__container container">
                     <div class="hero__content">
                         <div class="hero__header">
-                            <h1 class="hero__title">БК ЗАКАРПАТТЯ</h1>
                             <p class="hero__subtitle">Виробник бетону №1 м. Мукачево</p>
+                            <h1 class="hero__title">БК ЗАКАРПАТТЯ</h1>
+                            <p class="hero__description">Понад 15 років досвіду у виробництві високоякісного бетону та матеріалів для будівництва</p>
+                            <div class="hero__buttons">
+                                <a class="hero__button--order" href="#contacts">Замовити бетон</a>
+                                <a class="hero__button--prices"href="#prices">Дізнатись ціну</a>
+                            </div>
+                            
                         </div>
-                        <ul class="hero__features">
-                            <li class="hero__item">
-                                <img class="hero__item-icon" src="img/feature_1.svg" alt="Швидка доставка">
-                                <p class="hero__item-text">Швидка доставка</p>
-                            </li>
-                            <li class="hero__item">
-                                <img class="hero__item-icon" src="img/feature_2.svg" alt="Власний автопарк">
-                                <p class="hero__item-text">Власний автопарк</p>
-                            </li>
-                            <li class="hero__item">
-                                <img class="hero__item-icon" src="img/feature_3.svg" alt="Гнучкі ціни">
-                                <p class="hero__item-text">Гнучкі ціни</p>
-                            </li>
-                            <li class="hero__item">
-                                <img class="hero__item-icon" src="img/feature_4.svg" alt="Власне виробництво">
-                                <p class="hero__item-text">Власне виробництво</p>
-                            </li>
-                            <li class="hero__item">
-                                <img class="hero__item-icon" src="img/feautre_5.svg" alt="Контроль якості">
-                                <p class="hero__item-text">Контроль якості</p>
-                            </li>
-                        </ul>
+                        
+                        <img class="hero__img" src="img/hero_img.png" alt="Бетонозмішувач">
                     </div>
-                    <img class="hero__img" src="img/hero_img.png" alt="Бетонозмішувач">
+                    <ul class="hero__features">
+                        <li class="hero__feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                            </svg>
+                            <p class="feature-text">Швидка доставка</p>
+                        </li>
+                        <li class="hero__feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="3" width="15" height="13"></rect>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                            <p class="feature-text">Власний автопарк</p>
+                        </li>
+                        <li class="hero__feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                            <p class="feature-text">Гнучкі ціни</p>
+                        </li>
+                        <li class="hero__feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 20h20"></path>
+                                <path d="M5 20V8l5-4v16"></path>
+                                <path d="M10 20V4l7 4v12"></path>
+                                <path d="M17 20V8l5 3v9"></path>
+                                <rect x="7" y="12" width="2" height="3"></rect>
+                                <rect x="12" y="10" width="2" height="3"></rect>
+                            </svg>
+                            <p class="feature-text">Власне виробництво</p>
+                        </li>
+                        <li class="hero__feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <polyline points="9 12 11 14 15 10"></polyline>
+                            </svg>
+                            <p class="feature-text">Контроль якості</p>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section id="services" class="services">
                 <div class="services__container container">
+                    <span class="section-badge">Наші пропозиції</span>
                     <h2 class="services__title">ПОСЛУГИ</h2>
                     <ul class="services__list">
                         <li class="services__item">
@@ -117,31 +145,51 @@
             <section id="about" class="about">
                 <div class="about__container container">
                     <div class="about__content">
+                        <div class="about__info">
+                            <span class="section-badge">Про нас</span>
+                            <h2 class="about__title">ПРО КОМПАНІЮ</h2>
+                            <p class="about__text">Компанія БЕТОН БК Закарпаття займається виробництвом товарного бетону
+                                та продажем його спільно з нерудними матеріалами (пісок, щебінь тощо). За <strong
+                                    class="about__text-highlight">понад 15-річну історію</strong> існування ми стали <strong
+                                    class="about__text-highlight">лідерами Закарпатської області</strong> у сфері
+                                виготовлення та продажу матеріалів нульового циклу для малоповерхового та промислового
+                                будівництва.</p>
+                            <p class="about__text">Весь технологічний процес здійснюється під безперервним <strong
+                                    class="about__text-highlight">контролем технолога</strong>, що дозволяє без відриву
+                                від виробництва здійснювати оперативний та чіткий <strong
+                                    class="about__text-highlight">контроль якості</strong> як вхідної сировини, так і
+                                готової бетонної продукції.</p>
+                            <p class="about__text">Доставка бетону здійснюється <strong
+                                    class="about__text-highlight">власним автотранспортом</strong> за заявкою клієнта у
+                                зручний час.</p>
+                        </div>
                         <div class="about__media">
                             <img src="img/about_plugg.jpg" alt="Виробництво бетону">
                         </div>
-                        <div class="about__info">
-                            <h2 class="about__title">ПРО КОМПАНІЮ</h2>
-                            <p class="about__text">Компанія БЕТОН БК Закарпаття займається виробництвом товарного бетону
-                                та продажем його спільно з нерудними матеріалами (пісок, щебінь тощо). За <span
-                                    class="about__text-highlight">понад 15-річну історію</span> існування ми стали <span
-                                    class="about__text-highlight">лідерами Закарпатської області</span> у сфері
-                                виготовлення та продажу матеріалів нульового циклу для малоповерхового та промислового
-                                будівництва.</p>
-                            <p class="about__text">Весь технологічний процес здійснюється під безперервним <span
-                                    class="about__text-highlight">контролем технолога</span>, що дозволяє без відриву
-                                від виробництва здійснювати оперативний та чіткий <span
-                                    class="about__text-highlight">контроль якості</span> як вхідної сировини, так і
-                                готової бетонної продукції.</p>
-                            <p class="about__text">Доставка бетону здійснюється <span
-                                    class="about__text-highlight">власним автотранспортом</span> за заявкою клієнта у
-                                зручний час.</p>
-                        </div>
                     </div>
+                    <ul class="about__features">
+                        <li class="about__feature">
+                            <span class="about__feature-stat">15+</span>
+                            <span class="about__feature-label">Років досвіду</span>
+                        </li>
+                        <li class="about__feature">
+                            <span class="about__feature-stat">24/7</span>
+                            <span class="about__feature-label">Цілодобова робота</span>
+                        </li>
+                        <li class="about__feature">
+                            <span class="about__feature-stat">№1</span>
+                            <span class="about__feature-label">В Закарпатті</span>
+                        </li>
+                        <li class="about__feature">
+                            <span class="about__feature-stat">100%</span>
+                            <span class="about__feature-label">Контроль якості</span>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="gallery">
                 <div class="gallery__container container">
+                    <span class="section-badge">Наша техніка</span>
                     <h2 class="gallery__title">ГАЛЕРЕЯ</h2>
                     <div class="gallery__wrap">
                         <div class="swiper swiperGallery">
@@ -175,24 +223,52 @@
 
                 </div>
             </section>
-            <section class="prices">
+            <section id="prices" class="prices">
                 <div class="prices__container container">
-                    <h2 class="prices__title">ЦІНИ</h2>
-                    <div class="prices__content">
-                        <p class="prices__text">Вартість бетону та розчинів розраховується індивідуально і залежить від
-                            обсягів замовлення,
-                            адреси доставки та необхідності використання автобетононасоса.</p>
-                        <p class="prices__text">Для забудовників та постійних клієнтів у нас діє <strong>гнучка система
-                                знижок</strong>.</p>
-                        <p class="prices__text">Щоб отримати актуальний прайс-лист або точний розрахунок вартості саме
-                            для вашого об'єкту —
-                            зв'яжіться з нашими менеджерами.</p>
-                        <a class="prices__button" href="#contacts">РОЗРАХУВАТИ ВАРТІСТЬ</a>
+                    <div class="prices__info">
+                        <span class="section-badge">Вартість</span>
+                        <h2 class="prices__title">ЦІНИ</h2>
+                        <p class="prices__text">Вартість бетону та розчинів розраховується індивідуально і залежить від:</p>
+                        <ul class="prices__list">
+                            <li class="prices__item">
+                                <svg class="prices__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span class="prices__item-text">Обсягів замовлення</span>
+                            </li>
+                            <li class="prices__item">
+                                <svg class="prices__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span class="prices__item-text">Адреси доставки</span>
+                            </li>
+                            <li class="prices__item">
+                                <svg class="prices__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span class="prices__item-text">Необхідності використання автобетононасоса</span>
+                            </li>
+                        </ul>
+                        <p class="prices__note">Для забудовників та постійних клієнтів у нас діє гнучка система знижок.</p>
+                    </div>
+                    <div class="prices__cta">
+                        <h3 class="cta__title">Отримати розрахунок</h3>
+                        <p class="cta__text">Щоб отримати актуальний прайс-лист або точний розрахунок вартості саме для вашого об'єкту — зв'яжіться з нашими менеджерами.</p>
+                        <a class="cta__link" href="tel:+380991860591">
+                            <svg class="cta__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Розрахувати вартість
+                        </a>
                     </div>
                 </div>
             </section>
             <section class="certificates">
                 <div class="certificates__container container">
+                    <div class="certificates__top">
+                        <span class="section-badge">Гарантія якості</span>
+                        <h2 class="certificates__title">Сертифікати</h2>
+                    </div>
                     <div class="swiper swiperCertificates">
                         <ul class="certificates__list swiper-wrapper">
                             <li class="certificates__item swiper-slide">
@@ -244,7 +320,10 @@
             </section>
             <section id="contacts" class="contacts">
                 <div class="contacts__container container">
-                    <h2 class="contacts__title">КОНТАКТИ</h2>
+                    <div class="contacts__top">
+                        <span class="section-badge">Зв'язок</span>
+                        <h2 class="contacts__title">КОНТАКТИ</h2>
+                    </div>
                     <div class="contacts__content">
                         <div class="contacts__info">
                             <h3 class="contacts__company">
@@ -305,43 +384,49 @@
     </main>
     <footer>
         <div class="footer__container">
-            <p class="footer__company">
-                <span class="footer__company-line">БЕТОН</span>
-                <span class="footer__company-line">БК ЗАКАРПАТТЯ</span>
-            </p>
-            <ul class="footer__socials">
-                <li class="footer__socials-item">
-                    <a class="footer__socials-link" href="#">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M35 13H35.02M14 4H34C39.5228 4 44 8.47715 44 14V34C44 39.5228 39.5228 44 34 44H14C8.47715 44 4 39.5228 4 34V14C4 8.47715 8.47715 4 14 4ZM32 22.74C32.2468 24.4045 31.9625 26.1044 31.1875 27.598C30.4125 29.0916 29.1863 30.3028 27.6833 31.0593C26.1802 31.8159 24.4769 32.0792 22.8156 31.8119C21.1543 31.5445 19.6195 30.7602 18.4297 29.5703C17.2398 28.3805 16.4555 26.8457 16.1881 25.1844C15.9208 23.5231 16.1841 21.8198 16.9407 20.3167C17.6972 18.8137 18.9084 17.5875 20.402 16.8125C21.8956 16.0375 23.5955 15.7532 25.26 16C26.9578 16.2518 28.5297 17.0429 29.7434 18.2566C30.9571 19.4703 31.7482 21.0422 32 22.74Z"
-                                stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer__socials-item">
-                    <a class="footer__socials-link" href="#">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M36 4H30C27.3478 4 24.8043 5.05357 22.9289 6.92893C21.0536 8.8043 20 11.3478 20 14V20H14V28H20V44H28V28H34L36 20H28V14C28 13.4696 28.2107 12.9609 28.5858 12.5858C28.9609 12.2107 29.4696 12 30 12H36V4Z"
-                                stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer__socials-item">
-                    <a class="footer__socials-link" href="#">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M25.6335 15.6885C26.1498 15.6718 26.6641 15.7564 27.1447 15.9371C27.6252 16.1178 28.0616 16.3906 28.4269 16.7387C28.7921 17.0869 29.0784 17.5028 29.268 17.9608C29.4575 18.4188 29.5463 18.909 29.5288 19.401M24.7539 12.455C25.8425 12.4539 26.92 12.6634 27.9211 13.0708C28.9222 13.4783 29.826 14.0752 30.5779 14.8254C31.3299 15.5756 31.9141 16.4635 32.2954 17.4353C32.6766 18.4071 32.8468 19.4425 32.7958 20.4789M23.623 9.34127C25.3215 9.30364 27.0094 9.60481 28.5785 10.2255C30.1476 10.8461 31.5632 11.7726 32.7345 12.9453C33.9059 14.1181 34.807 15.5113 35.3802 17.0355C35.9534 18.5597 36.1859 20.1813 36.0628 21.7962"
-                                stroke="white" stroke-linecap="round" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3.76963 21.1974C3.76963 10.2993 5.90576 3.59277 24 3.59277C42.0942 3.59277 44.2304 10.2993 44.2304 21.1974C44.2304 32.0955 42.0942 38.802 24 38.802L20.733 38.6822L14.0733 46.227C13.5707 46.7061 13.0681 46.3468 13.0681 45.8678V37.6044C12.3141 37.6044 9.17277 36.1673 8.29319 35.329C5.5288 32.5745 3.76963 30.5386 3.76963 21.1974ZM0 21.1974C0 6.10772 6.91099 0 24 0C41.089 0 48 6.10772 48 21.1974C48 36.287 41.089 42.3947 24 42.3947C22.7435 42.3947 21.7382 42.3947 19.9791 42.1552L15.2042 47.3049C14.3246 48.2629 11.6859 48.6222 11.6859 45.748V40.7181C10.9319 40.7181 9.17277 39.9996 6.78534 38.5625C4.39791 37.0056 0 33.293 0 21.1974ZM28.0209 26.2273C28.8586 25.1893 29.8639 25.0297 31.0366 25.7482L35.5602 28.9817C36.2304 29.7801 35.9372 30.8979 34.6806 32.335C33.4241 33.7721 32.2513 34.3709 31.1623 34.1314C26.7225 33.1733 22.4503 30.7781 18.3455 26.9458C14.2408 23.1135 11.6859 18.9619 10.6806 14.4909C10.6806 12.8941 11.7277 11.5368 13.822 10.419C14.911 9.70049 15.8325 9.90009 16.5864 11.0178L19.7277 15.2094C20.2304 16.1675 19.9372 17.0457 18.8482 17.8441C13.9476 19.6405 25.2565 31.2571 28.0209 26.2273Z"
-                                fill="white" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <a class="footer__phone" href="tel:+380991860591">+38 099 186 05 91</a>
+            <div class="footer__content">
+                <p class="footer__company">
+                    <span class="footer__company-line">БЕТОН</span>
+                    <span class="footer__company-line">БК ЗАКАРПАТТЯ</span>
+                </p>
+                <ul class="footer__socials">
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="#">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35 13H35.02M14 4H34C39.5228 4 44 8.47715 44 14V34C44 39.5228 39.5228 44 34 44H14C8.47715 44 4 39.5228 4 34V14C4 8.47715 8.47715 4 14 4ZM32 22.74C32.2468 24.4045 31.9625 26.1044 31.1875 27.598C30.4125 29.0916 29.1863 30.3028 27.6833 31.0593C26.1802 31.8159 24.4769 32.0792 22.8156 31.8119C21.1543 31.5445 19.6195 30.7602 18.4297 29.5703C17.2398 28.3805 16.4555 26.8457 16.1881 25.1844C15.9208 23.5231 16.1841 21.8198 16.9407 20.3167C17.6972 18.8137 18.9084 17.5875 20.402 16.8125C21.8956 16.0375 23.5955 15.7532 25.26 16C26.9578 16.2518 28.5297 17.0429 29.7434 18.2566C30.9571 19.4703 31.7482 21.0422 32 22.74Z"
+                                    stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="#">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M36 4H30C27.3478 4 24.8043 5.05357 22.9289 6.92893C21.0536 8.8043 20 11.3478 20 14V20H14V28H20V44H28V28H34L36 20H28V14C28 13.4696 28.2107 12.9609 28.5858 12.5858C28.9609 12.2107 29.4696 12 30 12H36V4Z"
+                                    stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="#">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.6335 15.6885C26.1498 15.6718 26.6641 15.7564 27.1447 15.9371C27.6252 16.1178 28.0616 16.3906 28.4269 16.7387C28.7921 17.0869 29.0784 17.5028 29.268 17.9608C29.4575 18.4188 29.5463 18.909 29.5288 19.401M24.7539 12.455C25.8425 12.4539 26.92 12.6634 27.9211 13.0708C28.9222 13.4783 29.826 14.0752 30.5779 14.8254C31.3299 15.5756 31.9141 16.4635 32.2954 17.4353C32.6766 18.4071 32.8468 19.4425 32.7958 20.4789M23.623 9.34127C25.3215 9.30364 27.0094 9.60481 28.5785 10.2255C30.1476 10.8461 31.5632 11.7726 32.7345 12.9453C33.9059 14.1181 34.807 15.5113 35.3802 17.0355C35.9534 18.5597 36.1859 20.1813 36.0628 21.7962"
+                                    stroke="white" stroke-linecap="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.76963 21.1974C3.76963 10.2993 5.90576 3.59277 24 3.59277C42.0942 3.59277 44.2304 10.2993 44.2304 21.1974C44.2304 32.0955 42.0942 38.802 24 38.802L20.733 38.6822L14.0733 46.227C13.5707 46.7061 13.0681 46.3468 13.0681 45.8678V37.6044C12.3141 37.6044 9.17277 36.1673 8.29319 35.329C5.5288 32.5745 3.76963 30.5386 3.76963 21.1974ZM0 21.1974C0 6.10772 6.91099 0 24 0C41.089 0 48 6.10772 48 21.1974C48 36.287 41.089 42.3947 24 42.3947C22.7435 42.3947 21.7382 42.3947 19.9791 42.1552L15.2042 47.3049C14.3246 48.2629 11.6859 48.6222 11.6859 45.748V40.7181C10.9319 40.7181 9.17277 39.9996 6.78534 38.5625C4.39791 37.0056 0 33.293 0 21.1974ZM28.0209 26.2273C28.8586 25.1893 29.8639 25.0297 31.0366 25.7482L35.5602 28.9817C36.2304 29.7801 35.9372 30.8979 34.6806 32.335C33.4241 33.7721 32.2513 34.3709 31.1623 34.1314C26.7225 33.1733 22.4503 30.7781 18.3455 26.9458C14.2408 23.1135 11.6859 18.9619 10.6806 14.4909C10.6806 12.8941 11.7277 11.5368 13.822 10.419C14.911 9.70049 15.8325 9.90009 16.5864 11.0178L19.7277 15.2094C20.2304 16.1675 19.9372 17.0457 18.8482 17.8441C13.9476 19.6405 25.2565 31.2571 28.0209 26.2273Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <a class="footer__phone" href="tel:+380991860591">+38 099 186 05 91</a>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__bottom-text">© 2011 - 2026 БК Закарпаття. Всі права захищені.</p>
+            </div>
+            
         </div>
     </footer>
 
