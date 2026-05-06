@@ -207,10 +207,10 @@ header .header__container .header__list .header__item .header__item-link:hover {
   border-left-color: #38393E;
   padding-left: 20px;
 }
-.hero__container .hero__features .hero__feature:hover .feature-icon {
+.hero__container .hero__features .hero__feature:hover .hero__feature-icon {
   color: #38393E;
 }
-.hero__container .hero__features .hero__feature .feature-icon {
+.hero__container .hero__features .hero__feature .hero__feature-icon {
   width: 24px;
   height: 24px;
   color: #b38f00;
@@ -218,7 +218,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   will-change: transform;
   transition: all 0.3s ease;
 }
-.hero__container .hero__features .hero__feature .feature-text {
+.hero__container .hero__features .hero__feature .hero__feature-text {
   font-family: "Ubuntu";
   font-size: 14px;
   font-weight: 500;
@@ -293,7 +293,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
 .about .about__container .about__content .about__info .about__text:last-of-type {
   margin-bottom: inherit;
 }
-.about .about__container .about__content .about__info .about__text .about__text-highlight {
+.about .about__container .about__content .about__info .about__text .about__text--highlight {
   color: #38393E;
 }
 
@@ -363,15 +363,15 @@ header .header__container .header__list .header__item .header__item-link:hover {
   will-change: transform;
   transition: transform 0.333s;
 }
-.services__container .services__list .services__item .services__link {
+.services__container .services__list .services__item .services__item-link {
   display: contents;
 }
-.services__container .services__list .services__item .services__link .services__item-icon {
+.services__container .services__list .services__item .services__item-link .services__item-icon {
   display: block;
   width: 100%;
   border-bottom: solid 4px orange;
 }
-.services__container .services__list .services__item .services__link .services__item-text {
+.services__container .services__list .services__item .services__item-link .services__item-text {
   max-width: 300px;
   flex-grow: 1;
   display: flex;
@@ -542,7 +542,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   border-radius: 16px;
   text-align: center;
 }
-.prices .prices__container .prices__cta .cta__title {
+.prices .prices__container .prices__cta .prices__cta-title {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -550,14 +550,14 @@ header .header__container .header__list .header__item .header__item-link:hover {
   margin-bottom: 16px;
   line-height: 1.6;
 }
-.prices .prices__container .prices__cta .cta__text {
+.prices .prices__container .prices__cta .prices__cta-text {
   font-family: "Roboto";
   font-size: 15px;
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.7;
   margin-bottom: 32px;
 }
-.prices .prices__container .prices__cta .cta__link {
+.prices .prices__container .prices__cta .prices__cta-link {
   padding: 18px 36px;
   font-size: 16px;
   color: #fff;
@@ -576,12 +576,12 @@ header .header__container .header__list .header__item .header__item-link:hover {
   will-change: transform;
   line-height: 1.6;
 }
-.prices .prices__container .prices__cta .cta__link:hover {
+.prices .prices__container .prices__cta .prices__cta-link:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   background-color: #4a4b52;
 }
-.prices .prices__container .prices__cta .cta__link .cta__link-icon {
+.prices .prices__container .prices__cta .prices__cta-link .prices__cta-icon {
   width: 18px;
   height: 18px;
   line-height: 1.6;
@@ -777,12 +777,16 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 }
 
 .concrete__page-wrapper {
-  padding: 80px 0;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding-top: 80px;
 }
 .concrete__page-wrapper .concrete__production {
-  margin-bottom: 80px;
+  margin-bottom: 240px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.concrete__page-wrapper .concrete__production .section-badge {
+  align-self: center;
 }
 .concrete__page-wrapper .concrete__production .concrete__production-title {
   font-family: "Montserrat", sans-serif;
@@ -790,28 +794,70 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   font-size: 48px;
   color: #38393E;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 .concrete__page-wrapper .concrete__production .concrete__production-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-block {
   background: #38393E;
   color: #fff;
-  padding: 40px 60px;
+  padding: 40px;
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-subtitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  margin-bottom: 20px;
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: #fc0;
+}
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-subtitle {
+  font-family: "Ubuntu";
+  font-size: 34px;
+  margin-bottom: 35px;
   color: #fc0;
 }
-.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-text {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-text {
+  font-size: 17px;
+  font-family: "Roboto";
+  letter-spacing: 0.6px;
   line-height: 1.6;
-  margin-bottom: 20px;
+}
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-text .concrete__production-text--highlight {
+  color: #fc0;
+}
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 204, 0, 0.15);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-icon svg {
+  width: 32px;
+  height: 32px;
+  color: #fc0;
+}
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-cta {
+  grid-column: 1/-1;
+  text-align: center;
 }
 .concrete__page-wrapper .concrete__grades {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 .concrete__page-wrapper .concrete__grades .concrete__grades-title {
   font-family: "Montserrat", sans-serif;
@@ -822,15 +868,21 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+.concrete__page-wrapper .concrete__grades .section-badge {
+  align-self: center;
+}
 .concrete__page-wrapper .concrete__grades .concrete__grades-content {
   background: #252525;
-  padding: 60px 40px;
+  padding: 40px;
   border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 50px 30px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+.concrete__page-wrapper .concrete__grades .concrete__grades-content:last-of-type {
+  margin-bottom: 0;
 }
 .concrete__page-wrapper .concrete__grades .concrete__grades-content .mark__card {
   display: flex;
@@ -866,7 +918,13 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   color: #666;
 }
 .concrete__page-wrapper .detailed__description {
-  margin-bottom: 150px;
+  margin-bottom: 240px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.concrete__page-wrapper .detailed__description .section-badge {
+  align-self: center;
 }
 .concrete__page-wrapper .detailed__description .detailed__description-title {
   font-family: "Montserrat", sans-serif;
@@ -920,6 +978,126 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   margin-bottom: 0;
 }
 .concrete__page-wrapper .detailed__description .detailed__description-content .detail__card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.concrete-pump__page-wrapper {
+  padding-top: 80px;
+}
+.concrete-pump__page-wrapper .concrete__production {
+  margin-bottom: 240px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.concrete-pump__page-wrapper .concrete__production .section-badge {
+  align-self: center;
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #38393E;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content {
+  background: #38393E;
+  color: #fff;
+  padding: 40px 60px;
+  border-radius: 20px;
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fc0;
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-text .concrete__production-text--highlight {
+  color: #fc0;
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 204, 0, 0.15);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-icon svg {
+  width: 32px;
+  height: 32px;
+  color: #fc0;
+}
+.concrete-pump__page-wrapper .detailed__description {
+  margin-bottom: 240px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.concrete-pump__page-wrapper .detailed__description .section-badge {
+  align-self: center;
+}
+.concrete-pump__page-wrapper .detailed__description .detailed__description-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 42px;
+  color: #38393E;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.concrete-pump__page-wrapper .detailed__description .detailed__description-content .detail__card {
+  max-width: 1181px;
+  margin: 0 auto 50px auto;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: #38393E;
+  border-radius: 25px;
+  scroll-margin-top: 130px;
+}
+.concrete-pump__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__media {
+  flex-shrink: 0;
+  width: 320px;
+  height: 250px;
+}
+.concrete-pump__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__media img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.concrete-pump__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__info .detail__info-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 38px;
+  color: #fc0;
+  margin-bottom: 20px;
+}
+.concrete-pump__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__info .detail__info-text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.concrete-pump__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__info .detail__info-text:last-of-type {
+  margin-bottom: 0;
+}
+.concrete-pump__page-wrapper .detailed__description .detailed__description-content .detail__card:nth-child(even) {
   flex-direction: row-reverse;
 }
 
@@ -1023,10 +1201,10 @@ body.menu-open {
   .services .services__container .services__list {
     gap: 26px;
   }
-  .services .services__container .services__list .services__item .services__link .services__item-text {
+  .services .services__container .services__list .services__item .services__item-link .services__item-text {
     font-size: 22px;
   }
-  .services .services__container .services__list .services__item .services__link .services__item-text::after {
+  .services .services__container .services__list .services__item .services__item-link .services__item-text::after {
     width: 22px;
     height: 22px;
   }
@@ -1116,7 +1294,7 @@ body.menu-open {
   .hero .hero__container .hero__features {
     gap: 16px;
   }
-  .hero .hero__container .hero__features .hero__feature .feature-text {
+  .hero .hero__container .hero__features .hero__feature .hero__feature-text {
     font-size: 13px;
   }
   .certificates .certificates__container .swiperCertificates {
@@ -1566,11 +1744,11 @@ body.menu-open {
     width: 185px;
     padding: 10px 0 10px 12px;
   }
-  .hero__container .hero__features .hero__feature .feature-icon {
+  .hero__container .hero__features .hero__feature .hero__feature-icon {
     width: 20px;
     height: 20px;
   }
-  .hero__container .hero__features .hero__feature .feature-text {
+  .hero__container .hero__features .hero__feature .hero__feature-text {
     font-size: 13px;
   }
   .about .about__container {
@@ -1616,7 +1794,7 @@ body.menu-open {
   .services__container .services__list .services__item {
     min-height: 288px;
   }
-  .services__container .services__list .services__item .services__link .services__item-text {
+  .services__container .services__list .services__item .services__item-link .services__item-text {
     font-size: 18px;
     padding: 12px;
     max-width: 245px;
@@ -1777,11 +1955,11 @@ body.menu-open {
     width: 185px;
     padding: 10px 0 10px 12px;
   }
-  .hero__container .hero__features .hero__feature .feature-icon {
+  .hero__container .hero__features .hero__feature .hero__feature-icon {
     width: 20px;
     height: 20px;
   }
-  .hero__container .hero__features .hero__feature .feature-text {
+  .hero__container .hero__features .hero__feature .hero__feature-text {
     font-size: 13px;
   }
   .about .about__container {
@@ -1827,7 +2005,7 @@ body.menu-open {
   .services__container .services__list .services__item {
     min-height: 288px;
   }
-  .services__container .services__list .services__item .services__link .services__item-text {
+  .services__container .services__list .services__item .services__item-link .services__item-text {
     font-size: 18px;
     padding: 12px;
     max-width: 245px;
