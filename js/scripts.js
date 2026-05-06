@@ -15,7 +15,20 @@ const swiper = new Swiper('.swiperGallery', {
 });
 
 const swiperС = new Swiper('.swiperCertificates', {
-  slidesPerView: 4,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    1200: {
+      slidesPerView: 2,
+    },
+    1600: {
+      slidesPerView: 3,
+    },
+    1920: {
+      slidesPerView: 4,
+    },
+  },
   spaceBetween: 60,
   touchEventsTarget: "container",
   pagination: {
@@ -44,5 +57,44 @@ logo?.addEventListener('click', function (e) {
       '',
       window.location.pathname + window.location.search
     );
+  }
+});
+
+// Burger menu functions
+function toggleMenu() {
+  const burger = document.querySelector('.header__burger');
+  const nav = document.querySelector('.header__nav');
+  const overlay = document.querySelector('.header__overlay');
+  const body = document.body;
+  
+  burger.classList.toggle('active');
+  nav.classList.toggle('active');
+  overlay.classList.toggle('active');
+  body.classList.toggle('menu-open');
+}
+
+function closeMenu() {
+  const burger = document.querySelector('.header__burger');
+  const nav = document.querySelector('.header__nav');
+  const overlay = document.querySelector('.header__overlay');
+  const body = document.body;
+  
+  burger.classList.remove('active');
+  nav.classList.remove('active');
+  overlay.classList.remove('active');
+  body.classList.remove('menu-open');
+}
+
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+      closeMenu();
+  }
+});
+
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 768) {
+      closeMenu();
   }
 });

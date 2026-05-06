@@ -27,16 +27,22 @@
             <a href="index.html" class="header__logo">
                 <img class="header__logo-img" src="img/logo.svg" alt="logo">
             </a>
+            <button class="header__burger" aria-label="Меню" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header__overlay" onclick="toggleMenu()"></div>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a class="header__item-link" href="#services">Послуги</a>
+                        <a class="header__item-link" href="#services" onclick="closeMenu()">Послуги</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__item-link" href="#about">Про нас</a>
+                        <a class="header__item-link" href="#about" onclick="closeMenu()">Про нас</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__item-link" href="#contacts">Контакти</a>
+                        <a class="header__item-link" href="#contacts" onclick="closeMenu()">Контакти</a>
                     </li>
                 </ul>
             </nav>
@@ -122,7 +128,7 @@
                             </a>
                         </li>
                         <li class="services__item">
-                            <a href="concrete.html" class="services__link">
+                            <a href="#contacts" class="services__link">
                                 <img class="services__item-icon" src="img/service_3.png" alt="Послуги навантажувача">
                                 <p class="services__item-text">ПОСЛУГИ НАВАНТАЖУВАЧА</p>
                             </a>
@@ -163,28 +169,26 @@
                                     class="about__text-highlight">власним автотранспортом</strong> за заявкою клієнта у
                                 зручний час.</p>
                         </div>
-                        <div class="about__media">
-                            <img src="img/about_plugg.jpg" alt="Виробництво бетону">
-                        </div>
+                        <ul class="about__features">
+                            <li class="about__feature">
+                                <span class="about__feature-stat">15+</span>
+                                <span class="about__feature-label">Років досвіду</span>
+                            </li>
+                            <li class="about__feature">
+                                <span class="about__feature-stat">24/7</span>
+                                <span class="about__feature-label">Цілодобова робота</span>
+                            </li>
+                            <li class="about__feature">
+                                <span class="about__feature-stat">№1</span>
+                                <span class="about__feature-label">В Закарпатті</span>
+                            </li>
+                            <li class="about__feature">
+                                <span class="about__feature-stat">100%</span>
+                                <span class="about__feature-label">Контроль якості</span>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="about__features">
-                        <li class="about__feature">
-                            <span class="about__feature-stat">15+</span>
-                            <span class="about__feature-label">Років досвіду</span>
-                        </li>
-                        <li class="about__feature">
-                            <span class="about__feature-stat">24/7</span>
-                            <span class="about__feature-label">Цілодобова робота</span>
-                        </li>
-                        <li class="about__feature">
-                            <span class="about__feature-stat">№1</span>
-                            <span class="about__feature-label">В Закарпатті</span>
-                        </li>
-                        <li class="about__feature">
-                            <span class="about__feature-stat">100%</span>
-                            <span class="about__feature-label">Контроль якості</span>
-                        </li>
-                    </ul>
+                    
                 </div>
             </section>
             <section class="gallery">

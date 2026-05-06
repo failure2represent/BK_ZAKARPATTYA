@@ -1,230 +1,3 @@
-@media (max-width: 1440px) {
-  .container,
-  .header__container,
-  .footer__container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (max-width: 1024px) {
-  body {
-    overflow-x: hidden;
-  }
-  img {
-    max-width: 100%;
-    height: auto !important;
-  }
-  .hero__container {
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    margin-bottom: 120px;
-    padding-top: 30px;
-  }
-  .hero__container .hero__img {
-    max-width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .about__container .about__content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px;
-    margin: 0 20px;
-  }
-  .gallery__wrap {
-    padding: 0 20px;
-    width: 100%;
-    overflow: hidden;
-  }
-  .gallery__wrap .swiperGallery {
-    width: 100%;
-  }
-  .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide {
-    width: 100% !important;
-  }
-  .gallery__wrap .swiper-button-prev,
-  .gallery__wrap .swiper-button-next {
-    display: none !important;
-  }
-  .prices__container .prices__content {
-    margin: 0 20px;
-  }
-  .contacts__container .contacts__content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
-  }
-  .contacts__container .contacts__content .contacts__item {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .contacts__container .contacts__content .contacts__item .contacts__wrap {
-    align-items: center;
-  }
-  .contacts__container .contacts__content .contacts__map {
-    width: 100%;
-    max-width: 700px;
-    height: 400px;
-    margin: 0 auto;
-  }
-  .concrete__page-wrapper .detailed__description .detailed__description-content .detail__card {
-    flex-direction: column !important;
-    text-align: center;
-    padding: 30px 20px;
-    gap: 30px;
-    margin: 0 0 40px 0;
-  }
-  .concrete__page-wrapper .detailed__description .detailed__description-content .detail__card .detail__media {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-  }
-}
-@media (max-width: 768px) {
-  .hero__container {
-    margin-bottom: 80px;
-  }
-  .about__container,
-  .services__container,
-  .gallery__container,
-  .prices__container,
-  .certificates__container,
-  .contacts__container {
-    margin-bottom: 80px;
-  }
-  .hero__container .hero__content .hero__header .hero__title {
-    font-size: 56px;
-  }
-  .hero__container .hero__content .hero__header .hero__subtitle {
-    font-size: 30px;
-  }
-  .header__container {
-    flex-direction: column;
-    gap: 20px;
-    padding: 15px 20px;
-  }
-  .services__container .services__list {
-    padding: 0 20px;
-  }
-  .services__container .services__list .services__item {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    min-height: 400px;
-  }
-  .services__container .services__title,
-  .gallery__container .gallery__title,
-  .prices__container .prices__title,
-  .contacts__container .contacts__title,
-  .about__container .about__content .about__info .about__title,
-  .concrete__page-wrapper .concrete__production .concrete__production-title,
-  .concrete__page-wrapper .concrete__grades .concrete__grades-title,
-  .concrete__page-wrapper .detailed__description .detailed__description-title {
-    font-size: 42px;
-    margin-bottom: 20px;
-  }
-  .footer__container {
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-  }
-  .concrete__page-wrapper .concrete__grades .concrete__grades-content {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 480px) {
-  .header__container {
-    padding: 15px;
-    gap: 20px;
-  }
-  .header__container .header__logo {
-    max-width: 160px;
-    margin: 0 auto;
-  }
-  .header__container .header__list {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-  .header__container .header__list .header__item {
-    width: 100%;
-  }
-  .header__container .header__list .header__item .header__item-link {
-    display: block;
-    width: 100%;
-    font-size: 16px;
-    padding: 14px 0;
-    text-align: center;
-    border-radius: 12px;
-  }
-  .hero__container .hero__content .hero__header .hero__title {
-    font-size: 42px;
-  }
-  .hero__container .hero__content .hero__header .hero__subtitle {
-    font-size: 24px;
-  }
-  .services__container .services__title,
-  .gallery__container .gallery__title,
-  .prices__container .prices__title,
-  .contacts__container .contacts__title,
-  .about__container .about__content .about__info .about__title,
-  .concrete__page-wrapper .concrete__production .concrete__production-title,
-  .concrete__page-wrapper .concrete__grades .concrete__grades-title,
-  .concrete__page-wrapper .detailed__description .detailed__description-title {
-    font-size: 32px;
-  }
-  .about__container .about__content .about__info .about__text,
-  .prices__container .prices__content .prices__text,
-  .concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-text {
-    font-size: 18px;
-  }
-  .contacts__container .contacts__content .contacts__company {
-    font-size: 36px;
-  }
-  .contacts__container .contacts__content .contacts__item .contacts__label {
-    font-size: 24px;
-  }
-  .contacts__container .contacts__content .contacts__item .contacts__text {
-    font-size: 18px;
-  }
-  .footer__container .footer__company {
-    font-size: 32px;
-  }
-  .footer__container .footer__company .footer__company-line:last-of-type {
-    font-size: 20px;
-  }
-}
-@media (max-width: 320px) {
-  .header__container .header__list .header__item .header__item-link {
-    font-size: 14px;
-    padding: 12px 0;
-  }
-  .hero__container .hero__content .hero__header .hero__title {
-    font-size: 34px;
-  }
-  .hero__container .hero__content .hero__header .hero__subtitle {
-    font-size: 18px;
-  }
-  .about__container .about__content {
-    padding: 20px 10px;
-  }
-  .prices__container .prices__content {
-    padding: 30px 15px;
-  }
-  .services__container .services__list {
-    padding: 0 10px;
-  }
-  .services__container .services__list .services__item {
-    padding: 20px;
-    min-height: 350px;
-  }
-  .services__container .services__list .services__item .services__item-text {
-    font-size: 18px;
-  }
-}
 * {
   padding: 0;
   margin: 0;
@@ -265,11 +38,11 @@ body {
 }
 
 #about {
-  scroll-margin-top: 45px;
+  scroll-margin-top: 115px;
 }
 
 #contacts {
-  scroll-margin-top: 145px;
+  scroll-margin-top: 150px;
 }
 
 #prices {
@@ -335,10 +108,9 @@ header .header__container .header__list .header__item .header__item-link:hover {
   justify-content: center;
 }
 .hero__container .hero__content .hero__header .hero__subtitle {
-  max-width: 323px;
   font-family: "Roboto Slab", serif;
   font-weight: 900;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -351,14 +123,14 @@ header .header__container .header__list .header__item .header__item-link:hover {
 .hero__container .hero__content .hero__header .hero__title {
   font-family: "Roboto Slab", serif;
   font-weight: 900;
-  font-size: 76px;
+  font-size: 84px;
   color: #38393E;
   margin-bottom: 24px;
 }
 .hero__container .hero__content .hero__header .hero__description {
   max-width: 700px;
   margin-bottom: 40px;
-  font-family: "Ubuntu";
+  font-family: "Roboto";
   font-size: 20px;
   color: #5A5C63;
   line-height: 1.7;
@@ -369,7 +141,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   background-color: #fc0;
   color: #38393E;
   padding: 16px 28px;
-  font-family: "Ubuntu";
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 600;
   border-radius: 8px;
@@ -393,7 +165,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   color: #38393E;
   border: 2px solid #5A5A58;
   padding: 14px 28px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 600;
   border-radius: 8px;
@@ -459,22 +231,49 @@ header .header__container .header__list .header__item .header__item-link:hover {
 .about .about__container {
   margin-bottom: 120px;
   padding: 120px 0px;
+  max-width: 1200px;
 }
 .about .about__container .about__content {
-  max-width: 1440px;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
   margin-bottom: 80px;
 }
-.about .about__container .about__content .about__media {
-  padding-top: 35px;
+.about .about__container .about__content .about__features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding-top: 100px;
 }
-.about .about__container .about__content .about__media img {
-  border-radius: 15px;
-  width: 500px;
-  height: 450px;
+.about .about__container .about__content .about__features .about__feature {
+  padding: 42px;
+  background-color: #D5D4D0;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  will-change: transform;
+  cursor: default;
+}
+.about .about__container .about__content .about__features .about__feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.about .about__container .about__content .about__features .about__feature .about__feature-stat {
+  display: block;
+  font-size: 48px;
+  font-family: "Roboto";
+  font-weight: 800;
+  color: #b38f00;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.about .about__container .about__content .about__features .about__feature .about__feature-label {
+  font-size: 14px;
+  color: #5a5b61;
+  font-weight: 500;
+  font-family: "Montserrat";
 }
 .about .about__container .about__content .about__info .about__title {
   font-family: "Montserrat", sans-serif;
@@ -496,44 +295,6 @@ header .header__container .header__list .header__item .header__item-link:hover {
 }
 .about .about__container .about__content .about__info .about__text .about__text-highlight {
   color: #38393E;
-}
-.about .about__container .about__features {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: auto;
-}
-.about .about__container .about__features .about__feature {
-  padding: 32px;
-  background-color: #D5D4D0;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  width: 220px;
-  will-change: transform;
-  cursor: default;
-}
-.about .about__container .about__features .about__feature:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-.about .about__container .about__features .about__feature .about__feature-stat {
-  font-size: 48px;
-  font-family: "Roboto";
-  font-weight: 500;
-  color: #b38f00;
-  line-height: 1;
-  margin-bottom: 8px;
-}
-.about .about__container .about__features .about__feature .about__feature-label {
-  font-size: 14px;
-  color: #5a5b61;
-  font-weight: 500;
-  font-family: "Montserrat";
 }
 
 .services__container {
@@ -608,6 +369,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
 .services__container .services__list .services__item .services__link .services__item-icon {
   display: block;
   width: 100%;
+  border-bottom: solid 4px orange;
 }
 .services__container .services__list .services__item .services__link .services__item-text {
   max-width: 300px;
@@ -622,7 +384,6 @@ header .header__container .header__list .header__item .header__item-link:hover {
   color: #fff;
   background: #38393E;
   padding: 18px 20px;
-  border-top: solid 4px orange;
 }
 
 .gallery__container {
@@ -958,7 +719,7 @@ footer .footer__container .footer__content .footer__socials {
   display: flex;
   gap: 30px;
   position: relative;
-  left: 31px;
+  left: 30px;
 }
 footer .footer__container .footer__content .footer__socials .footer__socials-item:hover .footer__socials-link svg path {
   stroke: #cfcfcf;
@@ -1160,4 +921,1017 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 }
 .concrete__page-wrapper .detailed__description .detailed__description-content .detail__card:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+.header__burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #38393E;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.header__burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.header__burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.header__burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.header__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.header__overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+@media (1600px <= width < 1920px) {
+  header .header__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .about .about__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .about .about__container .about__content .about_info .about__title {
+    font-size: 44px;
+  }
+  .prices .prices__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .prices .prices__container .prices__info .prices__title {
+    font-size: 44px;
+  }
+  .footer__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .hero .hero__container {
+    padding-top: 62px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .hero .hero__container .hero__content .hero__header .hero__subtitle {
+    font-size: 14px;
+  }
+  .hero .hero__container .hero__content .hero__header .hero__buttons .hero__button--order, .hero .hero__container .hero__content .hero__header .hero__buttons .hero__button--prices {
+    font-size: 15px;
+  }
+  .services .services__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .services .services__container .section-badge {
+    margin-bottom: 12px;
+  }
+  .services .services__container .services__title {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+  .services .services__container .services__list {
+    gap: 26px;
+  }
+  .services .services__container .services__list .services__item .services__link .services__item-text {
+    font-size: 22px;
+  }
+  .services .services__container .services__list .services__item .services__link .services__item-text::after {
+    width: 22px;
+    height: 22px;
+  }
+  .gallery .gallery__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .gallery .gallery__container .gallery__title {
+    font-size: 44px;
+  }
+  .certificates .certificates__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .certificates .certificates__container .certificates__top .certificates__title {
+    font-size: 44px;
+  }
+  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
+    max-width: 461px;
+    height: inherit;
+  }
+  .contacts .contacts__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .contacts .contacts__container .contacts__top .contacts__title {
+    font-size: 44px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
+    font-size: 52px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
+    width: 38px;
+    height: 60px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__label {
+    font-size: 36px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__text {
+    font-size: 26px;
+  }
+  .section-badge {
+    font-size: 11px;
+  }
+}
+@media (1400px <= width < 1600px) {
+  header .header__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about .about__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .prices .prices__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .services__container,
+  .gallery__container,
+  .certificates__container,
+  .contacts__container,
+  .footer__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .hero .hero__container {
+    padding-top: 82px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .hero .hero__container .hero__content {
+    gap: 40px;
+  }
+  .hero .hero__container .hero__content .hero__header .hero__title {
+    font-size: 76px;
+  }
+  .hero .hero__container .hero__content .hero__header .hero__subtitle {
+    font-size: 13px;
+  }
+  .hero .hero__container .hero__content .hero__img {
+    width: 450px;
+    height: 500px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .hero .hero__container .hero__features {
+    gap: 16px;
+  }
+  .hero .hero__container .hero__features .hero__feature .feature-text {
+    font-size: 13px;
+  }
+  .certificates .certificates__container .swiperCertificates {
+    max-width: 1340px;
+  }
+  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item {
+    max-width: 640px;
+  }
+  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
+    max-width: 634px;
+    height: 895px;
+  }
+  .about__container .about__content .about__info .about__title {
+    font-size: 42px;
+  }
+  .contacts__container .contacts__content .contacts__company {
+    font-size: 46px;
+  }
+  .contacts__container .contacts__content .contacts__item .contacts__label {
+    font-size: 32px;
+  }
+  .contacts__container .contacts__content .contacts__item .contacts__text {
+    font-size: 24px;
+  }
+}
+@media (1200px <= width < 1400px) {
+  .footer__container,
+  .hero__container,
+  .about__container,
+  .services__container,
+  .gallery__container,
+  .prices__container,
+  .certificates__container,
+  .contacts__container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  header .header__container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .hero__container {
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
+  .hero__container .hero__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding-bottom: 40px;
+  }
+  .hero__container .hero__content .hero__header {
+    align-items: center;
+  }
+  .hero__container .hero__content .hero__img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+  }
+  .hero__container .hero__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .hero__container .hero__features .hero__feature {
+    justify-content: flex-start;
+  }
+  .about__container .about__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding: 50px 40px;
+  }
+  .about__container .about__content .about__info .about__text {
+    max-width: 100%;
+  }
+  .about__container .about__features {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .prices__container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 80px 30px;
+  }
+  .prices__container .prices__info {
+    text-align: center;
+  }
+  .prices__container .prices__info .prices__title {
+    font-size: 42px;
+  }
+  .prices__container .prices__info .prices__list {
+    display: inline-block;
+    text-align: left;
+  }
+  .prices__container .prices__cta {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .contacts__container .contacts__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+  .contacts__container .contacts__content .contacts__info {
+    width: 100%;
+  }
+  .contacts__container .contacts__content .contacts__item {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contacts__container .contacts__content .contacts__item .contacts__wrap {
+    align-items: center;
+  }
+  .contacts__container .contacts__content .contacts__map {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .contacts__container .contacts__content .contacts__map iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .certificates .certificates__container .swiperCertificates {
+    max-width: 1152px;
+  }
+  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item {
+    max-width: 546px;
+  }
+  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
+    max-width: 540px;
+    height: inherit;
+  }
+}
+@media (992px <= width < 1200px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero__container {
+    margin-bottom: 80px;
+  }
+  .hero__container .hero__content .hero__header .hero__title {
+    font-size: 56px;
+  }
+  .hero__container .hero__content .hero__header .hero__description {
+    font-size: 18px;
+  }
+  .hero__container .hero__content .hero__header .hero__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }
+  .hero__container .hero__content .hero__header .hero__buttons .hero__button--order,
+  .hero__container .hero__content .hero__header .hero__buttons .hero__button--prices {
+    margin-right: 0;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero__container .hero__features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .about__container,
+  .services__container,
+  .gallery__container,
+  .prices__container,
+  .certificates__container,
+  .contacts__container {
+    margin-bottom: 80px;
+  }
+  .services__container .services__list {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services__container .services__list .services__item {
+    max-width: 100%;
+    width: calc(50% - 15px);
+  }
+  .gallery__wrap {
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .gallery__wrap .swiperGallery {
+    width: 100%;
+  }
+  .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide {
+    width: 100%;
+  }
+  .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide .gallery__item-img {
+    width: 100%;
+    height: auto;
+  }
+  .gallery__wrap .swiper-button-prev,
+  .gallery__wrap .swiper-button-next {
+    display: none;
+  }
+  .swiperCertificates .swiper-wrapper .certificates__item {
+    width: auto;
+  }
+  .footer__container .footer__content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .footer__container .footer__content .footer__socials {
+    position: static;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .certificates {
+    display: none;
+  }
+  .container,
+  .header__container,
+  .footer__container,
+  .hero__container,
+  .about__container,
+  .services__container,
+  .gallery__container,
+  .prices__container,
+  .certificates__container,
+  .contacts__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header__burger {
+    display: flex;
+  }
+  .header__overlay {
+    display: block;
+  }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    width: 280px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 80px 30px 30px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+  }
+  .header__nav.active {
+    right: 0;
+  }
+  .header__nav .header__list {
+    flex-direction: column;
+    gap: 0;
+  }
+  .header__nav .header__list .header__item {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+  .header__nav .header__list .header__item .header__item-link {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 18px 0;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+  }
+  .header__nav .header__list .header__item .header__item-link:hover {
+    background: transparent;
+    color: #fc0;
+  }
+  .hero__container {
+    padding-top: 30px;
+    margin-bottom: 60px;
+  }
+  .hero__container .hero__content {
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+  }
+  .hero__container .hero__content .hero__header .hero__subtitle {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+  .hero__container .hero__content .hero__header .hero__title {
+    font-size: 42px;
+    margin-bottom: 16px;
+  }
+  .hero__container .hero__content .hero__header .hero__description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .hero__container .hero__features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0;
+  }
+  .hero__container .hero__features .hero__feature {
+    padding: 12px 0 12px 14px;
+  }
+  .about__container {
+    padding: 80px 0;
+  }
+  .about__container .about__content {
+    padding: 30px 20px;
+    margin: 0 20px;
+  }
+  .about__container .about__features {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .about__container .about__features .about__feature {
+    width: 100%;
+    max-width: 280px;
+  }
+  .services__container .services__title {
+    font-size: 36px;
+  }
+  .services__container .services__list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .services__container .services__list .services__item {
+    width: 100%;
+    max-width: 350px;
+  }
+  .gallery__container .gallery__title,
+  .prices__container .prices__title,
+  .contacts__container .contacts__title,
+  .about__container .about__content .about__info .about__title {
+    font-size: 32px;
+  }
+  .prices__container {
+    padding: 60px 20px;
+  }
+  .prices__container .prices__info .prices__title {
+    font-size: 32px;
+  }
+  .prices__container .prices__cta {
+    padding: 30px 20px;
+  }
+  .prices__container .prices__cta .cta__title {
+    font-size: 24px;
+  }
+  .certificates__container {
+    padding: 0 20px;
+    margin-bottom: 80px;
+  }
+  .certificates__container .certificates__top .certificates__title {
+    font-size: 32px;
+  }
+  .certificates__container .swiperCertificates .swiper-wrapper .certificates__item {
+    width: 200px;
+  }
+  .contacts__container .contacts__content .contacts__company {
+    font-size: 36px;
+  }
+  .contacts__container .contacts__content .contacts__item .contacts__label {
+    font-size: 24px;
+  }
+  .contacts__container .contacts__content .contacts__item .contacts__text {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .contacts__container .contacts__content .contacts__map {
+    height: 300px;
+    max-width: 100%;
+  }
+  .contacts__container .contacts__content .contacts__map iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .footer__container .footer__content {
+    padding-bottom: 30px;
+  }
+  .footer__container .footer__content .footer__company {
+    font-size: 32px;
+  }
+  .footer__container .footer__content .footer__company .footer__company-line:last-of-type {
+    font-size: 20px;
+  }
+  .footer__container .footer__content .footer__phone {
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .container,
+  .header__container,
+  .footer__container,
+  .hero__container,
+  .about__container,
+  .services__container,
+  .gallery__container,
+  .prices__container,
+  .certificates__container,
+  .contacts__container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .section-badge {
+    font-size: 10px;
+  }
+  header .header__container {
+    padding: 8px 16px;
+  }
+  header .header__container .header__logo .header__logo-img {
+    width: 70px;
+  }
+  header .header__container .header__burger {
+    width: 28px;
+    height: 20px;
+  }
+  header .header__container .header__burger span {
+    height: 2px;
+  }
+  .hero__container .hero__content {
+    margin-top: 10px;
+  }
+  .hero__container .hero__content .hero__header .hero__subtitle {
+    font-size: 10px;
+    padding: 5px 12px;
+  }
+  .hero__container .hero__content .hero__header .hero__title {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+  .hero__container .hero__content .hero__header .hero__description {
+    font-size: 14px;
+  }
+  .hero__container .hero__content .hero__header .hero__buttons .hero__button--order,
+  .hero__container .hero__content .hero__header .hero__buttons .hero__button--prices {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .hero__container .hero__features .hero__feature {
+    width: 185px;
+    padding: 10px 0 10px 12px;
+  }
+  .hero__container .hero__features .hero__feature .feature-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .hero__container .hero__features .hero__feature .feature-text {
+    font-size: 13px;
+  }
+  .about .about__container {
+    padding: 50px 0;
+  }
+  .about .about__container .about__content {
+    padding: 20px 12px;
+    margin: 0 12px;
+    border-radius: 15px;
+  }
+  .about .about__container .about__content .about__info .about__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .about .about__container .about__content .about__info .about__text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .about .about__container .about__features {
+    padding: 0 12px;
+  }
+  .about .about__container .about__features .about__feature {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .about .about__container .about__features .about__feature .about__feature-stat {
+    font-size: 36px;
+  }
+  .about .about__container .about__features .about__feature .about__feature-label {
+    font-size: 12px;
+  }
+  .services__container {
+    margin-bottom: 60px;
+  }
+  .services__container .services__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .services__container .services__list {
+    padding: 0 12px;
+  }
+  .services__container .services__list .services__item {
+    min-height: 288px;
+  }
+  .services__container .services__list .services__item .services__link .services__item-text {
+    font-size: 18px;
+    padding: 12px;
+    max-width: 245px;
+    align-self: center;
+  }
+  .gallery__container {
+    margin-bottom: 60px;
+  }
+  .gallery__container .gallery__title {
+    font-size: 24px;
+  }
+  .gallery__container .gallery__wrap {
+    padding: 0 12px;
+  }
+  .prices__container {
+    padding: 50px 12px;
+  }
+  .prices__container .prices__info .prices__title {
+    font-size: 24px;
+  }
+  .prices__container .prices__info .prices__text {
+    font-size: 14px;
+  }
+  .prices__container .prices__info .prices__list .prices__item {
+    padding: 10px 0;
+  }
+  .prices__container .prices__info .prices__list .prices__item .prices__item-text {
+    font-size: 13px;
+  }
+  .prices__container .prices__info .prices__note {
+    font-size: 12px;
+  }
+  .prices__container .prices__cta {
+    padding: 20px 12px;
+  }
+  .prices__container .prices__cta .cta__title {
+    font-size: 20px;
+  }
+  .prices__container .prices__cta .cta__text {
+    font-size: 13px;
+  }
+  .prices__container .prices__cta .cta__link {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .certificates__container {
+    padding: 0 12px;
+    margin-bottom: 60px;
+  }
+  .certificates__container .certificates__top .certificates__title {
+    font-size: 24px;
+  }
+  .certificates__container .swiperCertificates .swiper-wrapper .certificates__item {
+    width: 120px;
+  }
+  .contacts__container {
+    padding: 0 12px;
+    margin-bottom: 60px;
+  }
+  .contacts__container .contacts__top .contacts__title {
+    font-size: 24px;
+  }
+  .contacts__container .contacts__content {
+    gap: 40px;
+  }
+  .contacts__container .contacts__content .contacts__company {
+    font-size: 26px;
+  }
+  .contacts__container .contacts__content .contacts__item svg {
+    width: 25px;
+    height: 40px;
+  }
+  .contacts__container .contacts__content .contacts__item .contacts__label {
+    font-size: 18px;
+  }
+  .contacts__container .contacts__content .contacts__item .contacts__text {
+    font-size: 14px;
+  }
+  .contacts__container .contacts__content .contacts__map {
+    height: 220px;
+  }
+  .footer__container {
+    padding: 30px 12px 15px;
+  }
+  .footer__container .footer__content {
+    gap: 25px;
+  }
+  .footer__container .footer__content .footer__company {
+    font-size: 24px;
+  }
+  .footer__container .footer__content .footer__company .footer__company-line:last-of-type {
+    font-size: 16px;
+  }
+  .footer__container .footer__content .footer__socials {
+    gap: 15px;
+  }
+  .footer__container .footer__content .footer__socials .footer__socials-item .footer__socials-link svg {
+    width: 32px;
+    height: 32px;
+  }
+  .footer__container .footer__content .footer__phone {
+    font-size: 18px;
+  }
+  .footer__container .footer__bottom .footer__bottom-text {
+    font-size: 11px;
+  }
+}
+@media (max-width: 360px) {
+  .container,
+  .header__container,
+  .footer__container,
+  .hero__container,
+  .about__container,
+  .services__container,
+  .gallery__container,
+  .prices__container,
+  .certificates__container,
+  .contacts__container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .section-badge {
+    font-size: 10px;
+  }
+  header .header__container {
+    padding: 8px 16px;
+  }
+  header .header__container .header__logo .header__logo-img {
+    width: 70px;
+  }
+  header .header__container .header__burger {
+    width: 28px;
+    height: 20px;
+  }
+  header .header__container .header__burger span {
+    height: 2px;
+  }
+  .hero__container .hero__content {
+    margin-top: 10px;
+  }
+  .hero__container .hero__content .hero__header .hero__subtitle {
+    font-size: 10px;
+    padding: 5px 12px;
+  }
+  .hero__container .hero__content .hero__header .hero__title {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+  .hero__container .hero__content .hero__header .hero__description {
+    font-size: 14px;
+  }
+  .hero__container .hero__content .hero__header .hero__buttons .hero__button--order,
+  .hero__container .hero__content .hero__header .hero__buttons .hero__button--prices {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .hero__container .hero__features .hero__feature {
+    width: 185px;
+    padding: 10px 0 10px 12px;
+  }
+  .hero__container .hero__features .hero__feature .feature-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .hero__container .hero__features .hero__feature .feature-text {
+    font-size: 13px;
+  }
+  .about .about__container {
+    padding: 50px 0;
+  }
+  .about .about__container .about__content {
+    padding: 20px 12px;
+    margin: 0 12px;
+    border-radius: 15px;
+  }
+  .about .about__container .about__content .about__info .about__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .about .about__container .about__content .about__info .about__text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .about .about__container .about__features {
+    padding: 0 12px;
+  }
+  .about .about__container .about__features .about__feature {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .about .about__container .about__features .about__feature .about__feature-stat {
+    font-size: 36px;
+  }
+  .about .about__container .about__features .about__feature .about__feature-label {
+    font-size: 12px;
+  }
+  .services__container {
+    margin-bottom: 60px;
+  }
+  .services__container .services__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .services__container .services__list {
+    padding: 0 12px;
+  }
+  .services__container .services__list .services__item {
+    min-height: 288px;
+  }
+  .services__container .services__list .services__item .services__link .services__item-text {
+    font-size: 18px;
+    padding: 12px;
+    max-width: 245px;
+    align-self: center;
+  }
+  .gallery__container {
+    margin-bottom: 60px;
+  }
+  .gallery__container .gallery__title {
+    font-size: 24px;
+  }
+  .gallery__container .gallery__wrap {
+    padding: 0 12px;
+  }
+  .prices__container {
+    padding: 50px 12px;
+  }
+  .prices__container .prices__info .prices__title {
+    font-size: 24px;
+  }
+  .prices__container .prices__info .prices__text {
+    font-size: 14px;
+  }
+  .prices__container .prices__info .prices__list .prices__item {
+    padding: 10px 0;
+  }
+  .prices__container .prices__info .prices__list .prices__item .prices__item-text {
+    font-size: 13px;
+  }
+  .prices__container .prices__info .prices__note {
+    font-size: 12px;
+  }
+  .prices__container .prices__cta {
+    padding: 20px 12px;
+  }
+  .prices__container .prices__cta .cta__title {
+    font-size: 20px;
+  }
+  .prices__container .prices__cta .cta__text {
+    font-size: 13px;
+  }
+  .prices__container .prices__cta .cta__link {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .certificates__container {
+    padding: 0 12px;
+    margin-bottom: 60px;
+  }
+  .certificates__container .certificates__top .certificates__title {
+    font-size: 24px;
+  }
+  .certificates__container .swiperCertificates .swiper-wrapper .certificates__item {
+    width: 120px;
+  }
+  .contacts__container {
+    padding: 0 12px;
+    margin-bottom: 60px;
+  }
+  .contacts__container .contacts__top .contacts__title {
+    font-size: 24px;
+  }
+  .contacts__container .contacts__content {
+    gap: 40px;
+  }
+  .contacts__container .contacts__content .contacts__company {
+    font-size: 26px;
+  }
+  .contacts__container .contacts__content .contacts__item svg {
+    width: 25px;
+    height: 40px;
+  }
+  .contacts__container .contacts__content .contacts__item .contacts__label {
+    font-size: 18px;
+  }
+  .contacts__container .contacts__content .contacts__item .contacts__text {
+    font-size: 14px;
+  }
+  .contacts__container .contacts__content .contacts__map {
+    height: 220px;
+  }
+  .footer__container {
+    padding: 30px 12px 15px;
+  }
+  .footer__container .footer__content {
+    gap: 25px;
+  }
+  .footer__container .footer__content .footer__company {
+    font-size: 24px;
+  }
+  .footer__container .footer__content .footer__company .footer__company-line:last-of-type {
+    font-size: 16px;
+  }
+  .footer__container .footer__content .footer__socials {
+    gap: 15px;
+  }
+  .footer__container .footer__content .footer__socials .footer__socials-item .footer__socials-link svg {
+    width: 32px;
+    height: 32px;
+  }
+  .footer__container .footer__content .footer__phone {
+    font-size: 18px;
+  }
+  .footer__container .footer__bottom .footer__bottom-text {
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=style.css.map */
