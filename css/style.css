@@ -777,10 +777,10 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 }
 
 .concrete__page-wrapper {
-  padding-top: 80px;
+  padding-top: 30px;
 }
 .concrete__page-wrapper .concrete__production {
-  margin-bottom: 240px;
+  margin-bottom: 120px;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
@@ -808,6 +808,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+  will-change: transform;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-block::after {
@@ -818,6 +819,10 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   width: 5px;
   height: 100%;
   background: #fc0;
+}
+.concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 .concrete__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-subtitle {
   font-family: "Ubuntu";
@@ -1002,27 +1007,49 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   margin-bottom: 45px;
 }
 .concrete-pump__page-wrapper .concrete__production .concrete__production-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-block {
   background: #38393E;
   color: #fff;
-  padding: 40px 60px;
+  padding: 40px;
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-subtitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  margin-bottom: 20px;
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: #fc0;
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-subtitle {
+  font-family: "Ubuntu";
+  font-size: 34px;
+  margin-bottom: 35px;
   color: #fc0;
 }
-.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-text {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-text {
+  font-size: 17px;
+  font-family: "Roboto";
+  letter-spacing: 0.6px;
   line-height: 1.6;
-  margin-bottom: 20px;
 }
-.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-text .concrete__production-text--highlight {
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-text .concrete__production-text--highlight {
   color: #fc0;
 }
-.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-icon {
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-icon {
   width: 60px;
   height: 60px;
   background: rgba(255, 204, 0, 0.15);
@@ -1032,10 +1059,14 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   justify-content: center;
   margin-bottom: 25px;
 }
-.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-icon svg {
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-block .concrete__production-icon svg {
   width: 32px;
   height: 32px;
   color: #fc0;
+}
+.concrete-pump__page-wrapper .concrete__production .concrete__production-content .concrete__production-cta {
+  grid-column: 1/-1;
+  text-align: center;
 }
 .concrete-pump__page-wrapper .detailed__description {
   margin-bottom: 240px;

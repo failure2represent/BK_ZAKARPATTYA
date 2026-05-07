@@ -887,10 +887,10 @@ footer {
 }
 
 .concrete__page-wrapper {
-    padding-top: 80px;
+    padding-top: 30px;
     
     .concrete__production {
-        margin-bottom: 240px;
+        margin-bottom: 120px;
         max-width: 1200px;
         display: flex;
         flex-direction: column;
@@ -917,6 +917,7 @@ footer {
                 border-radius: 20px;
                 position: relative;
                 overflow: hidden;
+                will-change: transform;
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
                 &::after{
                     content: "";
@@ -926,6 +927,10 @@ footer {
                     width: 5px;
                     height: 100%;
                     background: #fc0;
+                }
+                &:hover{
+                    transform: translateY(-5px);
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
                 }
                 .concrete__production-subtitle {
                     font-family: "Ubuntu";
@@ -1131,40 +1136,66 @@ footer {
         }
 
         .concrete__production-content {
-            background: #38393E;
-            color: #fff;
-            padding: 40px 60px;
-            border-radius: 20px;
-            .concrete__production-subtitle {
-                font-family: "Montserrat", sans-serif;
-                font-size: 32px;
-                margin-bottom: 20px;
-                color: #fc0;
-            }
-
-            .concrete__production-text {
-                font-family: "Ubuntu", sans-serif;
-                font-size: 20px;
-                line-height: 1.6;
-                margin-bottom: 20px;
-                .concrete__production-text--highlight{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            .concrete__production-block{
+                background: $main_color;
+                color: #fff;
+                padding: 40px;
+                border-radius: 20px;
+                position: relative;
+                overflow: hidden;
+                will-change: transform;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 5px;
+                    height: 100%;
+                    background: #fc0;
+                }
+                &:hover{
+                    transform: translateY(-5px);
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+                }
+                .concrete__production-subtitle {
+                    font-family: "Ubuntu";
+                    font-size: 34px;
+                    margin-bottom: 35px;
                     color: $secondary_color;
                 }
-            }
-            .concrete__production-icon{
-                width: 60px;
-                height: 60px;
-                background: rgba(255, 204, 0, 0.15);
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 25px;
-                svg{
-                    width: 32px;
-                    height: 32px;
-                    color: $secondary_color;
+    
+                .concrete__production-text {
+                    font-size: 17px;
+                    font-family: "Roboto";
+                    letter-spacing: 0.6px;
+                    line-height: 1.6;
+                    .concrete__production-text--highlight{
+                        color: $secondary_color;
+                    }
                 }
+                .concrete__production-icon{
+                    width: 60px;
+                    height: 60px;
+                    background: rgba(255, 204, 0, 0.15);
+                    border-radius: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 25px;
+                    svg{
+                        width: 32px;
+                        height: 32px;
+                        color: $secondary_color;
+                    }
+                }
+            }
+            .concrete__production-cta{
+                grid-column: 1/-1;
+                text-align: center; 
             }
         }
     }
