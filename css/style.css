@@ -88,28 +88,27 @@ header .header__container .header__list .header__item .header__item-link:hover {
   color: white;
 }
 
-.hero__container {
+.hero .hero__container {
   padding-top: 72px;
   margin-bottom: 160px;
   gap: 85px;
 }
-.hero__container .hero__content {
+.hero .hero__container .hero__content {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
   border-bottom: 1px solid #b8b7b4;
   padding-bottom: 60px;
 }
-.hero__container .hero__content .hero__header {
+.hero .hero__container .hero__content .hero__header {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-.hero__container .hero__content .hero__header .hero__subtitle {
+.hero .hero__container .hero__content .hero__header .hero__subtitle {
   font-family: "Roboto Slab", serif;
-  font-weight: 900;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -120,14 +119,14 @@ header .header__container .header__list .header__item .header__item-link:hover {
   border-radius: 4px;
   margin-bottom: 13px;
 }
-.hero__container .hero__content .hero__header .hero__title {
+.hero .hero__container .hero__content .hero__header .hero__title {
   font-family: "Roboto Slab", serif;
   font-weight: 900;
   font-size: 84px;
   color: #38393E;
   margin-bottom: 24px;
 }
-.hero__container .hero__content .hero__header .hero__description {
+.hero .hero__container .hero__content .hero__header .hero__description {
   max-width: 700px;
   margin-bottom: 40px;
   font-family: "Roboto";
@@ -135,7 +134,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   color: #5A5C63;
   line-height: 1.7;
 }
-.hero__container .hero__content .hero__header .hero__buttons .hero__button--order {
+.hero .hero__container .hero__content .hero__header .hero__buttons .hero__button--order {
   display: inline-flex;
   align-items: center;
   background-color: #fc0;
@@ -153,12 +152,12 @@ header .header__container .header__list .header__item .header__item-link:hover {
   margin-right: 16px;
   will-change: transform;
 }
-.hero__container .hero__content .hero__header .hero__buttons .hero__button--order:hover {
+.hero .hero__container .hero__content .hero__header .hero__buttons .hero__button--order:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   background-color: #e6b800;
 }
-.hero__container .hero__content .hero__header .hero__buttons .hero__button--prices {
+.hero .hero__container .hero__content .hero__header .hero__buttons .hero__button--prices {
   display: inline-flex;
   align-items: center;
   background-color: transparent;
@@ -174,24 +173,23 @@ header .header__container .header__list .header__item .header__item-link:hover {
   white-space: nowrap;
   line-height: 1.6;
 }
-.hero__container .hero__content .hero__header .hero__buttons .hero__button--prices:hover {
+.hero .hero__container .hero__content .hero__header .hero__buttons .hero__button--prices:hover {
   background: #5A5A58;
   color: white;
 }
-.hero__container .hero__content .hero__img {
+.hero .hero__container .hero__content .hero__img {
   border-radius: 35px 0 0 35px;
   box-shadow: 0 10px 30px rgba(56, 57, 62, 0.3);
   display: block;
   width: 508px;
-  height: 561px;
 }
-.hero__container .hero__features {
+.hero .hero__container .hero__features {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 24px;
   place-items: center;
 }
-.hero__container .hero__features .hero__feature {
+.hero .hero__container .hero__features .hero__feature {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -203,14 +201,14 @@ header .header__container .header__list .header__item .header__item-link:hover {
   will-change: transform;
   cursor: default;
 }
-.hero__container .hero__features .hero__feature:hover {
+.hero .hero__container .hero__features .hero__feature:hover {
   border-left-color: #38393E;
   padding-left: 20px;
 }
-.hero__container .hero__features .hero__feature:hover .hero__feature-icon {
+.hero .hero__container .hero__features .hero__feature:hover .hero__feature-icon {
   color: #38393E;
 }
-.hero__container .hero__features .hero__feature .hero__feature-icon {
+.hero .hero__container .hero__features .hero__feature .hero__feature-icon {
   width: 24px;
   height: 24px;
   color: #b38f00;
@@ -218,7 +216,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   will-change: transform;
   transition: all 0.3s ease;
 }
-.hero__container .hero__features .hero__feature .hero__feature-text {
+.hero .hero__container .hero__features .hero__feature .hero__feature-text {
   font-family: "Ubuntu";
   font-size: 14px;
   font-weight: 500;
@@ -297,20 +295,20 @@ header .header__container .header__list .header__item .header__item-link:hover {
   color: #38393E;
 }
 
-.services__container {
+.services .services__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 120px;
 }
-.services__container .services__title {
+.services .services__container .services__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 48px;
   color: #38393E;
   margin-bottom: 26px;
 }
-.services__container .services__list {
+.services .services__container .services__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -318,7 +316,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   text-align: center;
   max-width: 1200px;
 }
-.services__container .services__list .services__item {
+.services .services__container .services__list .services__item {
   max-width: 333px;
   border: 4px solid #38393E;
   border-radius: 10px;
@@ -330,16 +328,16 @@ header .header__container .header__list .header__item .header__item-link:hover {
   will-change: transform;
   transition: transform 0.333s;
 }
-.services__container .services__list .services__item:hover {
+.services .services__container .services__list .services__item:hover {
   transition: transform 0.333s;
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
-.services__container .services__list .services__item:first-of-type:hover .services__item-text::after {
+.services .services__container .services__list .services__item:first-of-type:hover .services__item-text::after {
   transform: translateX(7px);
   transition: transform 0.333s;
 }
-.services__container .services__list .services__item:first-of-type .services__item-text::after {
+.services .services__container .services__list .services__item:first-of-type .services__item-text::after {
   content: "";
   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="%23fc0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   width: 24px;
@@ -349,11 +347,11 @@ header .header__container .header__list .header__item .header__item-link:hover {
   will-change: transform;
   transition: transform 0.333s;
 }
-.services__container .services__list .services__item:nth-of-type(4):hover .services__item-text::after {
+.services .services__container .services__list .services__item:nth-of-type(4):hover .services__item-text::after {
   transform: translateX(7px);
   transition: transform 0.333s;
 }
-.services__container .services__list .services__item:nth-of-type(4) .services__item-text::after {
+.services .services__container .services__list .services__item:nth-of-type(4) .services__item-text::after {
   content: "";
   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="%23fc0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   width: 24px;
@@ -363,15 +361,15 @@ header .header__container .header__list .header__item .header__item-link:hover {
   will-change: transform;
   transition: transform 0.333s;
 }
-.services__container .services__list .services__item .services__item-link {
+.services .services__container .services__list .services__item .services__item-link {
   display: contents;
 }
-.services__container .services__list .services__item .services__item-link .services__item-icon {
+.services .services__container .services__list .services__item .services__item-link .services__item-icon {
   display: block;
   width: 100%;
   border-bottom: solid 4px orange;
 }
-.services__container .services__list .services__item .services__item-link .services__item-text {
+.services .services__container .services__list .services__item .services__item-link .services__item-text {
   max-width: 300px;
   flex-grow: 1;
   display: flex;
@@ -386,13 +384,13 @@ header .header__container .header__list .header__item .header__item-link:hover {
   padding: 18px 20px;
 }
 
-.gallery__container {
+.gallery .gallery__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 120px;
 }
-.gallery__container .gallery__title {
+.gallery .gallery__container .gallery__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 48px;
@@ -400,32 +398,32 @@ header .header__container .header__list .header__item .header__item-link:hover {
   text-align: center;
   margin-bottom: 27px;
 }
-.gallery__container .gallery__wrap {
+.gallery .gallery__container .gallery__wrap {
   position: relative;
   max-width: 1100px;
   margin: 0 auto;
 }
-.gallery__container .gallery__wrap .swiperGallery {
+.gallery .gallery__container .gallery__wrap .swiperGallery {
   max-width: 1020px;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-.gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide {
+.gallery .gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide {
   width: 1020px;
 }
-.gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide.swiper-slide-active {
+.gallery .gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide.swiper-slide-active {
   width: 1020px;
 }
-.gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item .gallery__item-img {
+.gallery .gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item .gallery__item-img {
   display: block;
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gallery__container .gallery__wrap .swiper-button-prev,
-.gallery__container .gallery__wrap .swiper-button-next {
+.gallery .gallery__container .gallery__wrap .swiper-button-prev,
+.gallery .gallery__container .gallery__wrap .swiper-button-next {
   width: 60px;
   height: 60px;
   background: #fff;
@@ -439,37 +437,37 @@ header .header__container .header__list .header__item .header__item-link:hover {
   margin-top: 0;
   transition: all 0.3s ease;
 }
-.gallery__container .gallery__wrap .swiper-button-prev:after,
-.gallery__container .gallery__wrap .swiper-button-next:after {
+.gallery .gallery__container .gallery__wrap .swiper-button-prev:after,
+.gallery .gallery__container .gallery__wrap .swiper-button-next:after {
   display: none;
 }
-.gallery__container .gallery__wrap .swiper-button-prev svg,
-.gallery__container .gallery__wrap .swiper-button-next svg {
+.gallery .gallery__container .gallery__wrap .swiper-button-prev svg,
+.gallery .gallery__container .gallery__wrap .swiper-button-next svg {
   width: 20px;
   height: 20px;
 }
-.gallery__container .gallery__wrap .swiper-button-prev svg path,
-.gallery__container .gallery__wrap .swiper-button-next svg path {
+.gallery .gallery__container .gallery__wrap .swiper-button-prev svg path,
+.gallery .gallery__container .gallery__wrap .swiper-button-next svg path {
   fill: none;
   stroke: #38393E;
   stroke-width: 4;
 }
-.gallery__container .gallery__wrap .swiper-button-prev:hover,
-.gallery__container .gallery__wrap .swiper-button-next:hover {
+.gallery .gallery__container .gallery__wrap .swiper-button-prev:hover,
+.gallery .gallery__container .gallery__wrap .swiper-button-next:hover {
   background: #f8f8f8;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
-.gallery__container .gallery__wrap .swiper-button-prev {
+.gallery .gallery__container .gallery__wrap .swiper-button-prev {
   left: -30px;
 }
-.gallery__container .gallery__wrap .swiper-button-prev svg {
+.gallery .gallery__container .gallery__wrap .swiper-button-prev svg {
   position: relative;
   left: -2px;
 }
-.gallery__container .gallery__wrap .swiper-button-next {
+.gallery .gallery__container .gallery__wrap .swiper-button-next {
   right: -30px;
 }
-.gallery__container .gallery__wrap .swiper-button-next svg {
+.gallery .gallery__container .gallery__wrap .swiper-button-next svg {
   position: relative;
   right: -2px;
 }
@@ -587,14 +585,14 @@ header .header__container .header__list .header__item .header__item-link:hover {
   line-height: 1.6;
 }
 
-.certificates__container {
+.certificates .certificates__container {
   max-width: 1600px;
   margin-bottom: 250px;
 }
-.certificates__container .certificates__top {
+.certificates .certificates__container .certificates__top {
   text-align: center;
 }
-.certificates__container .certificates__top .certificates__title {
+.certificates .certificates__container .certificates__top .certificates__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 48px;
@@ -602,87 +600,87 @@ header .header__container .header__list .header__item .header__item-link:hover {
   text-transform: uppercase;
   margin-bottom: 27px;
 }
-.certificates__container .swiperCertificates {
+.certificates .certificates__container .swiperCertificates {
   margin-bottom: 30px;
 }
-.certificates__container .swiperCertificates .certificates__list .certificates__item.swiper-slide {
+.certificates .certificates__container .swiperCertificates .certificates__list .certificates__item.swiper-slide {
   border: 3px solid #38393E;
 }
-.certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
+.certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
   max-width: 349px;
   height: 492px;
   display: block;
 }
-.certificates__container .swiper-pagination {
+.certificates .certificates__container .swiper-pagination {
   bottom: inherit;
   top: inherit;
 }
-.certificates__container .swiper-pagination .swiper-pagination-bullet {
+.certificates .certificates__container .swiper-pagination .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
 }
-.certificates__container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.certificates .certificates__container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #38393E;
 }
 
-.contacts__container {
+.contacts .contacts__container {
   margin-bottom: 120px;
 }
-.contacts__container .contacts__top {
+.contacts .contacts__container .contacts__top {
   text-align: center;
 }
-.contacts__container .contacts__top .contacts__title {
+.contacts .contacts__container .contacts__top .contacts__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 48px;
   color: #38393E;
   margin-bottom: 39px;
 }
-.contacts__container .contacts__content {
+.contacts .contacts__container .contacts__content {
   display: flex;
   justify-content: space-around;
 }
-.contacts__container .contacts__content .contacts__company {
+.contacts .contacts__container .contacts__content .contacts__company {
   font-family: "Roboto Slab", serif;
   font-weight: 900;
   font-size: 54px;
   color: #38393E;
   margin-bottom: 36px;
 }
-.contacts__container .contacts__content .contacts__company .contacts__company-line:last-of-type {
+.contacts .contacts__container .contacts__content .contacts__company .contacts__company-line:last-of-type {
   display: block;
 }
-.contacts__container .contacts__content .contacts__item {
+.contacts .contacts__container .contacts__content .contacts__item {
   margin-bottom: 37px;
   display: flex;
   gap: 24px;
   align-items: center;
 }
-.contacts__container .contacts__content .contacts__item:last-of-type {
+.contacts .contacts__container .contacts__content .contacts__item:last-of-type {
   margin-bottom: inherit;
 }
-.contacts__container .contacts__content .contacts__item .contacts__label {
+.contacts .contacts__container .contacts__content .contacts__item .contacts__label {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 38px;
   color: #38393E;
   margin-bottom: 8px;
 }
-.contacts__container .contacts__content .contacts__item .contacts__text {
+.contacts .contacts__container .contacts__content .contacts__item .contacts__text {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 28px;
   color: #38393E;
   max-width: 455px;
 }
-.contacts__container .contacts__content .contacts__item #contacts__phone {
+.contacts .contacts__container .contacts__content .contacts__item #contacts__phone {
   font-weight: 700;
   color: brown;
 }
-.contacts__container .contacts__content .contacts__item #contacts__phone:hover {
+.contacts .contacts__container .contacts__content .contacts__item #contacts__phone:hover {
   color: #8F2D2D;
 }
-.contacts__container .contacts__content .contacts__map {
+.contacts .contacts__container .contacts__content .contacts__map {
   margin-top: 23px;
   border: 3px solid #38393E;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -719,7 +717,7 @@ footer .footer__container .footer__content .footer__socials {
   display: flex;
   gap: 30px;
   position: relative;
-  left: 30px;
+  left: 42px;
 }
 footer .footer__container .footer__content .footer__socials .footer__socials-item:hover .footer__socials-link svg path {
   stroke: #cfcfcf;
@@ -737,8 +735,6 @@ footer .footer__container .footer__content .footer__phone {
   font-weight: 400;
   font-size: 32px;
   text-decoration: underline;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: #fff;
 }
 footer .footer__container .footer__content .footer__phone:hover {
@@ -1256,30 +1252,8 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   visibility: visible;
 }
 
-body.menu-open {
-  overflow: hidden;
-}
-
-@media (1600px <= width < 1920px) {
+@media (max-width: 1600px) {
   header .header__container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .about .about__container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .about .about__container .about__content .about_info .about__title {
-    font-size: 44px;
-  }
-  .prices .prices__container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .prices .prices__container .prices__info .prices__title {
-    font-size: 44px;
-  }
-  .footer__container {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -1288,11 +1262,14 @@ body.menu-open {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .hero .hero__container .hero__content {
+    padding-bottom: 50px;
+  }
+  .hero .hero__container .hero__content .hero__header .hero__title {
+    font-size: 82px;
+  }
   .hero .hero__container .hero__content .hero__header .hero__subtitle {
     font-size: 14px;
-  }
-  .hero .hero__container .hero__content .hero__header .hero__buttons .hero__button--order, .hero .hero__container .hero__content .hero__header .hero__buttons .hero__button--prices {
-    font-size: 15px;
   }
   .services .services__container {
     padding-left: 40px;
@@ -1315,6 +1292,20 @@ body.menu-open {
     width: 22px;
     height: 22px;
   }
+  .about .about__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .about .about__container .about__content .about__info .about__title {
+    font-size: 44px;
+  }
+  .prices .prices__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .prices .prices__container .prices__info .prices__title {
+    font-size: 44px;
+  }
   .gallery .gallery__container {
     padding-left: 40px;
     padding-right: 40px;
@@ -1328,10 +1319,6 @@ body.menu-open {
   }
   .certificates .certificates__container .certificates__top .certificates__title {
     font-size: 44px;
-  }
-  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
-    max-width: 461px;
-    height: inherit;
   }
   .contacts .contacts__container {
     padding-left: 40px;
@@ -1354,49 +1341,29 @@ body.menu-open {
     font-size: 26px;
   }
   .section-badge {
-    font-size: 11px;
+    font-size: 12px;
+  }
+  footer .footer__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  footer .footer__container .footer__content .footer__company .footer__company-line {
+    font-size: 40px;
+  }
+  footer .footer__container .footer__content .footer__company .footer__company-line:last-of-type {
+    font-size: 24px;
+  }
+  footer .footer__container .footer__content .footer__socials .footer__socials-item .footer__socials-link svg {
+    width: 44px;
+    height: 44px;
   }
 }
-@media (1400px <= width < 1600px) {
-  header .header__container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .about .about__container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .prices .prices__container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .services__container,
-  .gallery__container,
-  .certificates__container,
-  .contacts__container,
-  .footer__container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+@media (max-width: 1400px) {
   .hero .hero__container {
-    padding-top: 82px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .hero .hero__container .hero__content {
-    gap: 40px;
+    padding: 60px 40px 58px 40px;
   }
   .hero .hero__container .hero__content .hero__header .hero__title {
-    font-size: 76px;
-  }
-  .hero .hero__container .hero__content .hero__header .hero__subtitle {
-    font-size: 13px;
-  }
-  .hero .hero__container .hero__content .hero__img {
-    width: 450px;
-    height: 500px;
-    -o-object-fit: contain;
-       object-fit: contain;
+    font-size: 78px;
   }
   .hero .hero__container .hero__features {
     gap: 16px;
@@ -1404,398 +1371,101 @@ body.menu-open {
   .hero .hero__container .hero__features .hero__feature .hero__feature-text {
     font-size: 13px;
   }
-  .certificates .certificates__container .swiperCertificates {
-    max-width: 1340px;
+  .services .services__container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item {
-    max-width: 640px;
+  .gallery .gallery__container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
-    max-width: 634px;
-    height: 895px;
+  .contacts .contacts__company-line {
+    font-size: 50px;
   }
-  .about__container .about__content .about__info .about__title {
-    font-size: 42px;
+  .contacts .contacts__item svg {
+    width: 36px;
+    height: 58px;
   }
-  .contacts__container .contacts__content .contacts__company {
-    font-size: 46px;
+  .contacts .contacts__label {
+    font-size: 34px;
   }
-  .contacts__container .contacts__content .contacts__item .contacts__label {
-    font-size: 32px;
-  }
-  .contacts__container .contacts__content .contacts__item .contacts__text {
+  .contacts .contacts__text {
     font-size: 24px;
   }
+  .certificates .certificates__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
-@media (1200px <= width < 1400px) {
-  .footer__container,
-  .hero__container,
-  .about__container,
-  .services__container,
-  .gallery__container,
-  .prices__container,
-  .certificates__container,
-  .contacts__container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  header .header__container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .hero__container {
+@media (max-width: 1200px) {
+  .hero .hero__container {
     padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-bottom: 100px;
   }
-  .hero__container .hero__content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
-    padding-bottom: 40px;
+  .hero .hero__container .hero__content .hero__header .hero__title {
+    font-size: 73px;
   }
-  .hero__container .hero__content .hero__header {
-    align-items: center;
+  .hero .hero__container .hero__content .hero__header .hero__description {
+    font-size: 18px;
+    max-width: 625px;
   }
-  .hero__container .hero__content .hero__img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 20px;
+  .hero .hero__container .hero__content .hero__header .hero__buttons .hero__button--order, .hero .hero__container .hero__content .hero__header .hero__buttons .hero__button--prices {
+    font-size: 15px;
   }
-  .hero__container .hero__features {
+  .hero .hero__container .hero__content .hero__img {
+    max-width: 458px;
+  }
+  .hero .hero__container .hero__features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-  .hero__container .hero__features .hero__feature {
-    justify-content: flex-start;
+  .hero .hero__container .hero__features .hero__feature {
+    width: 203px;
   }
-  .about__container .about__content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 40px;
+  .hero .hero__container .hero__features .hero__feature:last-of-type {
+    position: relative;
+    left: 105.5%;
+    justify-self: flex-end;
+  }
+  .hero .hero__container .hero__features .hero__feature:nth-child(1) {
+    justify-self: flex-start;
+  }
+  .hero .hero__container .hero__features .hero__feature:nth-child(3) {
+    justify-self: flex-end;
+  }
+  .hero .hero__container .hero__features .hero__feature:nth-child(4) {
+    justify-self: flex-start;
+  }
+  .services .services__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .services .services__container .services__list {
+    gap: 24px;
+  }
+  .about .about__content {
     padding: 50px 40px;
   }
-  .about__container .about__content .about__info .about__text {
-    max-width: 100%;
-  }
-  .about__container .about__features {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  .prices__container {
-    grid-template-columns: 1fr;
-    gap: 50px;
-    padding: 80px 30px;
-  }
-  .prices__container .prices__info {
-    text-align: center;
-  }
-  .prices__container .prices__info .prices__title {
-    font-size: 42px;
-  }
-  .prices__container .prices__info .prices__list {
-    display: inline-block;
-    text-align: left;
-  }
-  .prices__container .prices__cta {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  .contacts__container .contacts__content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
-  }
-  .contacts__container .contacts__content .contacts__info {
-    width: 100%;
-  }
-  .contacts__container .contacts__content .contacts__item {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .contacts__container .contacts__content .contacts__item .contacts__wrap {
-    align-items: center;
-  }
-  .contacts__container .contacts__content .contacts__map {
-    width: 100%;
-    max-width: 700px;
-    height: 400px;
-    margin: 0 auto;
-  }
-  .contacts__container .contacts__content .contacts__map iframe {
-    width: 100%;
-    height: 100%;
-  }
-  .certificates .certificates__container .swiperCertificates {
-    max-width: 1152px;
-  }
-  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item {
-    max-width: 546px;
-  }
-  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
-    max-width: 540px;
-    height: inherit;
-  }
-}
-@media (992px <= width < 1200px) {
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  .hero__container {
-    margin-bottom: 80px;
-  }
-  .hero__container .hero__content .hero__header .hero__title {
-    font-size: 56px;
-  }
-  .hero__container .hero__content .hero__header .hero__description {
-    font-size: 18px;
-  }
-  .hero__container .hero__content .hero__header .hero__buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-    width: 100%;
-  }
-  .hero__container .hero__content .hero__header .hero__buttons .hero__button--order,
-  .hero__container .hero__content .hero__header .hero__buttons .hero__button--prices {
-    margin-right: 0;
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-    justify-content: center;
-  }
-  .hero__container .hero__features {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-  .about__container,
-  .services__container,
-  .gallery__container,
-  .prices__container,
-  .certificates__container,
-  .contacts__container {
-    margin-bottom: 80px;
-  }
-  .services__container .services__list {
-    padding: 0 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .services__container .services__list .services__item {
-    max-width: 100%;
-    width: calc(50% - 15px);
-  }
-  .gallery__wrap {
-    padding: 0 20px;
-    width: 100%;
-    overflow: hidden;
-  }
-  .gallery__wrap .swiperGallery {
-    width: 100%;
-  }
-  .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide {
-    width: 100%;
-  }
-  .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item.swiper-slide .gallery__item-img {
-    width: 100%;
-    height: auto;
-  }
-  .gallery__wrap .swiper-button-prev,
-  .gallery__wrap .swiper-button-next {
-    display: none;
-  }
-  .swiperCertificates .swiper-wrapper .certificates__item {
-    width: auto;
-  }
-  .footer__container .footer__content {
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-  }
-  .footer__container .footer__content .footer__socials {
-    position: static;
-    justify-content: center;
-  }
-}
-@media (max-width: 768px) {
-  .certificates {
-    display: none;
-  }
-  .container,
-  .header__container,
-  .footer__container,
-  .hero__container,
-  .about__container,
-  .services__container,
-  .gallery__container,
-  .prices__container,
-  .certificates__container,
-  .contacts__container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .header__burger {
-    display: flex;
-  }
-  .header__overlay {
-    display: block;
-  }
-  .header__nav {
-    position: fixed;
-    top: 0;
-    right: -280px;
-    width: 280px;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 1000;
-    padding: 80px 30px 30px;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease;
-  }
-  .header__nav.active {
-    right: 0;
-  }
-  .header__nav .header__list {
-    flex-direction: column;
-    gap: 0;
-  }
-  .header__nav .header__list .header__item {
-    width: 100%;
-    border-bottom: 1px solid #eee;
-  }
-  .header__nav .header__list .header__item .header__item-link {
-    display: block;
-    width: 100%;
-    font-size: 20px;
-    padding: 18px 0;
-    border: none;
-    border-radius: 0;
-    text-align: left;
-  }
-  .header__nav .header__list .header__item .header__item-link:hover {
-    background: transparent;
-    color: #fc0;
-  }
-  .hero__container {
-    padding-top: 30px;
-    margin-bottom: 60px;
-  }
-  .hero__container .hero__content {
-    margin-bottom: 20px;
-    padding-bottom: 30px;
-  }
-  .hero__container .hero__content .hero__header .hero__subtitle {
-    font-size: 12px;
-    padding: 6px 16px;
-  }
-  .hero__container .hero__content .hero__header .hero__title {
-    font-size: 42px;
-    margin-bottom: 16px;
-  }
-  .hero__container .hero__content .hero__header .hero__description {
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
-  .hero__container .hero__features {
-    grid-template-columns: 1fr;
-    gap: 12px;
-    padding: 0;
-  }
-  .hero__container .hero__features .hero__feature {
-    padding: 12px 0 12px 14px;
-  }
-  .about__container {
-    padding: 80px 0;
-  }
-  .about__container .about__content {
-    padding: 30px 20px;
-    margin: 0 20px;
-  }
-  .about__container .about__features {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-  }
-  .about__container .about__features .about__feature {
-    width: 100%;
-    max-width: 280px;
-  }
-  .services__container .services__title {
-    font-size: 36px;
-  }
-  .services__container .services__list {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-  }
-  .services__container .services__list .services__item {
-    width: 100%;
-    max-width: 350px;
-  }
-  .gallery__container .gallery__title,
-  .prices__container .prices__title,
-  .contacts__container .contacts__title,
-  .about__container .about__content .about__info .about__title {
-    font-size: 32px;
-  }
-  .prices__container {
-    padding: 60px 20px;
-  }
-  .prices__container .prices__info .prices__title {
-    font-size: 32px;
-  }
-  .prices__container .prices__cta {
-    padding: 30px 20px;
-  }
-  .prices__container .prices__cta .cta__title {
-    font-size: 24px;
-  }
-  .certificates__container {
-    padding: 0 20px;
-    margin-bottom: 80px;
-  }
-  .certificates__container .certificates__top .certificates__title {
-    font-size: 32px;
-  }
-  .certificates__container .swiperCertificates .swiper-wrapper .certificates__item {
-    width: 200px;
-  }
-  .contacts__container .contacts__content .contacts__company {
-    font-size: 36px;
-  }
-  .contacts__container .contacts__content .contacts__item .contacts__label {
-    font-size: 24px;
-  }
-  .contacts__container .contacts__content .contacts__item .contacts__text {
-    font-size: 18px;
-    max-width: 100%;
-  }
-  .contacts__container .contacts__content .contacts__map {
-    height: 300px;
-    max-width: 100%;
-  }
-  .contacts__container .contacts__content .contacts__map iframe {
-    width: 100%;
-    height: 100%;
-  }
-  .footer__container .footer__content {
-    padding-bottom: 30px;
-  }
-  .footer__container .footer__content .footer__company {
-    font-size: 32px;
-  }
-  .footer__container .footer__content .footer__company .footer__company-line:last-of-type {
-    font-size: 20px;
-  }
-  .footer__container .footer__content .footer__phone {
-    font-size: 24px;
+  .about .about__features {
+    padding-top: inherit;
+  }
+  .gallery .gallery__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .prices .prices__container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .certificates .certificates__container {
+    padding-left: inherit;
+    padding-right: inherit;
+  }
+  #about {
+    scroll-margin-top: 55px;
   }
 }
 @media (max-width: 576px) {
@@ -2218,5 +1888,35 @@ body.menu-open {
   }
   .footer__container .footer__bottom .footer__bottom-text {
     font-size: 11px;
+  }
+}
+@media (1600px <= width < 1920px) {
+  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
+    max-width: 461px;
+    height: inherit;
+  }
+}
+@media (1400px <= width < 1600px) {
+  .certificates .certificates__container .swiperCertificates {
+    max-width: 1340px;
+  }
+  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item {
+    max-width: 640px;
+  }
+  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
+    max-width: 634px;
+    height: 895px;
+  }
+}
+@media (1200px <= width < 1400px) {
+  .certificates .certificates__container .swiperCertificates {
+    max-width: 1152px;
+  }
+  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item {
+    max-width: 546px;
+  }
+  .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
+    max-width: 540px;
+    height: inherit;
   }
 }/*# sourceMappingURL=style.css.map */
