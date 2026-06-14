@@ -60,7 +60,6 @@ logo?.addEventListener('click', function (e) {
   }
 });
 
-// Burger menu functions
 function toggleMenu() {
   const burger = document.querySelector('.header__burger');
   const nav = document.querySelector('.header__nav');

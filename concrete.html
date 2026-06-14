@@ -25,18 +25,24 @@
     <header>
         <div class="header__container">
             <a href="index.html" class="header__logo">
-                <img class="header__logo-img" src="img/logo.svg" alt="logo">
+                <img class="header__logo-img" src="img/logo.svg">
             </a>
+            <button class="header__burger" aria-label="Меню" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header__overlay" onclick="toggleMenu()"></div>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a class="header__item-link" href="index.html#services">Послуги</a>
+                        <a class="header__item-link" href="index.html#services" onclick="closeMenu()">Послуги</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__item-link" href="index.html#about">Про нас</a>
+                        <a class="header__item-link" href="index.html#about" onclick="closeMenu()">Про нас</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__item-link" href="#contacts">Контакти</a>
+                        <a class="header__item-link" href="#contacts" onclick="closeMenu()">Контакти</a>
                     </li>
                 </ul>
             </nav>
@@ -45,102 +51,104 @@
 
     <main>
         <div class="concrete__page-wrapper">
-
-            <section class="concrete__grades container">
-                <span class="section-badge">Каталог</span>
-                    <h2 class="concrete__grades-title">МАРКИ РОЗЧИНІВ</h2>
-                    <div class="concrete__grades-content">
-                        <div class="mark__card">
-                            <img class="mark__card-img" src="img/service_1.png" alt="M 5">
-                            <div class="mark__card-info">
-                                <div class="mark__class">M 5</div>
-                                <div class="mark__type">Розчин</div>
-                            </div>
-                        </div>
-                        <div class="mark__card">
-                            <img class="mark__card-img" src="img/service_1.png" alt="M 10">
-                            <div class="mark__card-info">
-                                <div class="mark__class">M 10</div>
-                                <div class="mark__type">Розчин</div>
-                            </div>
-                        </div>
-                        <div class="mark__card">
-                            <img class="mark__card-img" src="img/service_1.png" alt="CS II">
-                            <div class="mark__card-info">
-                                <div class="mark__class">CS II</div>
-                                <div class="mark__type">Розчин</div>
-                            </div>
-                        </div>
-                        <div class="mark__card">
-                            <img class="mark__card-img" src="img/service_1.png" alt="CS III">
-                            <div class="mark__card-info">
-                                <div class="mark__class">CS III</div>
-                                <div class="mark__type">Розчин</div>
-                            </div>
-                        </div>
-                    </div>
+            <section class="concrete__grades ">
+                <div class="grades__container container">
+                    <span class="section-badge">Каталог</span>
                     <h2 class="concrete__grades-title">МАРКИ БЕТОНУ</h2>
                     <div class="concrete__grades-content">
                     <a href="#mark-100" class="mark__card">
-                        <img class="mark__card-img" src="img/service_1.png" alt="B 7.5">
+                        <img class="mark__card-img" src="img/b7.5m100.jpg">
                         <div class="mark__card-info">
-                            <div class="mark__class">B 7.5</div>
-                            <div class="mark__type">M 100</div>
+                            <p class="mark__class">B 7.5</p>
+                            <p class="mark__type">M 100</p>
                         </div>
                     </a>
                     <a href="#mark-150" class="mark__card">
-                        <img class="mark__card-img" src="img/service_1.png" alt="B 12.5">
+                        <img class="mark__card-img" src="img/b12.5m150.jpg">
                         <div class="mark__card-info">
-                            <div class="mark__class">B 12.5</div>
-                            <div class="mark__type">M 150</div>
+                            <p class="mark__class">B 12.5</p>
+                            <p class="mark__type">M 150</p>
                         </div>
                     </a>
                     <a href="#mark-200" class="mark__card">
-                        <img class="mark__card-img" src="img/service_1.png" alt="B 15">
+                        <img class="mark__card-img" src="img/b15m200.jpg">
                         <div class="mark__card-info">
-                            <div class="mark__class">B 15</div>
-                            <div class="mark__type">M 200</div>
+                            <p class="mark__class">B 15</p>
+                            <p class="mark__type">M 200</p>
                         </div>
                     </a>
                     <a href="#mark-250" class="mark__card">
-                        <img class="mark__card-img" src="img/service_1.png" alt="B 20">
+                        <img class="mark__card-img" src="img/b20m250.jpg">
                         <div class="mark__card-info">
-                            <div class="mark__class">B 20</div>
-                            <div class="mark__type">M 250</div>
+                            <p class="mark__class">B 20</p>
+                            <p class="mark__type">M 250</p>
                         </div>
                     </a>
                     <a href="#mark-300" class="mark__card">
-                        <img class="mark__card-img" src="img/service_1.png" alt="B 22.5">
+                        <img class="mark__card-img" src="img/b22.5m300.jpg">
                         <div class="mark__card-info">
-                            <div class="mark__class">B 22.5</div>
-                            <div class="mark__type">M 300</div>
+                            <p class="mark__class">B 22.5</p>
+                            <p class="mark__type">M 300</p>
                         </div>
                     </a>
                     <a href="#mark-350" class="mark__card">
-                        <img class="mark__card-img" src="img/service_1.png" alt="B 25">
+                        <img class="mark__card-img" src="img/b25m350.jpg">
                         <div class="mark__card-info">
-                            <div class="mark__class">B 25</div>
-                            <div class="mark__type">M 350</div>
+                            <p class="mark__class">B 25</p>
+                            <p class="mark__type">M 350</p>
                         </div>
                     </a>
                     <a href="#mark-400" class="mark__card">
-                        <img class="mark__card-img" src="img/service_1.png" alt="B 30">
+                        <img class="mark__card-img" src="img/b30m400.png">
                         <div class="mark__card-info">
-                            <div class="mark__class">B 30</div>
-                            <div class="mark__type">M 400</div>
+                            <p class="mark__class">B 30</p>
+                            <p class="mark__type">M 400</p>
                         </div>
                     </a>
                     <a href="#mark-450" class="mark__card">
-                        <img class="mark__card-img" src="img/service_1.png" alt="B 35">
+                        <img class="mark__card-img" src="img/b35m450.png">
                         <div class="mark__card-info">
-                            <div class="mark__class">B 35</div>
-                            <div class="mark__type">M 450</div>
+                            <p class="mark__class">B 35</p>
+                            <p class="mark__type">M 450</p>
                         </div>
                     </a>
-                </div>
+                    </div>
+                    <h2 class="concrete__grades-title">МАРКИ РОЗЧИНІВ</h2>
+                    <div class="concrete__grades-content">
+                        <div class="mark__card">
+                            <img class="mark__card-img" src="img/service_1.png">
+                            <div class="mark__card-info">
+                                <p class="mark__class">M 5</p>
+                                <p class="mark__type">Розчин</p>
+                            </div>
+                        </div>
+                        <div class="mark__card">
+                            <img class="mark__card-img" src="img/service_1.png">
+                            <div class="mark__card-info">
+                                <p class="mark__class">M 10</p>
+                                <p class="mark__type">Розчин</p>
+                            </div>
+                        </div>
+                        <div class="mark__card">
+                            <img class="mark__card-img" src="img/service_1.png">
+                            <div class="mark__card-info">
+                                <p class="mark__class">CS II</p>
+                                <p class="mark__type">Розчин</p>
+                            </div>
+                        </div>
+                        <div class="mark__card">
+                            <img class="mark__card-img" src="img/service_1.png">
+                            <div class="mark__card-info">
+                                <p class="mark__class">CS III</p>
+                                <p class="mark__type">Розчин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
             </section>
 
-            <section class="concrete__production container">
+            <section class="concrete__production">
+                <div class="production__container container">
                     <span class="section-badge">Наш підхід</span>
                     <h1 class="concrete__production-title">ВИРОБНИЦТВО БЕТОНУ</h1>
                     <div class="concrete__production-content">
@@ -164,10 +172,8 @@
                         <p class="concrete__production-text">Для збереження властивостей суміші ми впровадили сезонні формули. <strong class="concrete__production-text--highlight">Взимку</strong> додаємо протиморозні присадки та підігріваємо інертні матеріали, що дозволяє заливати бетон у морози. <strong class="concrete__production-text--highlight">Влітку</strong> застосовуємо добавки, які регулюють час гідратації та запобігають передчасному схопленню на спеці.
                         </p>
                         </div>
-                        <div class="concrete__production-cta">
-                            <a class="prices__button" href="concrete.html#prices">РОЗРАХУВАТИ ВАРТІСТЬ</a>
-                        </div>
                     </div>
+                </div>
             </section>
                 
             <section id="prices" class="prices">
@@ -211,103 +217,106 @@
                 </div>
             </section>
 
-            <section class="detailed__description container">
-                <span class="section-badge">Детальніше</span>
-                <h2 class="detailed__description-title">ВИБІР МАРОК</h2>
-                <div class="detailed__description-content">
-
-                    <article id="mark-100" class="detail__card">
-                        <div class="detail__media">
-                            <img class="detail__media-img" src="img/service_1.png" alt="pic">
-                            
-                        </div>
-                        <div class="detail__info">
-                            <h3 class="detail__info-title">БЕТОН М-100 В-7,5</h3>
-                            <p class="detail__info-text">Ідеально підходить для підготовчих робіт, заливки бетонних подушок та пішохідних доріжок. Відрізняється доступною ціною та слугує надійною основою перед укладанням головного фундаменту або монтажем легких конструкцій.
-                            </p>
-                            <a class="prices__button" href="concrete.html#contacts">Замовити</a>
-                        </div>
-                    </article>
-
-                    <article id="mark-150" class="detail__card">
-                        <div class="detail__media">
-                            <img class="detail__media-img" src="img/service_1.png" alt="pic">
-                        </div>
-                        <div class="detail__info">
-                            <h3 class="detail__info-title">БЕТОН М-150 В-12,5</h3>
-                            <p class="detail__info-text">Застосовується для стяжок, підлог та фундаментів легких споруд. Відмінний вибір для базових будівельних завдань, де не передбачається високих навантажень. Поєднує в собі економічність та достатню міцність.</p>
-                            <a class="prices__button" href="concrete.html#contacts">Замовити</a>
-                        </div>
-                    </article>
-
-                    <article id="mark-200" class="detail__card">
-                        <div class="detail__media">
-                            <img class="detail__media-img" src="img/service_1.png" alt="pic">
-                        </div>
-                        <div class="detail__info">
-                            <h3 class="detail__info-title">БЕТОН М-200 В-15</h3>
-                            <p class="detail__info-text">Найбільш затребувана марка у приватному будівництві. Відмінно підходить для стрічкових фундаментів, вимощень, підпірних стін та сходів. Гарантує найкраще співвідношення ціни та довговічності для більшості побутових потреб.</p>
-                            
-                            <a class="prices__button" href="concrete.html#contacts">Замовити</a>
-                        </div>
-                    </article>
-
-                    <article id="mark-250" class="detail__card">
-                        <div class="detail__media">
-                            <img class="detail__media-img" src="img/service_1.png" alt="pic">
-                        </div>
-                        <div class="detail__info">
-                            <h3 class="detail__info-title">БЕТОН М-250 В-20</h3>
-                            <p class="detail__info-text">Надійний вибір для монолітних фундаментів, майданчиків з помірним навантаженням та важких парканів. Бетон цієї марки добре переносить перепади температур і вологість, забезпечуючи високу стабільність усієї конструкції.</p>
-                            <a class="prices__button" href="concrete.html#contacts">Замовити</a>
-                        </div>
-                    </article>
-
-                    <article id="mark-300" class="detail__card">
-                        <div class="detail__media">
-                            <img class="detail__media-img" src="img/service_1.png" alt="pic">
-                        </div>
-                        <div class="detail__info">
-                            <h3 class="detail__info-title">БЕТОН М-300 В-22,5</h3>
-                            <p class="detail__info-text">Міцний та універсальний бетон для відповідальних завдань. Використовується при зведенні стін, перекриттів, колон та фундаментів багатоповерхових будинків. Максимально стійкий до морозів, вологи та серйозних механічних навантажень.
-                            </p>
-                            <a class="prices__button" href="concrete.html#contacts">Замовити</a>
-                        </div>
-                    </article>
-
-                    <article id="mark-350" class="detail__card">
-                        <div class="detail__media">
-                            <img class="detail__media-img" src="img/service_1.png" alt="pic">
-                        </div>
-                        <div class="detail__info">
-                            <h3 class="detail__info-title">БЕТОН М-350 В-25</h3>
-                            <p class="detail__info-text">Бетон підвищеної міцності для комерційних та інфраструктурних об'єктів. Незамінний для несучих колон, плит перекриття, чаш басейнів. Відрізняється високою водонепроникністю, зносостійкістю та довговічністю.</p>
-                            <a class="prices__button" href="concrete.html#contacts">Замовити</a>
-                        </div>
-                    </article>
-
-                    <article id="mark-400" class="detail__card">
-                        <div class="detail__media">
-                            <img class="detail__media-img" src="img/service_1.png" alt="pic">
-                        </div>
-                        <div class="detail__info">
-                            <h3 class="detail__info-title">БЕТОН М-400 В-30</h3>
-                            <p class="detail__info-text">Надміцний матеріал для об'єктів спеціального призначення: мостів, гідротехнічних споруд та висотних будівель. Швидко схоплюється та легко витримує екстремальні навантаження в найагресивніших умовах середовища.</p>
-                            <a class="prices__button" href="concrete.html#contacts">Замовити</a>
-                        </div>
-                    </article>
-
-                    <article id="mark-450" class="detail__card">
-                        <div class="detail__media">
-                            <img class="detail__media-img" src="img/service_1.png" alt="pic">
-                        </div>
-                        <div class="detail__info">
-                            <h3 class="detail__info-title">БЕТОН М-450 В-35</h3>
-                            <p class="detail__info-text">Бетон преміального класу для зведення мостових опор, гідротехнічних споруд, метро та злітно-посадкових смуг. Має виняткову міцність, найвищу водонепроникність та морозостійкість. Практично не застосовується у приватному секторі.</p>
-                            <a class="prices__button" href="concrete.html#contacts">Замовити</a>
-                        </div>
-                    </article>
+            <section class="detailed__description">
+                <div class="description__container container">
+                    <span class="section-badge">Детальніше</span>
+                    <h2 class="detailed__description-title">ВИБІР МАРОК</h2>
+                    <div class="detailed__description-content">
+    
+                        <article id="mark-100" class="detail__card">
+                            <div class="detail__media">
+                                <img class="detail__media-img" src="img/b7.5m100.jpg">
+                                
+                            </div>
+                            <div class="detail__info">
+                                <h3 class="detail__info-title">БЕТОН М-100 В-7,5</h3>
+                                <p class="detail__info-text">Ідеально підходить для підготовчих робіт, заливки бетонних подушок та пішохідних доріжок. <span>Відрізняється доступною ціною та слугує надійною основою перед укладанням головного фундаменту або монтажем легких конструкцій.</span>
+                                </p>
+                                <a class="prices__button" href="concrete.html#contacts">Замовити</a>
+                            </div>
+                        </article>
+    
+                        <article id="mark-150" class="detail__card">
+                            <div class="detail__media">
+                                <img class="detail__media-img" src="img/b12.5m150.jpg">
+                            </div>
+                            <div class="detail__info">
+                                <h3 class="detail__info-title">БЕТОН М-150 В-12,5</h3>
+                                <p class="detail__info-text">Застосовується для стяжок, підлог та фундаментів легких споруд. <span>Відмінний вибір для базових будівельних завдань, де не передбачається високих навантажень. Поєднує в собі економічність та достатню міцність.</span></p>
+                                <a class="prices__button" href="concrete.html#contacts">Замовити</a>
+                            </div>
+                        </article>
+    
+                        <article id="mark-200" class="detail__card">
+                            <div class="detail__media">
+                                <img class="detail__media-img" src="img/b15m200.jpg">
+                            </div>
+                            <div class="detail__info">
+                                <h3 class="detail__info-title">БЕТОН М-200 В-15</h3>
+                                <p class="detail__info-text"><span>Найбільш затребувана марка у приватному будівництві.</span> Відмінно підходить для стрічкових фундаментів, вимощень, підпірних стін та сходів.<span> Гарантує найкраще співвідношення ціни та довговічності для більшості побутових потреб.</span></p>
+                                
+                                <a class="prices__button" href="concrete.html#contacts">Замовити</a>
+                            </div>
+                        </article>
+    
+                        <article id="mark-250" class="detail__card">
+                            <div class="detail__media">
+                                <img class="detail__media-img" src="img/b20m250.jpg">
+                            </div>
+                            <div class="detail__info">
+                                <h3 class="detail__info-title">БЕТОН М-250 В-20</h3>
+                                <p class="detail__info-text">Надійний вибір для монолітних фундаментів, майданчиків з помірним навантаженням та важких парканів. <span>Бетон цієї марки добре переносить перепади температур і вологість, забезпечуючи високу стабільність усієї конструкції.</span></p>
+                                <a class="prices__button" href="concrete.html#contacts">Замовити</a>
+                            </div>
+                        </article>
+    
+                        <article id="mark-300" class="detail__card">
+                            <div class="detail__media">
+                                <img class="detail__media-img" src="img/b22.5m300.jpg">
+                            </div>
+                            <div class="detail__info">
+                                <h3 class="detail__info-title">БЕТОН М-300 В-22,5</h3>
+                                <p class="detail__info-text"><span>Міцний та універсальний бетон для відповідальних завдань. </span>Використовується при зведенні стін, перекриттів, колон та фундаментів багатоповерхових будинків. <span>Максимально стійкий до морозів, вологи та серйозних механічних навантажень.</span>
+                                </p>
+                                <a class="prices__button" href="concrete.html#contacts">Замовити</a>
+                            </div>
+                        </article>
+    
+                        <article id="mark-350" class="detail__card">
+                            <div class="detail__media">
+                                <img class="detail__media-img" src="img/b25m350.jpg"">
+                            </div>
+                            <div class="detail__info">
+                                <h3 class="detail__info-title">БЕТОН М-350 В-25</h3>
+                                <p class="detail__info-text">Бетон підвищеної міцності для комерційних та інфраструктурних об'єктів. <span>Незамінний для несучих колон, плит перекриття, чаш басейнів. Відрізняється високою водонепроникністю, зносостійкістю та довговічністю.</span></p>
+                                <a class="prices__button" href="concrete.html#contacts">Замовити</a>
+                            </div>
+                        </article>
+    
+                        <article id="mark-400" class="detail__card">
+                            <div class="detail__media">
+                                <img class="detail__media-img" src="img/b30m400.png">
+                            </div>
+                            <div class="detail__info">
+                                <h3 class="detail__info-title">БЕТОН М-400 В-30</h3>
+                                <p class="detail__info-text">Надміцний матеріал для об'єктів спеціального призначення: мостів, гідротехнічних споруд та висотних будівель. <span>Швидко схоплюється та легко витримує екстремальні навантаження в найагресивніших умовах середовища.</span></p>
+                                <a class="prices__button" href="concrete.html#contacts">Замовити</a>
+                            </div>
+                        </article>
+    
+                        <article id="mark-450" class="detail__card">
+                            <div class="detail__media">
+                                <img class="detail__media-img" src="img/b35m450.png">
+                            </div>
+                            <div class="detail__info">
+                                <h3 class="detail__info-title">БЕТОН М-450 В-35</h3>
+                                <p class="detail__info-text">Бетон преміального класу для зведення мостових опор, гідротехнічних споруд, метро та злітно-посадкових смуг. <span>Має виняткову міцність, найвищу водонепроникність та морозостійкість. Практично не застосовується у приватному секторі.</span></p>
+                                <a class="prices__button" href="concrete.html#contacts">Замовити</a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
+                
             </section>
 
             <section id="contacts" class="contacts">
@@ -329,7 +338,7 @@
                                         d="M1.12 28.3863C-2.46041 17.3224 2.78887 5.7268 13.3645 1.3391C23.3089 -2.78686 35.9225 3.00888 39.6426 13.4136C42.3025 20.8526 41.1518 27.8462 35.3165 39.7028C32.1345 46.1681 22.4336 62.0651 21.1732 62.8801C20.1529 63.54 18.7181 61.6809 12.8782 52.1336C7.2073 42.8627 3.15997 34.688 1.12 28.3863ZM16.7853 11.725C12.8091 13.4226 9.94238 19.258 11.0678 23.3645C12.5723 28.854 15.5221 31.2462 20.7907 31.2504C28.6512 31.2566 33.0145 21.9892 28.3672 15.1592C26.008 11.6931 20.6104 10.0922 16.7853 11.725Z"
                                         fill="#775946" />
                                 </svg>
-                                <div class="contacts__wrap">
+                                <div class="contacts__item-wrap">
                                     <p class="contacts__label">Адреса:</p>
                                     <p class="contacts__text">вул. Пряшівська, 11, м. Мукачево,
                                         Закарпатська обл. Україна, 89600</p>
@@ -343,7 +352,7 @@
                                         d="M5.97585 15.7357C-0.264308 18.9945 -1.57332 24.692 1.84238 33.7247C4.65854 41.1725 13.4685 51.5998 21.3392 56.8007C27.3813 60.7937 31.8425 62.4551 36.6388 62.4988C41.5165 62.543 43.59 61.3938 46.2117 57.1918C48.5523 53.44 48.5875 51.8047 46.3631 50.1636C43.5034 48.053 36.2208 44.0745 35.2173 44.0745C34.694 44.0745 33.1168 45.2445 31.7118 46.6745C30.3069 48.1044 28.8283 49.2744 28.4263 49.2744C27.2771 49.2744 21.5886 44.9923 18.884 42.0908C16.0481 39.0483 13.3005 34.8973 13.3005 33.6545C13.3005 33.1834 14.4674 31.8111 15.8936 30.6053C17.4931 29.2528 18.4868 27.9934 18.4868 27.3174C18.4868 26.1636 13.7708 16.9036 12.3902 15.3452C11.2798 14.0921 8.83868 14.2407 5.97585 15.7357Z"
                                         fill="#775946" />
                                 </svg>
-                                <div class="contacts__wrap">
+                                <div class="contacts__item-wrap">
                                     <p class="contacts__label">Телефон:</p>
                                     <a id="contacts__phone" class="contacts__text" href="tel:+380991860591">+38 099 186
                                         05 91</a>
@@ -357,7 +366,7 @@
                                         d="M2.22109 28.3442C5.71848 20.8471 13.5861 15.3334 21.8407 14.5937C30.0906 13.8544 38.3983 17.5352 43.2121 24.0625C46.1846 28.0931 47.6183 32.044 47.9492 37.1144C48.9975 53.19 33.6549 65.7997 17.999 61.729C3.56377 57.9758 -4.06815 41.8262 2.22109 28.3442ZM22.4804 22.5275C22.0239 22.9831 21.8407 25.5157 21.8407 31.3649V39.5643L26.0863 43.5841C30.3304 47.6024 31.3849 48.1603 32.5449 47.0024C33.6987 45.8506 33.167 44.7939 29.5739 41.0987L25.9854 37.4087L25.8429 29.7991L25.7004 22.19L24.4102 22.0394C23.7006 21.9567 22.8324 22.1761 22.4804 22.5275Z"
                                         fill="#775946" />
                                 </svg>
-                                <div class="contacts__wrap">
+                                <div class="contacts__item-wrap">
                                     <p class="contacts__label">Графік роботи:</p>
                                     <p class="contacts__text">ЦІЛОДОБОВО</p>
                                 </div>

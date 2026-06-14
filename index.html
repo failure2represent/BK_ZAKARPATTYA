@@ -25,7 +25,7 @@
     <header>
         <div class="header__container">
             <a href="index.html" class="header__logo">
-                <img class="header__logo-img" src="img/logo.svg" alt="logo">
+                <img class="header__logo-img" src="img/logo.svg">
             </a>
             <button class="header__burger" aria-label="Меню" onclick="toggleMenu()">
                 <span></span>
@@ -68,8 +68,10 @@
                                 <a class="hero__button--prices"href="#prices">Дізнатись ціну</a>
                             </div>
                         </div>
-                        
-                        <img class="hero__img" src="img/hero_img.png" alt="Бетонозмішувач">
+                        <picture>
+                            <source media="(max-width: 1366px)" srcset="img/hero_img_alt.png">
+                            <img class="hero__img" src="img/hero_img.png">
+                        </picture>
                     </div>
                     <ul class="hero__features">
                         <li class="hero__feature">
@@ -122,31 +124,32 @@
                     <ul class="services__list">
                         <li class="services__item">
                             <a href="concrete.html" class="services__item-link">
-                                <img class="services__item-icon" src="img/service_1.png" alt="Бетон">
+                                <img class="services__item-img" src="img/service_1.png">
                                 <p class="services__item-text">БЕТОН</p>
                             </a>
                         </li>
                         <li class="services__item">
-                            <a href="#contacts" class="services__item-link">
-                                <img class="services__item-icon" src="img/service_2.png" alt="Послуги екскаватора">
-                                <p class="services__item-text">ПОСЛУГИ ЕКСКАВАТОРА</p>
-                            </a>
-                        </li>
-                        <li class="services__item">
-                            <a href="#contacts" class="services__item-link">
-                                <img class="services__item-icon" src="img/service_3.png" alt="Послуги навантажувача">
-                                <p class="services__item-text">ПОСЛУГИ НАВАНТАЖУВАЧА</p>
-                            </a>
-                        </li>
-                        <li class="services__item">
                             <a href="concrete-pump.html" class="services__item-link">
-                                <img class="services__item-icon" src="img/service_4.png" alt="Послуги бетононасоса">
+                                <img class="services__item-img" src="img/service_2.jpg">
                                 <p class="services__item-text">ПОСЛУГИ БЕТОНОНАСОСА</p>
                             </a>
                         </li>
                         <li class="services__item">
                             <a href="#contacts" class="services__item-link">
-                                <img class="services__item-icon" src="img/service_5.png" alt="Доставка піску і щебеню">
+                                <img class="services__item-img" src="img/service_3.jpg">
+                                <p class="services__item-text">ПОСЛУГИ ЕКСКАВАТОРА</p>
+                            </a>
+                        </li>
+                        <li class="services__item">
+                            <a href="#contacts" class="services__item-link">
+                                <img class="services__item-img" src="img/service_4.jpg">
+                                <p class="services__item-text">ПОСЛУГИ НАВАНТАЖУВАЧА</p>
+                            </a>
+                        </li>
+                        
+                        <li class="services__item">
+                            <a href="#contacts" class="services__item-link">
+                                <img class="services__item-img" src="img/service_5.jpg">
                                 <p class="services__item-text">ДОСТАВКА ПІСКУ І ЩЕБНЮ</p>
                             </a>
                         </li>
@@ -160,7 +163,7 @@
                             <span class="section-badge">Про нас</span>
                             <h2 class="about__title">ПРО КОМПАНІЮ</h2>
                             <p class="about__text">Компанія БЕТОН БК Закарпаття займається виробництвом товарного бетону
-                                та продажем його спільно з нерудними матеріалами (пісок, щебінь тощо). За <strong
+                                та продажем його спільно з нерудними матеріалами. За <strong
                                     class="about__text--highlight">понад 15-річну історію</strong> існування ми стали <strong
                                     class="about__text--highlight">лідерами Закарпатської області</strong> у сфері
                                 виготовлення та продажу матеріалів нульового циклу для малоповерхового та промислового
@@ -204,13 +207,28 @@
                         <div class="swiper swiperGallery">
                             <ul class="gallery__list swiper-wrapper">
                                 <li class="gallery__item swiper-slide">
-                                    <img class="gallery__item-img" src="img/07 1.png" alt="Галерея робіт">
+                                    <img class="gallery__item-img" src="img/gallery_1.jpg">
                                 </li>
                                 <li class="gallery__item swiper-slide">
-                                    <img class="gallery__item-img" src="img/07 1.png" alt="Галерея робіт">
+                                    <img class="gallery__item-img" src="img/gallery_2.jpg">
                                 </li>
                                 <li class="gallery__item swiper-slide">
-                                    <img class="gallery__item-img" src="img/07 1.png" alt="Галерея робіт">
+                                    <img class="gallery__item-img" src="img/gallery_3.jpg">
+                                </li>
+                                <li class="gallery__item swiper-slide">
+                                    <img class="gallery__item-img" src="img/gallery_4.jpg">
+                                </li>
+                                <li class="gallery__item swiper-slide">
+                                    <img class="gallery__item-img" src="img/gallery_5.jpg">
+                                </li>
+                                <li class="gallery__item swiper-slide">
+                                    <img class="gallery__item-img" src="img/gallery_6.jpg">
+                                </li>
+                                <li class="gallery__item swiper-slide">
+                                    <img class="gallery__item-img" src="img/gallery_7.jpg">
+                                </li>
+                                <li class="gallery__item swiper-slide">
+                                    <img class="gallery__item-img" src="img/gallery_8.jpg">
                                 </li>
                             </ul>
                         </div>
@@ -283,43 +301,37 @@
                             <li class="certificates__item swiper-slide">
                                 <a class="certificates__link" href="files/certificate_1.pdf" target="_blank"
                                     rel="noopener noreferrer">
-                                    <img class="certificates__item-img" src="img/certificate-preview1.png"
-                                        alt="Сертифікат якості">
+                                    <img class="certificates__item-img" src="img/certificate-preview1.png">
                                 </a>
                             </li>
                             <li class="certificates__item swiper-slide">
                                 <a class="certificates__link" href="files/certificate_1.pdf" target="_blank"
                                     rel="noopener noreferrer">
-                                    <img class="certificates__item-img" src="img/certificate-preview1.png"
-                                        alt="Сертифікат якості">
+                                    <img class="certificates__item-img" src="img/certificate-preview1.png">
                                 </a>
                             </li>
                             <li class="certificates__item swiper-slide">
                                 <a class="certificates__link" href="files/certificate_1.pdf" target="_blank"
                                     rel="noopener noreferrer">
-                                    <img class="certificates__item-img" src="img/certificate-preview1.png"
-                                        alt="Сертифікат якості">
+                                    <img class="certificates__item-img" src="img/certificate-preview1.png">
                                 </a>
                             </li>
                             <li class="certificates__item swiper-slide">
                                 <a class="certificates__link" href="files/certificate_1.pdf" target="_blank"
                                     rel="noopener noreferrer">
-                                    <img class="certificates__item-img" src="img/certificate-preview1.png"
-                                        alt="Сертифікат якості">
+                                    <img class="certificates__item-img" src="img/certificate-preview1.png">
                                 </a>
                             </li>
                             <li class="certificates__item swiper-slide">
                                 <a class="certificates__link" href="files/certificate_1.pdf" target="_blank"
                                     rel="noopener noreferrer">
-                                    <img class="certificates__item-img" src="img/certificate-preview1.png"
-                                        alt="Сертифікат якості">
+                                    <img class="certificates__item-img" src="img/certificate-preview1.png">
                                 </a>
                             </li>
                             <li class="certificates__item swiper-slide">
                                 <a class="certificates__link" href="files/certificate_1.pdf" target="_blank"
                                     rel="noopener noreferrer">
-                                    <img class="certificates__item-img" src="img/certificate-preview1.png"
-                                        alt="Сертифікат якості">
+                                    <img class="certificates__item-img" src="img/certificate-preview1.png">
                                 </a>
                             </li>
                         </ul>
@@ -346,7 +358,7 @@
                                         d="M1.12 28.3863C-2.46041 17.3224 2.78887 5.7268 13.3645 1.3391C23.3089 -2.78686 35.9225 3.00888 39.6426 13.4136C42.3025 20.8526 41.1518 27.8462 35.3165 39.7028C32.1345 46.1681 22.4336 62.0651 21.1732 62.8801C20.1529 63.54 18.7181 61.6809 12.8782 52.1336C7.2073 42.8627 3.15997 34.688 1.12 28.3863ZM16.7853 11.725C12.8091 13.4226 9.94238 19.258 11.0678 23.3645C12.5723 28.854 15.5221 31.2462 20.7907 31.2504C28.6512 31.2566 33.0145 21.9892 28.3672 15.1592C26.008 11.6931 20.6104 10.0922 16.7853 11.725Z"
                                         fill="#775946" />
                                 </svg>
-                                <div class="contacts__wrap">
+                                <div class="contacts__item-wrap">
                                     <p class="contacts__label">Адреса:</p>
                                     <p class="contacts__text">вул. Пряшівська, 11, м. Мукачево,
                                         Закарпатська обл. Україна, 89600</p>
@@ -360,7 +372,7 @@
                                         d="M5.97585 15.7357C-0.264308 18.9945 -1.57332 24.692 1.84238 33.7247C4.65854 41.1725 13.4685 51.5998 21.3392 56.8007C27.3813 60.7937 31.8425 62.4551 36.6388 62.4988C41.5165 62.543 43.59 61.3938 46.2117 57.1918C48.5523 53.44 48.5875 51.8047 46.3631 50.1636C43.5034 48.053 36.2208 44.0745 35.2173 44.0745C34.694 44.0745 33.1168 45.2445 31.7118 46.6745C30.3069 48.1044 28.8283 49.2744 28.4263 49.2744C27.2771 49.2744 21.5886 44.9923 18.884 42.0908C16.0481 39.0483 13.3005 34.8973 13.3005 33.6545C13.3005 33.1834 14.4674 31.8111 15.8936 30.6053C17.4931 29.2528 18.4868 27.9934 18.4868 27.3174C18.4868 26.1636 13.7708 16.9036 12.3902 15.3452C11.2798 14.0921 8.83868 14.2407 5.97585 15.7357Z"
                                         fill="#775946" />
                                 </svg>
-                                <div class="contacts__wrap">
+                                <div class="contacts__item-wrap">
                                     <p class="contacts__label">Телефон:</p>
                                     <a id="contacts__phone" class="contacts__text" href="tel:+380991860591">+38 099 186
                                         05 91</a>
@@ -374,7 +386,7 @@
                                         d="M2.22109 28.3442C5.71848 20.8471 13.5861 15.3334 21.8407 14.5937C30.0906 13.8544 38.3983 17.5352 43.2121 24.0625C46.1846 28.0931 47.6183 32.044 47.9492 37.1144C48.9975 53.19 33.6549 65.7997 17.999 61.729C3.56377 57.9758 -4.06815 41.8262 2.22109 28.3442ZM22.4804 22.5275C22.0239 22.9831 21.8407 25.5157 21.8407 31.3649V39.5643L26.0863 43.5841C30.3304 47.6024 31.3849 48.1603 32.5449 47.0024C33.6987 45.8506 33.167 44.7939 29.5739 41.0987L25.9854 37.4087L25.8429 29.7991L25.7004 22.19L24.4102 22.0394C23.7006 21.9567 22.8324 22.1761 22.4804 22.5275Z"
                                         fill="#775946" />
                                 </svg>
-                                <div class="contacts__wrap">
+                                <div class="contacts__item-wrap">
                                     <p class="contacts__label">Графік роботи:</p>
                                     <p class="contacts__text">ЦІЛОДОБОВО</p>
                                 </div>
