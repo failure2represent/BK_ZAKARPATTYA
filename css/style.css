@@ -2186,6 +2186,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 }
 /*  
 
+
     --CEO
 
     --заменить фотки
@@ -2206,6 +2207,8 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     --футер + хедер (посмотреть на телефоне)
 
     --320px проверить, когда все будет готово!
+
+
 */
 @media (1600px <= width < 1920px) {
   .certificates .certificates__container .swiperCertificates {
