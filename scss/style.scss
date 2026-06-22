@@ -1334,6 +1334,15 @@ footer {
     .detailed__description{
         .description__container{
             padding-top: 30px;
+            .detailed__description-content{
+                .detail__card{
+                    .detail__media{
+                        .detail__media-img{
+                            object-position: bottom;
+                        }
+                    }
+                }
+            }
         }
     }
 }

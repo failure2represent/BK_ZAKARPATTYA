@@ -1183,6 +1183,10 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 .concrete-pump__page-wrapper .detailed__description .description__container {
   padding-top: 30px;
 }
+.concrete-pump__page-wrapper .detailed__description .description__container .detailed__description-content .detail__card .detail__media .detail__media-img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
 
 .header__burger {
   display: none;
