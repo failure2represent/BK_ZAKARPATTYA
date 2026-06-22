@@ -429,7 +429,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .gallery .gallery__container .gallery__wrap .swiper-button-prev,
 .gallery .gallery__container .gallery__wrap .swiper-button-next {
@@ -696,7 +696,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   transition: border-color 0.2s, background 0.2s;
   box-sizing: border-box;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   -webkit-appearance: none;
 }
 .order__form .form__container .form__card form .form__card-group .form__card-input:hover {
@@ -982,7 +982,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   height: 70px;
   border-radius: 10px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   flex-shrink: 0;
 }
 .concrete__grades .grades__container .concrete__grades-content .mark__card .mark__card-info .mark__class {
@@ -1133,7 +1133,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   border-radius: 0px;
   transition: transform 0.5s ease;
@@ -2126,6 +2126,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 42px;
   }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
+    width: 31px;
+  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
     max-width: 295px;
     font-size: 19px;
@@ -2282,6 +2285,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container .contacts__top .contacts__title {
     font-size: 37px;
   }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
+    width: 29px;
+  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 40px;
   }
@@ -2357,7 +2363,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     font-size: 38px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 29px;
+    width: 28px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
     width: 31px;
@@ -2435,6 +2441,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 36px;
   }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
+    width: 30px;
+  }
   .hero .hero__container .hero__content .hero__header .hero__title {
     font-size: 39px;
   }
@@ -2480,8 +2489,8 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .gallery .gallery__container .gallery__wrap .swiperGallery {
     max-height: 158px;
   }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg:first-of-type {
-    width: 26px;
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
+    width: 27px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
     width: 28px;
@@ -2524,6 +2533,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
     width: 26px;
   }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
+    width: 26px;
+  }
   .concrete-pump__page-wrapper .detailed__description .description__container .detailed__description-content .detail__card .detail__info .detail__info-title {
     font-size: 18px;
   }
@@ -2544,7 +2556,11 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 
     --оптимизация (по microsoft и т.д)
 
-    --сжатие проекта
+    --сжатие проекта(через плагин ?????)
+
+    --проверить html на недостающие параметры у тэгов
+
+    --веб-киты у свойст элементов (через плагин ????)
 
     --убрать редирект при отправке форм. +добавить очищение полей ввода при рефреше страницы
 
