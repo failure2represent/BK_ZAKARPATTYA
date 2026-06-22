@@ -97,3 +97,35 @@ window.addEventListener('resize', function() {
       closeMenu();
   }
 });
+
+// hash-scroll
+(function() {
+  'use strict';
+  
+  const hash = window.location.hash;
+  if (!hash) return;
+  
+  // Отключаем нативное поведение хэша
+  history.replaceState(null, '', window.location.href.split('#')[0]);
+  
+  function scrollToHash() {
+    const target = document.querySelector(hash);
+    if (!target) return;
+    
+    // Ждём стабилизации всех ресурсов
+    if (document.readyState !== 'complete') {
+      setTimeout(scrollToHash, 50);
+      return;
+    }
+    
+    // Дополнительная задержка для шрифтов/картинок
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        target.scrollIntoView({ behavior: 'instant', block: 'start' });
+        history.replaceState(null, '', hash);
+      });
+    });
+  }
+  
+  scrollToHash();
+})();
