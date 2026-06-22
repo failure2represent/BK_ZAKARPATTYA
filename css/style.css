@@ -650,7 +650,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   color: #666;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
 }
 .order__form .form__container .form__card {
@@ -1877,7 +1877,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 }
 @media (max-width: 600px) {
   .concrete__grades .grades__container .concrete__grades-title {
-    font-size: 36px;
+    font-size: 38px;
   }
   .concrete__grades .grades__container .concrete__grades-content {
     grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
@@ -1889,10 +1889,10 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     font-size: 15px;
   }
   .detailed__description .description__container .detailed__description-title {
-    font-size: 36px;
+    font-size: 38px;
   }
   .concrete__production .production__container .concrete__production-title {
-    font-size: 36px;
+    font-size: 38px;
   }
   .concrete__production .production__container .concrete__production-content .concrete__production-block .concrete__production-icon {
     width: 55px;
@@ -1908,13 +1908,13 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     font-size: 21px;
   }
   .services .services__container .services__title {
-    font-size: 36px;
+    font-size: 38px;
   }
   .about .about__container .about__content .about__info .about__title {
-    font-size: 36px;
+    font-size: 38px;
   }
   .gallery .gallery__container .gallery__title {
-    font-size: 36px;
+    font-size: 38px;
   }
   .gallery .gallery__container .gallery__wrap {
     max-width: 499px;
@@ -1935,16 +1935,16 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     padding-right: initial;
   }
   .prices .prices__container .prices__info .prices__title {
-    font-size: 36px;
+    font-size: 38px;
   }
   .prices .prices__container .prices__cta {
     padding: 38px;
   }
   .order__form .order__form-title {
-    font-size: 36px;
+    font-size: 38px;
   }
   .contacts .contacts__container .contacts__top .contacts__title {
-    font-size: 36px;
+    font-size: 38px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 44px;
@@ -1980,6 +1980,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
   .hero .hero__container .hero__features .hero__feature:nth-of-type(4) {
     order: 4;
+  }
+  .order__form .form__container .order__form-title {
+    font-size: 38px;
   }
   .section-badge {
     font-size: 11px;
@@ -2156,18 +2159,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
 }
 @media (max-width: 430px) {
-  .concrete__grades .grades__container .concrete__grades-title {
-    font-size: 34px;
-  }
   .concrete__grades .grades__container .concrete__grades-content {
     max-width: 292px;
     place-self: center;
-  }
-  .detailed__description .description__container .detailed__description-title {
-    font-size: 34px;
-  }
-  .concrete__production .production__container .concrete__production-title {
-    font-size: 34px;
   }
   .concrete__production .production__container .concrete__production-content .concrete__production-cta .uniq__button {
     font-size: 14px;
@@ -2189,12 +2183,6 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     max-height: 52px;
     max-width: 165px;
   }
-  .services .services__container .services__title {
-    font-size: 34px;
-  }
-  .about .about__container .about__content .about__info .about__title {
-    font-size: 34px;
-  }
   .about .about__container .about__content .about__info .about__text {
     font-size: 14px;
   }
@@ -2203,9 +2191,6 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     display: flex;
     flex-direction: column;
     place-items: center;
-  }
-  .gallery .gallery__container .gallery__title {
-    font-size: 34px;
   }
   .gallery .gallery__container .gallery__wrap {
     max-width: 355px;
@@ -2227,24 +2212,15 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .gallery .gallery__container .gallery__wrap .swiper-button-prev {
     left: -23px;
   }
-  .prices .prices__container .prices__info .prices__title {
-    font-size: 34px;
-  }
   .prices .prices__container .prices__cta {
     padding: 32px;
   }
   .prices .prices__container .prices__cta .prices__cta-title {
     font-size: 22px;
   }
-  .order__form .order__form-title {
-    font-size: 34px;
-  }
   .contacts .contacts__container {
     padding-left: 0px;
     padding-right: 0px;
-  }
-  .contacts .contacts__container .contacts__top .contacts__title {
-    font-size: 34px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
     width: 30px;
@@ -2261,14 +2237,17 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
 }
 @media (max-width: 414px) {
+  header .header__container .header__logo .header__logo-img {
+    width: 74px;
+  }
   .concrete__grades .grades__container .concrete__grades-title {
-    font-size: 32px;
+    font-size: 37px;
   }
   .detailed__description .description__container .detailed__description-title {
-    font-size: 32px;
+    font-size: 37px;
   }
   .concrete__production .production__container .concrete__production-title {
-    font-size: 32px;
+    font-size: 37px;
   }
   .concrete-pump__page-wrapper .detailed__description .description__container .detailed__description-content .detail__card .detail__info .detail__info-title {
     font-size: 20px;
@@ -2280,31 +2259,57 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     font-size: 10px;
   }
   .services .services__container .services__title {
-    font-size: 32px;
+    font-size: 37px;
   }
   .about .about__container .about__content .about__info .about__title {
-    font-size: 32px;
+    font-size: 37px;
   }
   .about .about__container .about__content .about__features .about__feature {
     width: 165px;
   }
   .gallery .gallery__container .gallery__title {
-    font-size: 32px;
+    font-size: 37px;
   }
   .prices .prices__container .prices__info .prices__title {
-    font-size: 32px;
+    font-size: 37px;
   }
   .prices .prices__container .prices__cta .prices__cta-text {
     font-size: 13px;
   }
   .order__form .order__form-title {
-    font-size: 32px;
+    font-size: 37px;
   }
   .contacts .contacts__container .contacts__top .contacts__title {
-    font-size: 32px;
+    font-size: 37px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 40px;
+  }
+}
+@media (max-width: 411px) {
+  .services .services__container .services__title {
+    font-size: 36px;
+  }
+  .about .about__container .about__content .about__info .about__title {
+    font-size: 36px;
+  }
+  .gallery .gallery__container .gallery__title {
+    font-size: 36px;
+  }
+  .prices .prices__container .prices__info .prices__title {
+    font-size: 36px;
+  }
+  .contacts .contacts__container .contacts__top .contacts__title {
+    font-size: 36px;
+  }
+  .concrete__grades .grades__container .concrete__grades-title {
+    font-size: 36px;
+  }
+  .concrete__production .production__container .concrete__production-title {
+    font-size: 36px;
+  }
+  .detailed__description .description__container .detailed__description-title {
+    font-size: 36px;
   }
 }
 @media (max-width: 400px) {
@@ -2314,8 +2319,17 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .concrete-pump__page-wrapper .detailed__description .description__container .detailed__description-content .detail__card .detail__info {
     padding: 20px 31px;
   }
+  .services .services__container .services__title {
+    font-size: 35px;
+  }
+  .about .about__container .about__content .about__info .about__title {
+    font-size: 35px;
+  }
   .about .about__container .about__content .about__features .about__feature {
     width: 155px;
+  }
+  .gallery .gallery__container .gallery__title {
+    font-size: 35px;
   }
   .gallery .gallery__container .gallery__wrap {
     width: 320px;
@@ -2332,6 +2346,12 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
   .gallery .gallery__container .gallery__wrap .swiper-button-prev {
     left: -20px;
+  }
+  .prices .prices__container .prices__info .prices__title {
+    font-size: 35px;
+  }
+  .contacts .contacts__container .contacts__top .contacts__title {
+    font-size: 35px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 38px;
@@ -2355,6 +2375,15 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item:nth-of-type(2) .contacts__item-wrap .contacts__text {
     font-size: 21px;
   }
+  .concrete__grades .grades__container .concrete__grades-title {
+    font-size: 35px;
+  }
+  .concrete__production .production__container .concrete__production-title {
+    font-size: 35px;
+  }
+  .detailed__description .description__container .detailed__description-title {
+    font-size: 35px;
+  }
 }
 @media (max-width: 393px) {
   .prices .prices__container .prices__info .prices__text {
@@ -2373,6 +2402,30 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 @media (max-width: 390px) {
   .concrete-pump__page-wrapper .detailed__description .description__container .detailed__description-content .detail__card .detail__info {
     padding: 20px 25px;
+  }
+  .services .services__container .services__title {
+    font-size: 34px;
+  }
+  .about .about__container .about__content .about__info .about__title {
+    font-size: 34px;
+  }
+  .gallery .gallery__container .gallery__title {
+    font-size: 34px;
+  }
+  .prices .prices__container .prices__info .prices__title {
+    font-size: 34px;
+  }
+  .contacts .contacts__container .contacts__top .contacts__title {
+    font-size: 34px;
+  }
+  .concrete__grades .grades__container .concrete__grades-title {
+    font-size: 34px;
+  }
+  .concrete__production .production__container .concrete__production-title {
+    font-size: 34px;
+  }
+  .detailed__description .description__container .detailed__description-title {
+    font-size: 34px;
   }
 }
 @media (max-width: 384px) {
@@ -2435,8 +2488,17 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
 }
 @media (max-width: 360px) {
+  .services .services__container .services__title {
+    font-size: 32px;
+  }
+  .about .about__container .about__content .about__info .about__title {
+    font-size: 32px;
+  }
   .about .about__container .about__content .about__features .about__feature {
     width: 138px;
+  }
+  .gallery .gallery__container .gallery__title {
+    font-size: 32px;
   }
   .gallery .gallery__container .gallery__wrap {
     width: 290px;
@@ -2444,8 +2506,14 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .gallery .gallery__container .gallery__wrap .swiperGallery {
     max-height: 153px;
   }
+  .prices .prices__container .prices__info .prices__title {
+    font-size: 32px;
+  }
   .prices .prices__container .prices__cta .prices__cta-title {
     font-size: 19px;
+  }
+  .contacts .contacts__container .contacts__top .contacts__title {
+    font-size: 32px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 34px;
@@ -2455,6 +2523,15 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
   .concrete-pump__page-wrapper .detailed__description .description__container .detailed__description-content .detail__card .detail__info .detail__info-title {
     font-size: 18px;
+  }
+  .concrete__grades .grades__container .concrete__grades-title {
+    font-size: 32px;
+  }
+  .concrete__production .production__container .concrete__production-title {
+    font-size: 32px;
+  }
+  .detailed__description .description__container .detailed__description-title {
+    font-size: 32px;
   }
 }
 /*  
@@ -2466,12 +2543,12 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 
     --сжатие проекта
 
-    -- еще раз попробовать заскейлить titles секций (начать от малого 360-32px 375-34px....)
-
     --убрать редирект при отправке форм. +добавить очищение полей ввода при рефреше страницы
 
     --настроить отступы при переходах по кнопкам 
     (только для десктопа >=1280, на <=1279 сейчас отключены)!!
+
+    --оставшиеся сертификаты pdf >> png
 
     --уменьшить сертификаты (3шт 2шт 1шт визуал)
 

@@ -730,7 +730,7 @@ header {
             font-family: "Ubuntu", sans-serif;
             font-size: 16px;
             color: #666;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             text-align: center;
         }
         .form__card{
@@ -2506,7 +2506,7 @@ footer {
     .concrete__grades{
         .grades__container{
             .concrete__grades-title{
-                font-size: 36px;
+                font-size: 38px;
             }
             .concrete__grades-content{
                 grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
@@ -2526,7 +2526,7 @@ footer {
     .detailed__description{
         .description__container{
             .detailed__description-title{
-                font-size: 36px;
+                font-size: 38px;
             }
         }
     }
@@ -2534,7 +2534,7 @@ footer {
     .concrete__production{
         .production__container{
             .concrete__production-title{
-                font-size: 36px;
+                font-size: 38px;
             }
             .concrete__production-content{
                 .concrete__production-block{
@@ -2572,7 +2572,7 @@ footer {
     .services{
         .services__container{
             .services__title{
-                font-size: 36px;
+                font-size: 38px;
             }
         }
     }
@@ -2581,7 +2581,7 @@ footer {
             .about__content{
                 .about__info{
                     .about__title{
-                        font-size: 36px;
+                        font-size: 38px;
                     }
                 }
             }
@@ -2590,7 +2590,7 @@ footer {
     .gallery{
         .gallery__container{
             .gallery__title{
-                font-size: 36px;
+                font-size: 38px;
             }
             .gallery__wrap{
                 max-width: 499px;
@@ -2616,7 +2616,7 @@ footer {
             padding-right: initial;
             .prices__info{
                 .prices__title{
-                    font-size: 36px;
+                    font-size: 38px;
                 }
             }
             .prices__cta{
@@ -2627,7 +2627,7 @@ footer {
 
     .order__form{
         .order__form-title{
-            font-size: 36px;
+            font-size: 38px;
         }
     }
 
@@ -2635,7 +2635,7 @@ footer {
         .contacts__container{
             .contacts__top{
                 .contacts__title{
-                    font-size: 36px;
+                    font-size: 38px;
                 }
             }
             .contacts__content{
@@ -2698,7 +2698,14 @@ footer {
         }
     }
     
-
+    .order__form{
+        .form__container{
+            .order__form-title{
+                font-size: 38px;
+            }
+            
+        }
+    }
     .section-badge{
         font-size: 11px;
     }
@@ -3044,27 +3051,14 @@ footer {
 @media(max-width: 430px){
     .concrete__grades{
         .grades__container{
-            .concrete__grades-title{
-                font-size: 34px;
-            }
             .concrete__grades-content{
                 max-width: 292px;
                 place-self: center;
             }
         }
     }
-    .detailed__description{
-        .description__container{
-            .detailed__description-title{
-                font-size: 34px;
-            }
-        }
-    }
     .concrete__production{
         .production__container{
-            .concrete__production-title{
-                font-size: 34px;
-            }
             .concrete__production-content{
                 .concrete__production-cta{
                     .uniq__button{
@@ -3101,20 +3095,10 @@ footer {
             }
         }
     }
-    .services{
-        .services__container{
-            .services__title{
-                font-size: 34px;
-            }
-        }
-    }
     .about{
         .about__container{
             .about__content{
                 .about__info{
-                    .about__title{
-                        font-size: 34px;
-                    }
                     .about__text{
                         font-size: 14px;
                     } 
@@ -3134,9 +3118,6 @@ footer {
 
     .gallery{
         .gallery__container{
-            .gallery__title{
-                font-size: 34px;
-            }
             .gallery__wrap{
                 max-width: 355px;
                 .swiperGallery{
@@ -3163,11 +3144,6 @@ footer {
 
     .prices{
         .prices__container{
-            .prices__info{
-                .prices__title{
-                    font-size: 34px;
-                }
-            }
             .prices__cta{
                 padding: 32px;
                 .prices__cta-title{
@@ -3177,21 +3153,10 @@ footer {
         }
     }
 
-    .order__form{
-        .order__form-title{
-            font-size: 34px;
-        }
-    }
-
     .contacts{
         .contacts__container{
             padding-left: 0px;
             padding-right: 0px;
-            .contacts__top{
-                .contacts__title{
-                    font-size: 34px;
-                }
-            }
             .contacts__content{
                 .contacts__info{
                     .contacts__item{
@@ -3219,24 +3184,34 @@ footer {
 }
 
 @media(max-width: 414px){
+
+    header{
+        .header__container{
+            .header__logo{
+                .header__logo-img{
+                    width: 74px;
+                }
+            }
+        }
+    }
     .concrete__grades{
         .grades__container{
             .concrete__grades-title{
-                font-size: 32px;
+                font-size: 37px;
             }
         }
     }
     .detailed__description{
         .description__container{
             .detailed__description-title{
-                font-size: 32px;
+                font-size: 37px;
             }
         }
     }
     .concrete__production{
         .production__container{
             .concrete__production-title{
-                font-size: 32px;
+                font-size: 37px;
             }
         }
     }
@@ -3273,7 +3248,7 @@ footer {
     .services{
         .services__container{
             .services__title{
-                font-size: 32px;
+                font-size: 37px;
             }
         }
     }
@@ -3282,7 +3257,7 @@ footer {
             .about__content{
                 .about__info{
                     .about__title{
-                        font-size: 32px;
+                        font-size: 37px;
                     }
                 }
                 .about__features{
@@ -3296,7 +3271,7 @@ footer {
     .gallery{
         .gallery__container{
             .gallery__title{
-                font-size: 32px;
+                font-size: 37px;
             }
         }
     }
@@ -3304,7 +3279,7 @@ footer {
         .prices__container{
             .prices__info{
                 .prices__title{
-                    font-size: 32px;
+                    font-size: 37px;
                 }
                 
             }
@@ -3317,14 +3292,14 @@ footer {
     }
     .order__form{
         .order__form-title{
-            font-size: 32px;
+            font-size: 37px;
         }
     }
     .contacts{
         .contacts__container{
             .contacts__top{
                 .contacts__title{
-                    font-size: 32px;
+                    font-size: 37px;
                 }
             }
             .contacts__content{
@@ -3335,6 +3310,73 @@ footer {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media(max-width: 411px){
+    .services{
+        .services__container{
+            .services__title{
+                font-size: 36px;
+            }
+        }
+    }
+    .about{
+        .about__container{
+            .about__content{
+                .about__info{
+                    .about__title{
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+    .gallery{
+        .gallery__container{
+            .gallery__title{
+                font-size: 36px;
+            }
+        }
+    }
+    .prices{
+        .prices__container{
+            .prices__info{
+                .prices__title{
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    .contacts{
+        .contacts__container{
+            .contacts__top{
+                .contacts__title{
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    .concrete__grades{
+        .grades__container{
+            .concrete__grades-title{
+                font-size: 36px;
+            }
+        }
+    }
+    .concrete__production{
+        .production__container{
+            .concrete__production-title{
+                font-size: 36px;
+            }
+        }
+    }
+    .detailed__description{
+        .description__container{
+            .detailed__description-title{
+                font-size: 36px;
             }
         }
     }
@@ -3365,9 +3407,21 @@ footer {
             }
         }
     }
+    .services{
+        .services__container{
+            .services__title{
+                font-size: 35px;
+            }
+        }
+    }
     .about{
         .about__container{
             .about__content{
+                .about__info{
+                    .about__title{
+                        font-size: 35px;
+                    }
+                }
                 .about__features{
                     .about__feature{
                         width: 155px;
@@ -3379,6 +3433,9 @@ footer {
     
     .gallery{
         .gallery__container{
+            .gallery__title{
+                font-size: 35px;
+            }
             .gallery__wrap{
                 width: 320px;
                 .swiperGallery{
@@ -3397,9 +3454,22 @@ footer {
             }
         }
     }
-
+    .prices{
+        .prices__container{
+            .prices__info{
+                .prices__title{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
     .contacts{
         .contacts__container{
+            .contacts__top{
+                .contacts__title{
+                    font-size: 35px;
+                }
+            }
             .contacts__content{
                 .contacts__info{
                     .contacts__company{
@@ -3437,6 +3507,27 @@ footer {
                         }
                     }
                 }
+            }
+        }
+    }
+    .concrete__grades{
+        .grades__container{
+            .concrete__grades-title{
+                font-size: 35px;
+            }
+        }
+    }
+    .concrete__production{
+        .production__container{
+            .concrete__production-title{
+                font-size: 35px;
+            }
+        }
+    }
+    .detailed__description{
+        .description__container{
+            .detailed__description-title{
+                font-size: 35px;
             }
         }
     }
@@ -3489,6 +3580,70 @@ footer {
                         }
                     }
                 }
+            }
+        }
+    }
+    .services{
+        .services__container{
+            .services__title{
+                font-size: 34px;
+            }
+        }
+    }
+    .about{
+        .about__container{
+            .about__content{
+                .about__info{
+                    .about__title{
+                        font-size: 34px;
+                    }
+                }
+            }
+        }
+    }
+    .gallery{
+        .gallery__container{
+            .gallery__title{
+                font-size: 34px;
+            }
+        }
+    }
+    .prices{
+        .prices__container{
+            .prices__info{
+                .prices__title{
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+    .contacts{
+        .contacts__container{
+            .contacts__top{
+                .contacts__title{
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+    .concrete__grades{
+        .grades__container{
+            .concrete__grades-title{
+                font-size: 34px;
+            }
+        }
+    }
+    .concrete__production{
+        .production__container{
+            .concrete__production-title{
+                font-size: 34px;
+            }
+        }
+    }
+    .detailed__description{
+        .description__container{
+            .detailed__description-title{
+                font-size: 34px;
             }
         }
     }
@@ -3641,10 +3796,21 @@ footer {
 
 @media(max-width: 360px){
 
-
+    .services{
+        .services__container{
+            .services__title{
+                font-size: 32px;
+            }
+        }
+    }
     .about{
         .about__container{
             .about__content{
+                .about__info{
+                    .about__title{
+                        font-size: 32px;
+                    }
+                }
                 .about__features{
                     .about__feature{
                         width: 138px;
@@ -3656,6 +3822,9 @@ footer {
 
     .gallery{
         .gallery__container{
+            .gallery__title{
+                font-size: 32px;
+            }
             .gallery__wrap{
                 width: 290px;
                 .swiperGallery{
@@ -3666,6 +3835,11 @@ footer {
     }
     .prices{
         .prices__container{
+            .prices__info{
+                .prices__title{
+                    font-size: 32px;
+                }
+            }
             .prices__cta{
                 .prices__cta-title{
                     font-size: 19px;
@@ -3675,6 +3849,11 @@ footer {
     }
     .contacts{
         .contacts__container{
+            .contacts__top{
+                .contacts__title{
+                    font-size: 32px;
+                }
+            }
             .contacts__content{
                 .contacts__info{
                     .contacts__company{
@@ -3710,6 +3889,27 @@ footer {
             }
         }
     }
+    .concrete__grades{
+        .grades__container{
+            .concrete__grades-title{
+                font-size: 32px;
+            }
+        }
+    }
+    .concrete__production{
+        .production__container{
+            .concrete__production-title{
+                font-size: 32px;
+            }
+        }
+    }
+    .detailed__description{
+        .description__container{
+            .detailed__description-title{
+                font-size: 32px;
+            }
+        }
+    }
 }
 
 
@@ -3724,12 +3924,12 @@ footer {
 
     --сжатие проекта
 
-    -- еще раз попробовать заскейлить titles секций (начать от малого 360-32px 375-34px....)
-
     --убрать редирект при отправке форм. +добавить очищение полей ввода при рефреше страницы
 
     --настроить отступы при переходах по кнопкам 
     (только для десктопа >=1280, на <=1279 сейчас отключены)!!
+
+    --оставшиеся сертификаты pdf >> png
     
     --уменьшить сертификаты (3шт 2шт 1шт визуал)
 
