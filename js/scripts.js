@@ -99,30 +99,30 @@ window.addEventListener('resize', function() {
 });
 
 // hash-scroll
-(function() {
-  'use strict';
+// (function() {
+//   'use strict';
   
-  const hash = window.location.hash;
+//   const hash = window.location.hash;
   
-  // Строгая проверка: пустая строка, просто #, или whitespace — игнорируем
-  if (!hash || hash === '#' || !hash.trim().startsWith('#')) return;
+//   // Строгая проверка: пустая строка, просто #, или whitespace — игнорируем
+//   if (!hash || hash === '#' || !hash.trim().startsWith('#')) return;
   
-  // Отключаем нативное поведение хэша
-  history.replaceState(null, '', window.location.href.split('#')[0]);
+//   // Отключаем нативное поведение хэша
+//   history.replaceState(null, '', window.location.href.split('#')[0]);
   
-  function scrollToHash() {
-    const target = document.querySelector(hash);
-    if (!target) return;
+//   function scrollToHash() {
+//     const target = document.querySelector(hash);
+//     if (!target) return;
     
-    // Ждём стабилизации всех ресурсов
-    if (document.readyState !== 'complete') {
-      setTimeout(scrollToHash, 50);
-      return;
-    }
+//     // Ждём стабилизации всех ресурсов
+//     if (document.readyState !== 'complete') {
+//       setTimeout(scrollToHash, 50);
+//       return;
+//     }
     
-    target.scrollIntoView({ behavior: 'instant', block: 'start' });
-    history.replaceState(null, '', hash);
-  }
+//     target.scrollIntoView({ behavior: 'instant', block: 'start' });
+//     history.replaceState(null, '', hash);
+//   }
   
-  scrollToHash();
-})();
+//   scrollToHash();
+// })();
