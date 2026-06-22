@@ -3491,7 +3491,7 @@ footer {
                                 font-size: 26px;
                             }
                             .contacts__text{
-                                font-size: 17px;
+                                font-size: 18px;
                                 font-weight: 500;
                                 span{
                                     display: inherit
@@ -3535,6 +3535,21 @@ footer {
 
 @media(max-width: 393px){
 
+    .contacts{
+        .contacts__container{
+            .contacts__content{
+                .contacts__info{
+                    .contacts__item{
+                        .contacts__item-wrap{
+                            .contacts__text{
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .prices{
         .prices__container{
             .prices__info{
@@ -3777,7 +3792,7 @@ footer {
                     .contacts__item{
                         svg{
                             &:first-of-type{
-                                width: 27px;
+                                width: 26px;
                             }
                             width: 28px;
                         }

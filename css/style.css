@@ -2366,7 +2366,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     font-size: 26px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text span {
@@ -2386,6 +2386,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
 }
 @media (max-width: 393px) {
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
+    font-size: 17px;
+  }
   .prices .prices__container .prices__info .prices__text {
     font-size: 16px;
   }
@@ -2478,7 +2481,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     max-height: 158px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg:first-of-type {
-    width: 27px;
+    width: 26px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
     width: 28px;
