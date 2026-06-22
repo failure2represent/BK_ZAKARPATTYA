@@ -103,7 +103,9 @@ window.addEventListener('resize', function() {
   'use strict';
   
   const hash = window.location.hash;
-  if (!hash) return;
+  
+  // Строгая проверка: пустая строка, просто #, или whitespace — игнорируем
+  if (!hash || hash === '#' || !hash.trim().startsWith('#')) return;
   
   // Отключаем нативное поведение хэша
   history.replaceState(null, '', window.location.href.split('#')[0]);
@@ -118,13 +120,8 @@ window.addEventListener('resize', function() {
       return;
     }
     
-    // Дополнительная задержка для шрифтов/картинок
-    requestAnimationFrame(function() {
-      requestAnimationFrame(function() {
-        target.scrollIntoView({ behavior: 'instant', block: 'start' });
-        history.replaceState(null, '', hash);
-      });
-    });
+    target.scrollIntoView({ behavior: 'instant', block: 'start' });
+    history.replaceState(null, '', hash);
   }
   
   scrollToHash();
