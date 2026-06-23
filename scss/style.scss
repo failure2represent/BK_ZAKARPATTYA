@@ -3707,11 +3707,11 @@ footer {
                     .contacts__item{
                         &:first-of-type{
                             svg{
-                                width: 28px;
+                                width: 27px;
                             }
                         }
                         svg{
-                            width: 31px;
+                            width: 30px;
                         }
                         .contacts__item-wrap{
                             .contacts__label{
@@ -3927,7 +3927,7 @@ footer {
                     }
                     .contacts__item{
                         svg{
-                            width: 30px;
+                            width: 29px;
                         }
                     }
                 }
@@ -4052,8 +4052,13 @@ footer {
             .contacts__content{
                 .contacts__info{
                     .contacts__item{
+                        &:first-of-type{
+                            svg{
+                                width: 26px;
+                            }
+                        }
                         svg{
-                            width: 28px;
+                            width: 27px;
                         }
                         .contacts__item-wrap{
                             .contacts__text{
@@ -4142,13 +4147,13 @@ footer {
                         }
                     }
                     .contacts__item{
-                        &:first-of-type{
-                            svg{
-                                width: 26px;
-                            }
-                        }
                         svg{
                             width: 26px;
+                        }
+                        .contacts__item-wrap{
+                            .contacts__text{
+                                font-size: 15px;
+                            }
                         }
                     }
                 }

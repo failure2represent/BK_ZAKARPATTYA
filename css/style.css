@@ -2488,10 +2488,10 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     font-size: 38px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 28px;
+    width: 27px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
-    width: 31px;
+    width: 30px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__label {
     font-size: 26px;
@@ -2591,7 +2591,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     font-size: 36px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
-    width: 30px;
+    width: 29px;
   }
   .hero .hero__container .hero__content .hero__header .hero__title {
     font-size: 39px;
@@ -2638,8 +2638,11 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .gallery .gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item .gallery__item-img {
     max-height: 158px;
   }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
+    width: 26px;
+  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
-    width: 28px;
+    width: 27px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
     font-size: 16px;
@@ -2676,11 +2679,11 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 34px;
   }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 26px;
-  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
     width: 26px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
+    font-size: 15px;
   }
   .concrete-pump__page-wrapper .detailed__description .description__container .detailed__description-content .detail__card .detail__info .detail__info-title {
     font-size: 18px;
