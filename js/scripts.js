@@ -123,3 +123,32 @@ window.addEventListener('resize', function() {
       closeMenu();
   }
 });
+
+
+
+//order__form-settings
+document.querySelector('form').reset();
+
+const input = document.querySelector('input[name="phone"]');
+const nameInput = document.querySelector('input[name="name"]');
+
+
+input.addEventListener('focus', () => {
+  if (!input.value) {
+    input.value = '+380';
+  }
+});
+
+input.addEventListener('blur', () => {
+  if (input.value === '+380') {
+    input.value = '';
+  }
+});
+
+input.addEventListener('input', () => {
+  input.value = input.value.replace(/[^+\d]/g, '');
+});
+
+nameInput.addEventListener('input', () => {
+  nameInput.value = nameInput.value.replace(/[^a-zA-Zа-яА-ЯёЁіІїЇєЄґҐ\s'-]/g, '');
+});

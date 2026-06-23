@@ -2983,7 +2983,18 @@ footer {
 }
 
 @media(max-width: 540px){
-
+    #services{
+        scroll-margin-top: 130px;
+    }
+    #about{
+        scroll-margin-top: 10px;
+    }
+    #prices{
+        scroll-margin-top: 10px;
+    }
+    #contacts{
+        scroll-margin-top: 10px;
+    }
     header{
         .header__container{
             .header__logo{
@@ -4174,9 +4185,7 @@ footer {
 
     --веб-киты у свойст элементов (через плагин ????)
 
-    --убрать редирект при отправке форм. +добавить очищение полей ввода при рефреше страницы
-
-    --оставшиеся сертификаты pdf >> png
+    --оставшиеся сертификаты (отредактировать figma + имплементировать)
     
     --уменьшить сертификаты (3шт 2шт 1шт визуал)
 
