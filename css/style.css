@@ -2639,10 +2639,10 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     max-height: 158px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 26px;
+    width: 25px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
-    width: 27px;
+    width: 26px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
     font-size: 16px;
@@ -2678,9 +2678,6 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 34px;
-  }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
-    width: 26px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
     font-size: 15px;
