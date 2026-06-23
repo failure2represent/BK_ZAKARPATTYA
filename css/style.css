@@ -36,7 +36,7 @@ body {
 }
 
 #services {
-  scroll-margin-top: 130px;
+  scroll-margin-top: 155px;
 }
 
 #about {
@@ -105,7 +105,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   flex-wrap: wrap;
   margin-bottom: 30px;
   border-bottom: 1px solid #b8b7b4;
-  padding-bottom: 60px;
+  padding-bottom: 90px;
 }
 .hero .hero__container .hero__content .hero__header {
   display: flex;
