@@ -1,3 +1,4 @@
+// swiperGallery
 const swiper = new Swiper('.swiperGallery', {
   loop: true,
   slidesPerView: 1,
@@ -14,6 +15,7 @@ const swiper = new Swiper('.swiperGallery', {
 
 });
 
+// swiperCertificates
 const swiperС = new Swiper('.swiperCertificates', {
   breakpoints: {
     0: {
@@ -37,6 +39,7 @@ const swiperС = new Swiper('.swiperCertificates', {
   },
 });
 
+//url-cleaner
 const logo = document.querySelector('.header__logo');
 
 logo?.addEventListener('click', function (e) {
@@ -60,6 +63,7 @@ logo?.addEventListener('click', function (e) {
   }
 });
 
+//burger-menu
 function toggleMenu() {
   const burger = document.querySelector('.header__burger');
   const nav = document.querySelector('.header__nav');
@@ -98,7 +102,7 @@ window.addEventListener('resize', function() {
   }
 });
 
-// hash-scroll
+// hash-scroll-fix
 (function() {
   'use strict';
   
