@@ -39,6 +39,7 @@ const swiperС = new Swiper('.swiperCertificates', {
   },
 });
 
+
 //url-cleaner
 const logo = document.querySelector('.header__logo');
 
@@ -62,6 +63,27 @@ logo?.addEventListener('click', function (e) {
     );
   }
 });
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (!target) return;
+
+    e.preventDefault();
+
+    target.scrollIntoView({
+      behavior: 'smooth',
+    });
+
+    history.replaceState(
+      null,
+      '',
+      window.location.pathname + window.location.search
+    );
+  });
+});
+
+
 
 //burger-menu
 function toggleMenu() {
@@ -101,29 +123,3 @@ window.addEventListener('resize', function() {
       closeMenu();
   }
 });
-
-// hash-scroll-fix
-(function() {
-  'use strict';
-  
-  const hash = window.location.hash;
-  
-  if (!hash || hash === '#' || !hash.trim().startsWith('#')) return;
-  
-  history.replaceState(null, '', window.location.href.split('#')[0]);
-  
-  function scrollToHash() {
-    const target = document.querySelector(hash);
-    if (!target) return;
-    
-    if (document.readyState !== 'complete') {
-      setTimeout(scrollToHash, 50);
-      return;
-    }
-    
-    target.scrollIntoView({ behavior: 'instant', block: 'start' });
-    history.replaceState(null, '', hash);
-  }
-  
-  scrollToHash();
-})();
