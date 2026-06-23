@@ -2983,18 +2983,7 @@ footer {
 }
 
 @media(max-width: 540px){
-    #services{
-        scroll-margin-top: 130px;
-    }
-    #about{
-        scroll-margin-top: 10px;
-    }
-    #prices{
-        scroll-margin-top: 10px;
-    }
-    #contacts{
-        scroll-margin-top: 10px;
-    }
+    
     header{
         .header__container{
             .header__logo{
@@ -3532,6 +3521,21 @@ footer {
     }
 }
 
+@media(max-width: 412px){
+    #services{
+        scroll-margin-top: 120px;
+    }
+    #about{
+        scroll-margin-top: 0px;
+    }
+    #prices{
+        scroll-margin-top: 0px;
+    }
+    #contacts{
+        scroll-margin-top: 0px;
+    }
+}
+
 @media(max-width: 411px){
     .services{
         .services__container{
@@ -3757,7 +3761,18 @@ footer {
 }
 
 @media(max-width: 393px){
-
+    #services{
+        scroll-margin-top: 140px;
+    }
+    #about{
+        scroll-margin-top: 20px;
+    }
+    #prices{
+        scroll-margin-top: 20px;
+    }
+    #contacts{
+        scroll-margin-top: 140px;
+    }
     .contacts{
         .contacts__container{
             .contacts__content{
@@ -3889,6 +3904,18 @@ footer {
 }
 
 @media(max-width: 384px){
+    #services{
+        scroll-margin-top: 120px;
+    }
+    #about{
+        scroll-margin-top: 0px;
+    }
+    #prices{
+        scroll-margin-top: 0px;
+    }
+    #contacts{
+        scroll-margin-top: 0px;
+    }
     .contacts{
         .contacts__container{
             .contacts__content{
@@ -4189,7 +4216,7 @@ footer {
     
     --уменьшить сертификаты (3шт 2шт 1шт визуал)
 
-    --320px проверить, когда все будет готово!
+    --320px проверить, когда все будет готово + настроить scroll-margin 320x480px
 
 
 */

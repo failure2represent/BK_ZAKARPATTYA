@@ -2134,18 +2134,6 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
 }
 @media (max-width: 540px) {
-  #services {
-    scroll-margin-top: 130px;
-  }
-  #about {
-    scroll-margin-top: 10px;
-  }
-  #prices {
-    scroll-margin-top: 10px;
-  }
-  #contacts {
-    scroll-margin-top: 10px;
-  }
   header .header__container .header__logo .header__logo-img {
     width: 80px;
   }
@@ -2415,6 +2403,20 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     font-size: 40px;
   }
 }
+@media (max-width: 412px) {
+  #services {
+    scroll-margin-top: 120px;
+  }
+  #about {
+    scroll-margin-top: 0px;
+  }
+  #prices {
+    scroll-margin-top: 0px;
+  }
+  #contacts {
+    scroll-margin-top: 0px;
+  }
+}
 @media (max-width: 411px) {
   .services .services__container .services__title {
     font-size: 36px;
@@ -2515,6 +2517,18 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
 }
 @media (max-width: 393px) {
+  #services {
+    scroll-margin-top: 140px;
+  }
+  #about {
+    scroll-margin-top: 20px;
+  }
+  #prices {
+    scroll-margin-top: 20px;
+  }
+  #contacts {
+    scroll-margin-top: 140px;
+  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
     font-size: 17px;
   }
@@ -2561,6 +2575,18 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
 }
 @media (max-width: 384px) {
+  #services {
+    scroll-margin-top: 120px;
+  }
+  #about {
+    scroll-margin-top: 0px;
+  }
+  #prices {
+    scroll-margin-top: 0px;
+  }
+  #contacts {
+    scroll-margin-top: 0px;
+  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 36px;
   }
@@ -2688,7 +2714,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 
     --уменьшить сертификаты (3шт 2шт 1шт визуал)
 
-    --320px проверить, когда все будет готово!
+    --320px проверить, когда все будет готово + настроить scroll-margin 320x480px
 
 
 */
