@@ -2638,9 +2638,6 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .gallery .gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item .gallery__item-img {
     max-height: 158px;
   }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 27px;
-  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
     width: 28px;
   }
