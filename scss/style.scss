@@ -4195,6 +4195,107 @@ footer {
     }
 }
 
+@media(max-width: 320px){
+    .hero{
+        .hero__container{
+            .hero__content{
+                .hero__header{
+                    .hero__subtitle{
+                        font-size: 9px;
+                    }
+                    .hero__title{
+                        font-size: 30px;
+                    }
+                    .hero__description{
+                        font-size: 13px;
+                    }
+                    .hero__buttons{
+                        flex-wrap: wrap;
+                        place-content: center;
+                        .hero__button--order{
+                            margin-right: 0px;
+                            margin-bottom: 15px;
+                            
+                        }
+                        .hero__button--prices{
+                            padding: 16px 35px;
+                        }
+                        .hero__button--order,.hero__button--prices{
+                            max-height: 49px;
+                            font-size: 11px;
+                            max-width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .services{
+        .services__container{
+            .services__title{
+                font-size: 28px;
+            }
+        }
+    }
+    .about{
+        .about__container{
+            .about__content{
+                .about__info{
+                    .about__title{
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+    .gallery{
+        .gallery__container{
+            .gallery__title{
+                font-size: 28px;
+            }
+        }
+    }
+    .prices{
+        .prices__container{
+            .prices__info{
+                .prices__title{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .contacts{
+        .contacts__container{
+            .contacts__top{
+                .contacts__title{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .concrete__grades{
+        .grades__container{
+            .concrete__grades-title{
+                font-size: 28px;
+            }
+        }
+    }
+    .concrete__production{
+        .production__container{
+            .concrete__production-title{
+                font-size: 28px;
+            }
+        }
+    }
+    .detailed__description{
+        .description__container{
+            .detailed__description-title{
+                font-size: 28px;
+            }
+        }
+    }
+}
+
 /*  
 
     --сжатие проекта(через плагин ?????)
