@@ -2727,7 +2727,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     height: inherit;
   }
 }
-@media (1400px <= width < 1600px) {
+@media (1200px <= width < 1600px) {
   .certificates .certificates__container .swiperCertificates {
     max-width: 879px;
   }
@@ -2739,19 +2739,19 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     height: 570px;
   }
 }
-@media (1200px <= width < 1400px) {
+@media (720px <= width < 1200px) {
   .certificates .certificates__container .swiperCertificates {
-    max-width: 1142px;
+    max-width: 456px;
   }
   .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item {
-    max-width: 546px;
+    max-width: 456px;
   }
   .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
-    max-width: 534px;
+    max-width: 450px;
     height: inherit;
   }
 }
-@media (0 <= width < 1200px) {
+@media (0 <= width < 720px) {
   .certificates {
     display: none;
   }

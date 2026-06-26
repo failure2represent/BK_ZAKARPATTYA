@@ -1348,7 +1348,6 @@ footer {
 
 
 // Burger Menu 
-// ---------------------------------------------
 .header__burger {
     display: none;
     flex-direction: column;
@@ -1402,8 +1401,7 @@ footer {
     }
 }
 
-// MEDIA Q...
-// ---------------------------------------------
+// MEDIA
 @media(max-width: 1680px){
     #services
     {
@@ -2904,7 +2902,7 @@ footer {
             }
         }
     }
-} // брейкпоинт "магии" кнопок
+} 
 
 @media(max-width: 568px){
     .concrete__grades{
@@ -4219,9 +4217,7 @@ footer {
 */
 
 
-// ---------------------------------------------
-//CERTIFICATES_VISUALS
-// ---------------------------------------------
+//CERTIFICATES__VISUALS
 @media (1600px <= width < 1920px){
     .certificates{
                 .certificates__container{
@@ -4242,7 +4238,7 @@ footer {
                 }
             }
 }
-@media(1400px <= width < 1600px){
+@media(1200px <= width < 1600px){
     .certificates{
         .certificates__container{
             .swiperCertificates{
@@ -4262,17 +4258,17 @@ footer {
         }
     }
 }
-@media(1200px <= width < 1400px){
+@media(720px <= width < 1200px){
     .certificates{
         .certificates__container{
             .swiperCertificates{
-                max-width: 1142px;
+                max-width: 456px;
                 .certificates__list{
                     .certificates__item{
-                        max-width: 546px;
+                        max-width: 456px;
                         .certificates__link{
                             .certificates__item-img{
-                                max-width: 534px;
+                                max-width: 450px;
                                 height: inherit;
                             }
                         }
@@ -4282,53 +4278,7 @@ footer {
         }
     }
 }
-// @media(992px <= width < 1200px){
-//     .certificates{
-//         .certificates__container{
-//             .swiperCertificates{
-//                 max-width: 546px;
-//                 .certificates__list{
-//                     .certificates__item{
-//                         max-width: 546px;
-//                         .certificates__link{
-//                             .certificates__item-img{
-//                                 max-width: 540px;
-//                                 height: inherit;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }                               
-//         }
-//     }
-// }
-// @media(720px <= width < 992px){
-//     .certificates{
-//         .certificates__container{
-//             .swiperCertificates{
-//                 max-width: 546px;
-//                 .certificates__list{
-//                     .certificates__item{
-//                         max-width: 546px;
-//                         .certificates__link{
-//                             .certificates__item-img{
-//                                 max-width: 540px;
-//                                 height: inherit;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }                               
-//         }
-//     }
-// }
-// @media(0 <= width < 720px){
-//     .certificates{
-//         display: none;
-//     }
-// }
-
-@media(0 <= width < 1200px){
+@media(0 <= width < 720px){
     .certificates{
         display: none;
     }

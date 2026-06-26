@@ -18,9 +18,7 @@ const swiper = new Swiper('.swiperGallery', {
 // swiperCertificates
 const swiperС = new Swiper('.swiperCertificates', {
   breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
+    
     1200: {
       slidesPerView: 2,
     },
