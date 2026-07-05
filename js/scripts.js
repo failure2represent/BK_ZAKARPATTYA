@@ -38,6 +38,7 @@ const swiperС = new Swiper('.swiperCertificates', {
 });
 
 
+//smth-logo
 //url-cleaner
 const logo = document.querySelector('.header__logo');
 
@@ -62,6 +63,7 @@ logo?.addEventListener('click', function (e) {
   }
 });
 
+//rm-hash
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
