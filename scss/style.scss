@@ -11,6 +11,7 @@ $secondary_color: #fc0;
 
 html {
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -45,17 +46,19 @@ body {
 #about{
     scroll-margin-top: 135px;
 }
+
 #contacts{
     scroll-margin-top: 145px;
 }
-#prices {
+
+#prices{
     scroll-margin-top: 192px;
 }
 #order-form{
-    scroll-margin-top: 10px
+    scroll-margin-top: 20px
 }
 
-header {
+header{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -231,6 +234,21 @@ header {
                         color: $main_color
                     }
                 }
+                &:first-of-type{
+                    width: 182px
+                }
+                &:nth-of-type(2){
+                    width: 184px
+                }
+                &:nth-of-type(3){
+                    width: 135px
+                }
+                &:nth-of-type(4){
+                    width: 201px
+                }
+                &:last-of-type{
+                    width: 171px
+                }
                 .hero__feature-icon{
                     width: 24px;
                     height: 24px;
@@ -301,7 +319,7 @@ header {
                 .about__title {
                     font-family: "Montserrat", sans-serif;
                     font-weight: 900;
-                    font-size: 48px;;
+                    font-size: 48px;
                     color: $main_color;
                     margin-bottom: 33px;
                 }
@@ -337,7 +355,7 @@ header {
         .services__title {
             font-family: "Montserrat", sans-serif;
             font-weight: 900;
-            font-size: 48px;;
+            font-size: 48px;
             color: $main_color;
             margin-bottom: 20px;
         }
@@ -454,7 +472,7 @@ header {
         .gallery__title {
             font-family: "Montserrat", sans-serif;
             font-weight: 900;
-            font-size: 48px;;
+            font-size: 48px;
             color: $main_color;
             text-align: center;
             margin-bottom: 20px;
@@ -564,7 +582,7 @@ header {
             .prices__title {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 900;
-                font-size: 48px;;
+                font-size: 48px;
                 color: #fff;
                 margin-bottom: 30px;
             }
@@ -775,8 +793,8 @@ header {
                         outline: none;
                         transition: border-color 0.2s, background 0.2s;
                         box-sizing: border-box;
+                        appearance: none;
                         -moz-appearance: none;
-                             appearance: none;
                         -webkit-appearance: none;
                         &:hover{
                             border-color: #bfbfbf;
@@ -876,7 +894,7 @@ header {
             .contacts__title {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 900;
-                font-size: 48px;;
+                font-size: 48px;
                 color: $main_color;
                 margin-bottom: 38px;
             }
@@ -927,7 +945,7 @@ header {
                         font-weight: 400;
                         font-size: 19px;
                         color: #38393E;
-                        text-align: end;
+                        font-style: italic;
                         &:last-of-type{
                             margin-bottom: initial;
                         }
@@ -948,7 +966,7 @@ header {
                         max-width: 455px;
                     }
         
-                    #contacts__phone {
+                    #contacts__phone1, f#contacts__phone2 {
                         display: flex;
                         font-weight: 700;
                         color: brown;
@@ -978,7 +996,6 @@ footer {
         margin: auto;
         padding: 60px 0px 30px;
         .footer__content{
-            
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -1004,6 +1021,7 @@ footer {
                 gap: 30px;
                 position: relative;
                 left: 30px;
+                visibility: hidden;
                 .footer__socials-item {
                     &:hover .footer__socials-link svg path {
                         stroke: #cfcfcf;
@@ -1161,7 +1179,7 @@ footer {
         .concrete__production-title {
             font-family: "Montserrat", sans-serif;
             font-weight: 900;
-            font-size: 48px;;
+            font-size: 48px;
             color: $main_color;
             text-align: center;
             margin-bottom: 45px;
@@ -1651,17 +1669,7 @@ footer {
 }
 
 @media (max-width: 1440px){
-    .hero{
-        .hero__container{
-            .hero__features{
-                .hero__feature{
-                    .hero__feature-text{
-                        font-size: 13px;
-                    }
-                }
-            }
-        }
-    }
+    
     .contacts{
         .contacts__container{
             .contacts__content{
@@ -1913,6 +1921,21 @@ footer {
                     padding-left: 0px;
                     &:hover{
                         padding-left: 0px;
+                    }
+                    &:first-of-type{
+                        width: initial;
+                    }
+                    &:nth-of-type(2){
+                        width: initial;
+                    }
+                    &:nth-of-type(3){
+                        width: initial;
+                    }
+                    &:nth-of-type(4){
+                        width: initial;
+                    }
+                    &:last-of-type{
+                        width: initial;
                     }
                 }
             }
@@ -2867,7 +2890,6 @@ footer {
             .hero__features{
                 .hero__feature{
                     &:last-of-type{
-                        left: initial;
                         order: 1;
                     }
                     &:first-of-type{
@@ -3019,6 +3041,24 @@ footer {
                         }
                     }
                 }
+            }
+        }
+    }
+    .contacts{
+        .contacts__container{
+            .contacts__content{
+                .contacts__info{
+                    .contacts__item{
+                        svg{
+                            width: 31px;
+                        }
+                        .contacts__item-wrap{
+                            .contacts__phone-owner{
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }   
             }
         }
     }
@@ -3202,7 +3242,7 @@ footer {
                     .contacts__item{
                         &:first-of-type{
                             svg{
-                                width: 31px;
+                                width: 27px;
                             }
                         }
                         .contacts__item-wrap{
@@ -3301,6 +3341,13 @@ footer {
                     }
                 }
             }
+            .hero__features{
+                .hero__feature{
+                    .hero__feature-text{
+                        font-size: 13px;
+                    }
+                }
+            }
         }
     }
     .about{
@@ -3372,18 +3419,6 @@ footer {
             padding-left: 0px;
             padding-right: 0px;
             .contacts__content{
-                .contacts__info{
-                    .contacts__item{
-                        &:first-of-type{
-                            svg{
-                                width: 30px;
-                            }
-                        }
-                        svg{
-                            width: 33px;
-                        }
-                    }                    
-                }
                 .contacts__map{
                     width: 300px;
                     height: 300px;
@@ -3519,13 +3554,6 @@ footer {
             }
             .contacts__content{
                 .contacts__info{
-                    .contacts__item{
-                        &:first-of-type{
-                            svg{
-                                width: 29px;
-                            }
-                        }
-                    }
                     .contacts__company{
                         .contacts__company-line{
                             font-size: 40px;
@@ -3721,24 +3749,10 @@ footer {
                         }
                     }
                     .contacts__item{
-                        &:first-of-type{
-                            svg{
-                                width: 27px;
-                            }
-                        }
-                        svg{
-                            width: 30px;
-                        }
+                        gap: 20px;
                         .contacts__item-wrap{
                             .contacts__label{
                                 font-size: 26px;
-                            }
-                            .contacts__text{
-                                font-size: 18px;
-                                font-weight: 500;
-                                span{
-                                    display: inherit
-                                }
                             }
                         }
                         &:nth-of-type(2){
@@ -3796,9 +3810,22 @@ footer {
                     .contacts__item{
                         .contacts__item-wrap{
                             .contacts__text{
-                                font-size: 17px;
+                                font-size: 18px;
+                                font-weight: 500;
+                                span{
+                                    display: inherit
+                                }
+                            }
+                            .contacts__phone-owner{
+                                font-size: 16px;
                             }
                         }
+                        &:first-of-type{
+                            svg{
+                                width: 28px;
+                            }
+                        }
+                            
                     }
                 }
             }
@@ -3894,6 +3921,20 @@ footer {
                     font-size: 34px;
                 }
             }
+            .contacts__content{
+                .contacts__info{
+                    .contacts__item{
+                        &:first-of-type{
+                            svg{
+                                width: 27px;
+                            }
+                        }
+                        svg{
+                            width: 30px;
+                        }
+                    }
+                }
+            }
         }
     }
     .concrete__grades{
@@ -3942,8 +3983,18 @@ footer {
                         }
                     }
                     .contacts__item{
+                        &:first-of-type{
+                            svg{
+                                width: 26px
+                            }
+                        }
                         svg{
-                            width: 29px;
+                            width: 28px;
+                        }
+                        .contacts__item-wrap{
+                            .contacts__text{
+                                font-size: 17px;
+                            }
                         }
                     }
                 }
@@ -4009,6 +4060,7 @@ footer {
                             .detail__info-text{
                                 font-size: 12px;
                             }
+                            
                         }
                     }
                     
@@ -4068,17 +4120,12 @@ footer {
             .contacts__content{
                 .contacts__info{
                     .contacts__item{
-                        &:first-of-type{
-                            svg{
-                                width: 25px;
-                            }
-                        }
-                        svg{
-                            width: 26px;
-                        }
                         .contacts__item-wrap{
                             .contacts__text{
                                 font-size: 16px;
+                            }
+                            .contacts__phone-owner{
+                                font-size: 15px;
                             }
                         }
                     }
@@ -4086,7 +4133,19 @@ footer {
             }
         }
     }
-    
+    .detailed__desc{
+            .desc__container{
+                .detailed__desc-content{
+                    .detail__card{
+                        .detail__info{
+                            .uniq__button{
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 @media(max-width: 360px){
@@ -4203,6 +4262,14 @@ footer {
                         }
                     }
                     .contacts__item{
+                        &:first-of-type{
+                            svg{
+                                width: 26px;
+                            }
+                        }
+                        svg{
+                            width: 27px;
+                        }
                         .contacts__item-wrap{
                             .contacts__text{
                                 font-size: 15px;
@@ -4249,13 +4316,35 @@ footer {
             .detailed__desc-title{
                 font-size: 32px;
             }
+             .detailed__desc-content{
+                    .detail__card{
+                        .detail__info{
+                            .uniq__button{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
         }
     }
 }
 
 @media(max-width: 320px){
+    #services{
+        scroll-margin-top: 100px;
+    }
+    #about{
+        scroll-margin-top: -10px;
+    }
+    #prices{
+        scroll-margin-top: 0px;
+    }
+    #contacts{
+        scroll-margin-top: -152px;
+    }
     .hero{
         .hero__container{
+            padding-top: 44px;
             .hero__content{
                 .hero__header{
                     .hero__subtitle{
@@ -4377,11 +4466,11 @@ footer {
                     .contacts__item{
                         &:first-of-type{
                             svg{
-                                width: 23px
+                                width: 25px
                             }
                         }
                         svg{
-                            width: 21px;
+                            width: 23px;
                         }
                         &:nth-of-type(2){
                             .contacts__item-wrap{
@@ -4396,6 +4485,9 @@ footer {
                             }
                             .contacts__label{
                                 font-size: 25px;
+                            }
+                            .contacts__phone-owner{
+                                font-size: 14px;
                             }
                         }
                     }
@@ -4416,6 +4508,14 @@ footer {
             .concrete__grades-title{
                 font-size: 28px;
             }
+            .concrete__grades-content{
+                .mark__card{
+                    .mark__card-img{
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+            }
         }
     }
     .concrete__production{
@@ -4432,24 +4532,52 @@ footer {
             }
         }
     }
+
+    .concrete-pump__page-wrapper{
+        .detailed__desc{
+            .desc__container{
+                .detailed__desc-content{
+                    .detail__card{
+                        .detail__info{
+                            .detail__info-title{
+                                font-size: 15px;
+                            }
+                            .detail__info-text{
+                                font-size: 11px;
+                                height: 82px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .detailed__desc{
+        .desc__container{
+            .detailed__desc-content{
+                .detail__card{
+                    .detail__info{
+                        .uniq__button{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*  
 
     --сжатие проекта(через плагин ?????)
 
-    --CEO 
+    --CEO (доделать ссылку на сайт + почту)
+
+    --HTTPS и 301 редиректы
+
+    --Google Search Console
 
     --оптимизация (по microsoft и т.д)
-
-    --проверить html на недостающие параметры у тэгов
-
-    --веб-киты у свойст элементов (через плагин ????)
-
-    --320px проверить, когда все будет готово + настроить scroll-margin 320x480px
-
-    --пофиксить контакты 320-540 (новый текст + свг(((ОПЯТЬ)))) )
-
 
 */
 

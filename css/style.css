@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -52,7 +53,7 @@ body {
 }
 
 #order-form {
-  scroll-margin-top: 10px;
+  scroll-margin-top: 20px;
 }
 
 header {
@@ -219,6 +220,21 @@ header .header__container .header__list .header__item .header__item-link:hover {
 }
 .hero .hero__container .hero__features .hero__feature:hover .hero__feature-icon {
   color: #38393E;
+}
+.hero .hero__container .hero__features .hero__feature:first-of-type {
+  width: 182px;
+}
+.hero .hero__container .hero__features .hero__feature:nth-of-type(2) {
+  width: 184px;
+}
+.hero .hero__container .hero__features .hero__feature:nth-of-type(3) {
+  width: 135px;
+}
+.hero .hero__container .hero__features .hero__feature:nth-of-type(4) {
+  width: 201px;
+}
+.hero .hero__container .hero__features .hero__feature:last-of-type {
+  width: 171px;
 }
 .hero .hero__container .hero__features .hero__feature .hero__feature-icon {
   width: 24px;
@@ -697,8 +713,8 @@ header .header__container .header__list .header__item .header__item-link:hover {
   outline: none;
   transition: border-color 0.2s, background 0.2s;
   box-sizing: border-box;
-  -moz-appearance: none;
   appearance: none;
+  -moz-appearance: none;
   -webkit-appearance: none;
 }
 .order__form .form__container .form__card form .form__card-group .form__card-input:hover {
@@ -827,7 +843,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
   font-weight: 400;
   font-size: 19px;
   color: #38393E;
-  text-align: end;
+  font-style: italic;
 }
 .contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap .contacts__phone-owner:last-of-type {
   margin-bottom: initial;
@@ -846,13 +862,13 @@ header .header__container .header__list .header__item .header__item-link:hover {
   color: #38393E;
   max-width: 455px;
 }
-.contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap #contacts__phone {
+.contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap #contacts__phone1, .contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap f#contacts__phone2 {
   display: flex;
   font-weight: 700;
   color: brown;
   margin-bottom: 5px;
 }
-.contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap #contacts__phone:hover {
+.contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap #contacts__phone1:hover, .contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap f#contacts__phone2:hover {
   color: #8F2D2D;
 }
 .contacts .contacts__container .contacts__content .contacts__map {
@@ -894,6 +910,7 @@ footer .footer__container .footer__content .footer__socials {
   gap: 30px;
   position: relative;
   left: 30px;
+  visibility: hidden;
 }
 footer .footer__container .footer__content .footer__socials .footer__socials-item:hover .footer__socials-link svg path {
   stroke: #cfcfcf;
@@ -1427,9 +1444,6 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
 }
 @media (max-width: 1440px) {
-  .hero .hero__container .hero__features .hero__feature .hero__feature-text {
-    font-size: 13px;
-  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 50px;
   }
@@ -1595,6 +1609,21 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
   .hero .hero__container .hero__features .hero__feature:hover {
     padding-left: 0px;
+  }
+  .hero .hero__container .hero__features .hero__feature:first-of-type {
+    width: initial;
+  }
+  .hero .hero__container .hero__features .hero__feature:nth-of-type(2) {
+    width: initial;
+  }
+  .hero .hero__container .hero__features .hero__feature:nth-of-type(3) {
+    width: initial;
+  }
+  .hero .hero__container .hero__features .hero__feature:nth-of-type(4) {
+    width: initial;
+  }
+  .hero .hero__container .hero__features .hero__feature:last-of-type {
+    width: initial;
   }
   .about .about__container {
     padding-left: initial;
@@ -2093,7 +2122,6 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     height: 394px;
   }
   .hero .hero__container .hero__features .hero__feature:last-of-type {
-    left: initial;
     order: 1;
   }
   .hero .hero__container .hero__features .hero__feature:first-of-type {
@@ -2155,6 +2183,12 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
   .gallery .gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item .gallery__item-img {
     max-height: 235px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
+    width: 31px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__phone-owner {
+    font-size: 17px;
   }
   .concrete__grades .grades__container .concrete__grades-content .mark__card {
     padding: 15px 18px;
@@ -2254,7 +2288,7 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     font-size: 42px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 31px;
+    width: 27px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
     max-width: 295px;
@@ -2314,6 +2348,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     max-height: 52px;
     max-width: 165px;
   }
+  .hero .hero__container .hero__features .hero__feature .hero__feature-text {
+    font-size: 13px;
+  }
   .about .about__container .about__content .about__info .about__text {
     font-size: 14px;
   }
@@ -2352,12 +2389,6 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container {
     padding-left: 0px;
     padding-right: 0px;
-  }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 30px;
-  }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
-    width: 33px;
   }
   .contacts .contacts__container .contacts__content .contacts__map {
     width: 300px;
@@ -2413,9 +2444,6 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
   .contacts .contacts__container .contacts__top .contacts__title {
     font-size: 37px;
-  }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 29px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 40px;
@@ -2505,21 +2533,11 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 38px;
   }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 27px;
-  }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
-    width: 30px;
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item {
+    gap: 20px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__label {
     font-size: 26px;
-  }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text span {
-    display: inherit;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item:nth-of-type(2) .contacts__item-wrap .contacts__text {
     font-size: 21px;
@@ -2548,7 +2566,17 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     scroll-margin-top: 140px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text span {
+    display: inherit;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__phone-owner {
+    font-size: 16px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
+    width: 28px;
   }
   .prices .prices__container .prices__info .prices__text {
     font-size: 16px;
@@ -2582,6 +2610,12 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container .contacts__top .contacts__title {
     font-size: 34px;
   }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
+    width: 27px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
+    width: 30px;
+  }
   .concrete__grades .grades__container .concrete__grades-title {
     font-size: 34px;
   }
@@ -2608,8 +2642,14 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 36px;
   }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
+    width: 26px;
+  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
-    width: 29px;
+    width: 28px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
+    font-size: 17px;
   }
   .hero .hero__container .hero__content .hero__header .hero__title {
     font-size: 39px;
@@ -2656,14 +2696,14 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .gallery .gallery__container .gallery__wrap .swiperGallery .gallery__list.swiper-wrapper .gallery__item .gallery__item-img {
     max-height: 158px;
   }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 25px;
-  }
-  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
-    width: 26px;
-  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
     font-size: 16px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__phone-owner {
+    font-size: 15px;
+  }
+  .detailed__desc .desc__container .detailed__desc-content .detail__card .detail__info .uniq__button {
+    font-size: 17px;
   }
 }
 @media (max-width: 360px) {
@@ -2715,6 +2755,12 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .contacts .contacts__container .contacts__content .contacts__info .contacts__company .contacts__company-line {
     font-size: 34px;
   }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
+    width: 26px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
+    width: 27px;
+  }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__text {
     font-size: 15px;
   }
@@ -2730,8 +2776,26 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .detailed__desc .desc__container .detailed__desc-title {
     font-size: 32px;
   }
+  .detailed__desc .desc__container .detailed__desc-content .detail__card .detail__info .uniq__button {
+    font-size: 16px;
+  }
 }
 @media (max-width: 320px) {
+  #services {
+    scroll-margin-top: 100px;
+  }
+  #about {
+    scroll-margin-top: -10px;
+  }
+  #prices {
+    scroll-margin-top: 0px;
+  }
+  #contacts {
+    scroll-margin-top: -152px;
+  }
+  .hero .hero__container {
+    padding-top: 44px;
+  }
   .hero .hero__container .hero__content .hero__header .hero__subtitle {
     font-size: 9px;
   }
@@ -2806,10 +2870,10 @@ footer .footer__container .footer__bottom .footer__bottom-text {
     font-size: 30px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item:first-of-type svg {
-    width: 23px;
+    width: 25px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item svg {
-    width: 21px;
+    width: 23px;
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item:nth-of-type(2) .contacts__item-wrap .contacts__text {
     font-size: 19px;
@@ -2819,6 +2883,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
   .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__label {
     font-size: 25px;
+  }
+  .contacts .contacts__container .contacts__content .contacts__info .contacts__item .contacts__item-wrap .contacts__phone-owner {
+    font-size: 14px;
   }
   .contacts .contacts__container .contacts__content .contacts__map {
     width: 250px;
@@ -2831,29 +2898,38 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   .concrete__grades .grades__container .concrete__grades-title {
     font-size: 28px;
   }
+  .concrete__grades .grades__container .concrete__grades-content .mark__card .mark__card-img {
+    width: 64px;
+    height: 64px;
+  }
   .concrete__production .production__container .concrete__production-title {
     font-size: 28px;
   }
   .detailed__desc .desc__container .detailed__desc-title {
     font-size: 28px;
   }
+  .concrete-pump__page-wrapper .detailed__desc .desc__container .detailed__desc-content .detail__card .detail__info .detail__info-title {
+    font-size: 15px;
+  }
+  .concrete-pump__page-wrapper .detailed__desc .desc__container .detailed__desc-content .detail__card .detail__info .detail__info-text {
+    font-size: 11px;
+    height: 82px;
+  }
+  .detailed__desc .desc__container .detailed__desc-content .detail__card .detail__info .uniq__button {
+    font-size: 15px;
+  }
 }
 /*  
 
     --сжатие проекта(через плагин ?????)
 
-    --CEO 
+    --CEO (доделать ссылку на сайт + почту)
+
+    --HTTPS и 301 редиректы
+
+    --Google Search Console
 
     --оптимизация (по microsoft и т.д)
-
-    --проверить html на недостающие параметры у тэгов
-
-    --веб-киты у свойст элементов (через плагин ????)
-
-    --320px проверить, когда все будет готово + настроить scroll-margin 320x480px
-
-    --пофиксить контакты 320-540 (новый текст + свг(((ОПЯТЬ)))) )
-
 
 */
 @media (1600px <= width < 1920px) {

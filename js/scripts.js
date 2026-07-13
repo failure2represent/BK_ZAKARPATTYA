@@ -40,6 +40,26 @@ const swiperС = new Swiper('.swiperCertificates', {
 
 //smth-logo
 //url-cleaner
+function cleanUrl() {
+  history.replaceState(null, '', window.location.pathname + window.location.search);
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+  const hash = window.location.hash;
+  if (!hash) return;
+
+  const target = document.querySelector(hash);
+  
+  if (target) {
+    setTimeout(() => {
+      target.scrollIntoView({ behavior: 'smooth' });
+      cleanUrl();
+    }, 100);
+  } else {
+    cleanUrl();
+  }
+});
+
 const logo = document.querySelector('.header__logo');
 
 logo?.addEventListener('click', function (e) {
@@ -49,40 +69,22 @@ logo?.addEventListener('click', function (e) {
 
   if (isHomePage) {
     e.preventDefault();
-
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-
-    history.replaceState(
-      null,
-      '',
-      window.location.pathname + window.location.search
-    );
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    cleanUrl();
   }
 });
 
-//rm-hash
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener('click', function (e) {
-    const target = document.querySelector(this.getAttribute('href'));
+    const href = this.getAttribute('href');
+    const target = document.querySelector(href);
     if (!target) return;
 
     e.preventDefault();
-
-    target.scrollIntoView({
-      behavior: 'smooth',
-    });
-
-    history.replaceState(
-      null,
-      '',
-      window.location.pathname + window.location.search
-    );
+    target.scrollIntoView({ behavior: 'smooth' });
+    cleanUrl();
   });
 });
-
 
 
 //burger-menu
