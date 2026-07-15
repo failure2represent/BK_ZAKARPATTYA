@@ -639,6 +639,7 @@ header .header__container .header__list .header__item .header__item-link:hover {
 .certificates .certificates__container .swiperCertificates .certificates__list .certificates__item .certificates__link .certificates__item-img {
   max-width: 349px;
   display: block;
+  height: 451px;
 }
 .certificates .certificates__container .swiper-pagination {
   bottom: inherit;
@@ -862,13 +863,13 @@ header .header__container .header__list .header__item .header__item-link:hover {
   color: #38393E;
   max-width: 455px;
 }
-.contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap #contacts__phone1, .contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap f#contacts__phone2 {
+.contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap #contacts__phone1, .contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap #contacts__phone2 {
   display: flex;
   font-weight: 700;
   color: brown;
   margin-bottom: 5px;
 }
-.contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap #contacts__phone1:hover, .contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap f#contacts__phone2:hover {
+.contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap #contacts__phone1:hover, .contacts .contacts__container .contacts__content .contacts__item .contacts__item-wrap #contacts__phone2:hover {
   color: #8F2D2D;
 }
 .contacts .contacts__container .contacts__content .contacts__map {
@@ -2464,6 +2465,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
   }
 }
 @media (max-width: 411px) {
+  .hero .hero__container .hero__content .hero__header .hero__title {
+    font-size: 40px;
+  }
   .services .services__container .services__title {
     font-size: 36px;
   }
@@ -2923,13 +2927,9 @@ footer .footer__container .footer__bottom .footer__bottom-text {
 
     --сжатие проекта(через плагин ?????)
 
-    --CEO (доделать ссылку на сайт + почту)
+    --обфускация классов
 
-    --HTTPS и 301 редиректы
-
-    --Google Search Console
-
-    --оптимизация (по microsoft и т.д)
+    --альты + размеры на <img> + <picture> + <iframe>
 
 */
 @media (1600px <= width < 1920px) {

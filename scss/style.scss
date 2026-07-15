@@ -712,6 +712,7 @@ header{
                         .certificates__item-img {
                             max-width: 349px;
                             display: block;
+                            height: 451px;
                         }
                     }
                 }
@@ -966,7 +967,7 @@ header{
                         max-width: 455px;
                     }
         
-                    #contacts__phone1, f#contacts__phone2 {
+                    #contacts__phone1, #contacts__phone2 {
                         display: flex;
                         font-weight: 700;
                         color: brown;
@@ -3581,6 +3582,18 @@ footer {
 }
 
 @media(max-width: 411px){
+
+    .hero{
+        .hero__container{
+            .hero__content{
+                .hero__header{
+                    .hero__title{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
     .services{
         .services__container{
             .services__title{
@@ -4571,13 +4584,9 @@ footer {
 
     --сжатие проекта(через плагин ?????)
 
-    --CEO (доделать ссылку на сайт + почту)
+    --обфускация классов
 
-    --HTTPS и 301 редиректы
-
-    --Google Search Console
-
-    --оптимизация (по microsoft и т.д)
+    --альты + размеры на <img> + <picture> + <iframe>
 
 */
 
