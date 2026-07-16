@@ -878,6 +878,9 @@ header .header__container .header__list .header__item .header__item-link:hover {
   height: 511px;
   place-self: center;
 }
+.contacts .contacts__container .contacts__content .contacts__map iframe {
+  border: 0;
+}
 
 footer {
   background: #38393E;

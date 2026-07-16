@@ -206,6 +206,8 @@ async function build() {
       removeComments: true,
       minifyCSS: true,
       minifyJS: true,
+      collapseBooleanAttributes: false,
+      removeAttributeQuotes: false,
     });
 
     fs.writeFileSync(path.join(DIST_DIR, htmlFile), result);
